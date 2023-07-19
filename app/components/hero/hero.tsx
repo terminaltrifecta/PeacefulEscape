@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -9,7 +10,11 @@ export default function Hero() {
             <p className="py-6">
               Here at Peaceful Accomodations LLC, we offer the best prices for the highest quality properties you can find!
             </p>
-            <button className="btn btn-primary btn-wide">Learn More</button>
+            <li>
+              <button className="btn btn-primary btn-wide">
+                <Link href="/about">Learn More</Link>
+              </button>
+            </li>
           </div>
         </div>
     </div>
