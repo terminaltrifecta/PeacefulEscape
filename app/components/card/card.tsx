@@ -20,11 +20,9 @@ export default function Card({
         <p>{paragraphText}</p>
         <div className="card-actions justify-start">
           <Link className="break-words" href={`${buttonPath}`}>
-              <button className="btn btn-primary w-full">
-                {buttonText}
-              </button>
-            </Link>
-          </div>
+            <button className="btn btn-primary w-full">{buttonText}</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

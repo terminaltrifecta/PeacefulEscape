@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Antboard() {
-  return <div className="artboard phone-1">peepee poopoo woooo</div>;
+export default function Artboard() {
+  return <div className="artboard phone-1 w-20">peepee poopoo woooo</div>;
 }
