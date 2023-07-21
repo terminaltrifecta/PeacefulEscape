@@ -14,28 +14,28 @@ export default function Proplayout({ box1, box2, box3, box4, box5 }: any) {
 
       <div className="carousel w-full object-cover">
   <div id="slide1" className="carousel-item relative w-full">
-    <Image width={5} height={5} src={Stock} alt={""} style={{objectFit:"cover"}} className="w-full" />
+    <Image width={0} height={0} src={Stock} alt={""} style={{objectFit:"cover"}} className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide4" className="btn btn-circle">❮</a> 
       <a href="#slide2" className="btn btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide2" className="carousel-item relative w-full">
-    <Image width={5} height={5} src={Stock} alt={""} style={{objectFit:"cover"}} className="w-full" />
+    <Image width={0} height={0} src={Stock} alt={""} style={{objectFit:"cover"}} className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide1" className="btn btn-circle">❮</a> 
       <a href="#slide3" className="btn btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide3" className="carousel-item relative w-full">
-    <Image width={5} height={5} src={Stock} alt={""} style={{objectFit:"cover"}} className="w-full" />
+    <Image width={0} height={0} src={Stock} alt={""} style={{objectFit:"cover"}} className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide2" className="btn btn-circle">❮</a> 
       <a href="#slide4" className="btn btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide4" className="carousel-item relative w-full">
-    <Image width={5} height={5} src={Stock} alt={""} style={{objectFit:"cover"}} className="w-full" />
+    <Image width={0} height={0} src={Stock} alt={""} style={{objectFit:"cover"}} className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide3" className="btn btn-circle">❮</a> 
       <a href="#slide1" className="btn btn-circle">❯</a>
