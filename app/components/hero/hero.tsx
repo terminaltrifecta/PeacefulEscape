@@ -11,9 +11,11 @@ export default function Hero() {
             Here at Peaceful Accomodations LLC, we offer the best prices for the
             highest quality properties you can find!
           </p>
-          <button className="btn btn-primary btn-wide">
-            <Link href="/about">Learn More</Link>
-          </button>
+          <Link href="/about">
+            <button className="btn btn-primary btn-wide">
+              Learn More
+            </button>
+          </Link>
         </div>
       </div>
     </div>

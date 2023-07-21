@@ -38,12 +38,12 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-      <div className="navbar-center">
-        <Link className="btn btn-ghost normal-case text-xl" href="/">
-          {" "}
-          Peaceful Accomodations
-        </Link>
-      </div>
+      <Link className="btn btn-ghost normal-case text-xl" href="/">
+        <div className="navbar-center">
+            {" "}
+            Peaceful Accomodations
+        </div>
+      </Link>
       <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">
           <svg
