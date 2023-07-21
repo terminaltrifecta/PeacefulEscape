@@ -19,13 +19,9 @@ export default function Card({
         <h2 className="card-title">{headerText}</h2>
         <p>{paragraphText}</p>
         <div className="card-actions justify-start">
-          <li>
-              <button className="btn btn-primary">
-                <Link href={`${buttonPath}`}>
-                  {buttonText}
-                </Link>
-              </button>
-          </li>
+          <button className="btn btn-primary w-full">
+            <Link className="break-words" href={`${buttonPath}`}>{buttonText}</Link>
+          </button>
         </div>
       </div>
     </div>

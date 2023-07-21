@@ -39,9 +39,10 @@ export default function Navbar() {
         </div>
       </div>
       <div className="navbar-center">
-        <li>
-          <Link className="btn btn-ghost normal-case text-xl" href="/"> Peaceful Accomodations</Link>
-        </li>
+        <Link className="btn btn-ghost normal-case text-xl" href="/">
+          {" "}
+          Peaceful Accomodations
+        </Link>
       </div>
       <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">
