@@ -19,10 +19,12 @@ export default function Card({
         <h2 className="card-title">{headerText}</h2>
         <p>{paragraphText}</p>
         <div className="card-actions justify-start">
-          <button className="btn btn-primary w-full">
-            <Link className="break-words" href={`${buttonPath}`}>{buttonText}</Link>
-          </button>
-        </div>
+          <Link className="break-words" href={`${buttonPath}`}>
+              <button className="btn btn-primary w-full">
+                {buttonText}
+              </button>
+            </Link>
+          </div>
       </div>
     </div>
   );

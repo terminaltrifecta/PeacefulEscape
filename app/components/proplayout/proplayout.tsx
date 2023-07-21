@@ -12,6 +12,7 @@ export default function Proplayout({ box1, box2, box3, box4, box5 }: any) {
         <div className="h-20 lg:h-40 card bg-primary"></div>
         <div className="h-48 lg:h-96 card bg-primary"></div>
       </div>
+
     </div>
   );
 }
