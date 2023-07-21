@@ -40,7 +40,8 @@ export default function Navbar() {
       </div>
       <Link className="btn btn-ghost normal-case text-xl" href="/">
         <div className="navbar-center">
-              PA
+            {" "}
+            Peaceful Accomodations
         </div>
       </Link>
       <div className="navbar-end">

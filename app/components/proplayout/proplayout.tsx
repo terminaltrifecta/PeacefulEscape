@@ -1,6 +1,5 @@
-import Artboard from "../Artboard/artboard";
 import Image from "next/image";
-import Stock from "app/assets/stockhome.jpg"
+import Stock from "app/assets/stockhome.jpg";
 
 export default function Proplayout({ box1, box2, box3, box4, box5 }: any) {
   return (
@@ -49,9 +48,15 @@ export default function Proplayout({ box1, box2, box3, box4, box5 }: any) {
           {box3}
         </div>
       </div>
-      <div className="grid gap-8">
-        <div className="h-20 lg:h-40 card bg-primary"></div>
-        <div className="h-48 lg:h-96 card bg-primary"></div>
+
+      <div className="grid p-8 gap-8">
+        <div className="h-48 lg:h-40 card bg-primary">
+          {box4}
+        </div>
+
+        <div className="text-center h-32 lg:h-96 card bg-primary">
+          {box5}
+        </div>
       </div>
 
     </div>
