@@ -1,20 +1,20 @@
-import React from "react";
-import { useKeenSlider } from "keen-slider/react";
+import React, { useEffect } from "react";
+import { KeenSliderPlugin, useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-function ThumbnailPlugin(mainRef: any) {
-  return (slider: any) => {
+function ThumbnailPlugin(mainRef: any): KeenSliderPlugin {
+  return (slider) => {
     function removeActive() {
-      slider.slides.forEach((slide: any) => {
+      slider.slides.forEach((slide) => {
         slide.classList.remove("active");
       });
     }
-    function addActive(idx: any) {
+    function addActive(idx: number) {
       slider.slides[idx].classList.add("active");
     }
 
     function addClickEvents() {
-      slider.slides.forEach((slide: any, idx: any) => {
+      slider.slides.forEach((slide, idx) => {
         slide.addEventListener("click", () => {
           if (mainRef.current) mainRef.current.moveToIdx(idx);
         });
@@ -25,7 +25,7 @@ function ThumbnailPlugin(mainRef: any) {
       if (!mainRef.current) return;
       addActive(slider.track.details.rel);
       addClickEvents();
-      mainRef.current.on("animationStarted", (main: any) => {
+      mainRef.current.on("animationStarted", (main:any) => {
         removeActive();
         const next = main.animator.targetIdx || 0;
         addActive(main.track.absToRel(next));
@@ -36,10 +36,10 @@ function ThumbnailPlugin(mainRef: any) {
 }
 
 export default function App() {
-  const [sliderRef, instanceRef] = useKeenSlider({
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
   });
-  const [thumbnailRef] = useKeenSlider(
+  const [thumbnailRef] = useKeenSlider<HTMLDivElement>(
     {
       initial: 0,
       slides: {
@@ -51,7 +51,7 @@ export default function App() {
   );
 
   return (
-    <div className="h-full inline-grid gap-2">
+    <>
       <div ref={sliderRef} className="keen-slider row-span-3">
         <div className="keen-slider__slide number-slide1">1</div>
         <div className="keen-slider__slide number-slide2">2</div>
@@ -69,6 +69,6 @@ export default function App() {
         <div className="keen-slider__slide number-slide5">5</div>
         <div className="keen-slider__slide number-slide6">6</div>
       </div>
-    </div>
+    </>
   );
 }

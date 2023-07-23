@@ -16,16 +16,6 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -122,9 +112,6 @@ body {
 }
 .thumbnail .keen-slider__slide {
   cursor: pointer;
-}
-.thumbnail .keen-slider__slide.active {
-  border: 0.1rem solid white;
 }
 
 .slideshow {

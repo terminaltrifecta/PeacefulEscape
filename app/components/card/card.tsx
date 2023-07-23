@@ -11,7 +11,7 @@ export default function Card({
   imageName,
 }: any) {
   return (
-    <div className="card lg:card-side bg-base-100 shadow-xl">
+    <div className="card lg:card-side bg-base-100 shadow-2xl">
       <figure>
         <Image className="h-full" src={Stock} alt="Album" />
       </figure>
