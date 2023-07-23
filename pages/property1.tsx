@@ -3,6 +3,7 @@ import Proplayout from "@/app/components/proplayout/proplayout";
 
 export default function Property1() {
   return (
+    <div className="justify-center flex">
       <Proplayout
         box1="The Beautiful Fuhrst Pwoperty"
         box2="Stock"
@@ -10,5 +11,6 @@ export default function Property1() {
         box4="box4"
         box5="ammenities and shit and shit"
       />
+    </div>
   );
 }

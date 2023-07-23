@@ -126,3 +126,11 @@ body {
 .thumbnail .keen-slider__slide.active {
   border: 0.1rem solid white;
 }
+
+.slideshow {
+  height: 60vh;
+}
+
+.propertylayout {
+  max-width: 1000px;
+}
