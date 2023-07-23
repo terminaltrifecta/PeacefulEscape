@@ -15,16 +15,14 @@ export default function Card({
       <figure>
         <Image className="h-full" src={Stock} alt="Album" />
       </figure>
-      <div className="card-body">
+      <div className="card-body h-full w-1/2">
         <h2 className="card-title">{headerText}</h2>
-        <p>{paragraphText}</p>
+        <p className="break-words">{paragraphText}</p>
         <div className="card-actions justify-start">
           <Link className="break-words" href={`${buttonPath}`}>
-              <button className="btn btn-primary w-full">
-                {buttonText}
-              </button>
-            </Link>
-          </div>
+            <button className="btn btn-primary w-full">{buttonText}</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
