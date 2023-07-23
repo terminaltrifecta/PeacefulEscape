@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import moon from "app/assets/moon.svg";
-import sun from "app/assets/sun.svg";
 import Image from "next/image";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 const Navbar = () => {
   // set it to the theme in storage if available, otherwise light
@@ -19,10 +18,10 @@ const Navbar = () => {
       setTheme("dark");
     } else {
       setTheme("light");
-    };
+    }
 
     const doc = document.querySelector("html") as HTMLElement;
-    doc.setAttribute("data-theme", theme as string)
+    doc.setAttribute("data-theme", theme as string);
   };
 
   return (
@@ -67,7 +66,7 @@ const Navbar = () => {
       <div className="navbar-end">
         <div className="flex-none">
           {/* Toggle button here */}
-          <button className="btn btn-square bg-gray-600 hover:bg-gray-400">
+          <button className="btn btn-ghost btn-square">
             <label className="swap swap-rotate w-12 h-12 ">
               <input
                 type="checkbox"
@@ -76,17 +75,9 @@ const Navbar = () => {
                 checked={theme === "light" ? false : true}
               />
               {/* light theme sun image */}
-              <Image
-                src={sun}
-                alt="light"
-                className="text-red-600 w-8 h-8 swap-on"
-              />
+              <SunIcon className="text-base-accent w-8 h-8 swap-on" />
               {/* dark theme moon image */}
-              <Image
-                src={moon}
-                alt="dark"
-                className="text-red-600 w-8 h-8 swap-off"
-              />
+              <MoonIcon className="text-base-accent w-8 h-8 swap-off" />
             </label>
           </button>
         </div>

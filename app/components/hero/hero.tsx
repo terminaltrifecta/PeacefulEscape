@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="hero min-h-screen">
+    <div className="hero min-h-screen text-accent-content">
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-3xl lg:text-5xl break-words font-bold">Peaceful Accomodations LLC</h1>
