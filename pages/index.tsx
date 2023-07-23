@@ -50,6 +50,13 @@ export default function Home() {
           imageName="app/assets/stockhome.jpg"
           buttonPath="/property4"
         />
+        <Card
+          headerText="so is aiden :3"
+          paragraphText="AAGHGHGB"
+          buttonText="book"
+          imageName="app/assets/stockhome.jpg"
+          buttonPath="/property5"
+        />
       </div>
     </>
   );

@@ -33,7 +33,6 @@ body {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #88888800;
-  border-radius: 5px;
 }
 
 /* Handle */
@@ -56,7 +55,6 @@ body {
   font-size: 50px;
   color: #fff;
   font-weight: 500;
-  height: 200px;
   max-height: 100vh;
 }
 
@@ -121,8 +119,6 @@ body {
 
 .thumbnail .keen-slider__slide {
   font-size: 30px;
-  margin-top: 10px;
-  height: 100px;
 }
 .thumbnail .keen-slider__slide {
   cursor: pointer;

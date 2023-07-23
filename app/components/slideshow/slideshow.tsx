@@ -51,8 +51,8 @@ export default function App() {
   );
 
   return (
-    <div className="w-full h-full">
-      <div ref={sliderRef} className="keen-slider w-1/6">
+    <div className="h-full inline-grid gap-2">
+      <div ref={sliderRef} className="keen-slider row-span-3">
         <div className="keen-slider__slide number-slide1">1</div>
         <div className="keen-slider__slide number-slide2">2</div>
         <div className="keen-slider__slide number-slide3">3</div>
@@ -61,7 +61,7 @@ export default function App() {
         <div className="keen-slider__slide number-slide6">6</div>
       </div>
 
-      <div ref={thumbnailRef} className="keen-slider thumbnail w-1/6">
+      <div ref={thumbnailRef} className="keen-slider thumbnail">
         <div className="keen-slider__slide number-slide1">1</div>
         <div className="keen-slider__slide number-slide2">2</div>
         <div className="keen-slider__slide number-slide3">3</div>

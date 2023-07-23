@@ -41,7 +41,7 @@ export default function Navbar() {
       <Link className="btn btn-ghost normal-case text-xl" href="/">
         <div className="navbar-center">
             {" "}
-            Peaceful Accomodations
+            PA
         </div>
       </Link>
       <div className="navbar-end">
