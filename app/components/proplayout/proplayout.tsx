@@ -9,7 +9,7 @@ export default function Proplayout({ box1, box2, box3, box4, box5 }: any) {
       <div className="text-xl font-bold text-center justify-center">
         Cheerful bedroom in a Cozy home
       </div>
-      <div className="slideshow w-full join grid gap-2">
+      <div className="slideshow p-12 w-full join grid gap-2">
         <Slideshow />
       </div>
       <hr className="" />

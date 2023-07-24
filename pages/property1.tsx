@@ -6,26 +6,27 @@ import { HomeIcon, WifiIcon } from "@heroicons/react/24/solid";
 export default function Property1() {
   return (
     <div className="justify-center flex">
-      <div className="propertylayout justify-center grid p-8 gap-8 text-accent-content">
-        <div className="text-xl font-bold text-center justify-center">
+      <div className="propertylayout justify-center grid p-8 gap-8">
+        <div className="text-2xl font-bold text-white text-center justify-center">
           Cheerful bedroom in a Cozy home
         </div>
-        <div className="slideshow w-full join grid gap-2">
-          <Slideshow />
+        <div className="slideshow p-4 bg-primary w-full join grid gap-2">
+          <Slideshow slide1="/assets/stockhome.jpg" slide2="/assets/landscape.jpg"/>
         </div>
         <hr className="border-base-200" />
 
-        <div className="p-4 h-36 card bg-primary">
+        <div className="p-4 h-36 card bg-primary text-white">
           <b>The space Enjoy a private room.</b> in a quiet neighborhood. The
           house is centrally located and close to shopping malls and major
           freeways.
         </div>
-        <hr className="border-base-200" />
-        <div className="p-4 h-36 xl:h-80 card bg-primary">Hai</div>
+        <hr className="border-base-200"/>
+        <div className="p-4 h-36 xl:h-80 card bg-primary text-white">Hai</div>
         <hr className="border-base-200" />
 
-        <div className="p-4 gap-5 card bg-primary">
-          <div className="text-2xl">Things to Know</div>
+        <div className="p-4 gap-5 card bg-primary text-white">
+          <div className="text-3xl font-extrabold text-center">Things to Know</div>
+        <hr className="border-base-200" />
           <div className="inline-grid grid-cols-3">
             <div className="">
               <div className="font-bold">House rules</div>
