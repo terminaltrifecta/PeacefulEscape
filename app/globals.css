@@ -16,28 +16,29 @@
   }
 }
 
-::-webkit-scrollbar {
-  width: 10px;
+hr {
+  border-top-width: 0.2rem;
+  border-radius: 5px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #88888800;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #6908d7;
-  border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #e1c4ff;
+  background: #610bbc;
 }
 
 [class^="number-slide"],
 [class*=" number-slide"] {
+  border-width: 0.2rem;
+  border-color: rgba(0, 0, 0, 0.1);
   background: grey;
   display: flex;
   align-items: center;

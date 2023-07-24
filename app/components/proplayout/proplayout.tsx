@@ -5,7 +5,7 @@ import { HomeIcon } from "@heroicons/react/24/solid";
 
 export default function Proplayout({ box1, box2, box3, box4, box5 }: any) {
   return (
-    <div className="propertylayout grid p-8 gap-8 grid-cols-1 text-white">
+    <div className="propertylayout justify-center grid p-8 gap-8 text-white">
       <div className="text-xl font-bold text-center justify-center">
         Cheerful bedroom in a Cozy home
       </div>

@@ -11,11 +11,11 @@ export default function Card({
   imageName,
 }: any) {
   return (
-    <div className="card lg:card-side bg-base-100 shadow-2xl">
-      <figure>
+    <div className="card xl:card-side bg-base-100 shadow-2xl">
+      <figure className="xl:w-1/2">
         <Image className="h-full" src={Stock} alt="Album" />
       </figure>
-      <div className="card-body h-full w-1/2">
+      <div className="card-body xl:w-1/2">
         <h2 className="card-title">{headerText}</h2>
         <p className="break-words">{paragraphText}</p>
         <div className="card-actions justify-start">
