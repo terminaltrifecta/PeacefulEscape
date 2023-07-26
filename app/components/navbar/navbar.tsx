@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
+import { json } from "stream/consumers";
+import Searchbar from "../searchbar/searchbar";
+import Searchresultslist from "../searchbar/searchresultslist";
 
 const Navbar = () => {
   // set it to the theme in storage if available, otherwise light
@@ -23,6 +26,8 @@ const Navbar = () => {
     const doc = document.querySelector("html") as HTMLElement;
     doc.setAttribute("data-theme", theme as string);
   };
+
+  const [results, setResults] = useState([]);
 
   return (
     <div className="navbar sticky top-0 z-50 bg-primary text-white">
@@ -64,7 +69,11 @@ const Navbar = () => {
         <div className="navbar-center"> PA</div>
       </Link>
       <div className="navbar-end">
-        <div className="flex-none">
+        <div className="flex">
+          <div className="grid">
+            <Searchbar setResults={setResults} />
+            <Searchresultslist results={results}/>
+          </div>
           {/* Toggle button here */}
           <button className="btn btn-ghost btn-square">
             <label className="swap swap-rotate w-12 h-12 ">

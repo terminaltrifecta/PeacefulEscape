@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
 
       {/* Cards */}
-      <div className="p-10 grid gap-10 justify-center lg:grid-cols-2">
+      <div className="p-10 grid gap-10 justify-center md:grid-cols-2">
         <div className="grid gap-10">
           <Card
             headerText="Southfield Home"
