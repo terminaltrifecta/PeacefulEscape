@@ -37,7 +37,14 @@ function ThumbnailPlugin(mainRef: any): KeenSliderPlugin {
   };
 }
 
-export default function App({slide1, slide2}:any) {
+export default function App({
+  slide1,
+  slide2,
+  slide3,
+  slide4,
+  slide5,
+  slide6,
+}: any) {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
   });
@@ -45,6 +52,7 @@ export default function App({slide1, slide2}:any) {
     {
       initial: 0,
       slides: {
+        number: 6,
         perView: 4,
         spacing: 10,
       },
@@ -54,45 +62,45 @@ export default function App({slide1, slide2}:any) {
 
   return (
     <>
-      <div ref={sliderRef} className="keen-slider row-span-3">
+      <div ref={sliderRef} className="keen-slider row-span-3 flex w-full">
         <div className="keen-slider__slide number-slide1">
-          <Image src={slide1} fill={true} alt="" className="w-full" />
+          <Image src={slide1} fill={true} alt="" className="object-cover" />
         </div>
         <div className="keen-slider__slide number-slide1">
-          <Image src={slide2} fill={true} alt="" className="w-full" />
+          <Image src={slide2} fill={true} alt="" className="object-cover" />
         </div>
         <div className="keen-slider__slide number-slide3">
-          <Image src={home} alt="" className="w-full" />
+          <Image src={slide3} fill={true} alt="" className="object-cover" />
         </div>
         <div className="keen-slider__slide number-slide4">
-          <Image src={home} alt="" className="w-full" />
+          <Image src={slide4} fill={true} alt="" className="object-cover" />
         </div>
         <div className="keen-slider__slide number-slide5">
-          <Image src={home} alt="" className="w-full" />
+          <Image src={slide5} fill={true} alt="" className="object-cover" />
         </div>
         <div className="keen-slider__slide number-slide6">
-          <Image src={home} alt="" className="w-full" />
+          <Image src={slide6} fill={true} alt="" className="object-cover" />
         </div>
       </div>
 
-      <div ref={thumbnailRef} className="keen-slider thumbnail">
-      <div className="keen-slider__slide number-slide1">
-          <Image src={slide1} fill={true} alt="" className="w-full" />
+      <div ref={thumbnailRef} className="keen-slider thumbnail w-full">
+        <div className="keen-slider__slide number-slide1">
+          <Image src={slide1} fill={true} alt="" className="object-cover" />
         </div>
         <div className="keen-slider__slide number-slide1">
-          <Image src={slide2} fill={true} alt="" className="w-full" />
+          <Image src={slide2} fill={true} alt="" className="object-cover" />
         </div>
         <div className="keen-slider__slide number-slide3">
-          <Image src={home} alt="" className="w-full" />
+          <Image src={slide3} fill={true} alt="" className="object-cover" />
         </div>
         <div className="keen-slider__slide number-slide4">
-          <Image src={home} alt="" className="w-full" />
+          <Image src={slide4} fill={true} alt="" className="object-cover" />
         </div>
         <div className="keen-slider__slide number-slide5">
-          <Image src={home} alt="" className="w-full" />
+          <Image src={slide5} fill={true} alt="" className="object-cover" />
         </div>
         <div className="keen-slider__slide number-slide6">
-          <Image src={home} alt="" className="w-full" />
+          <Image src={slide6} fill={true} alt="" className="object-cover" />
         </div>
       </div>
     </>
