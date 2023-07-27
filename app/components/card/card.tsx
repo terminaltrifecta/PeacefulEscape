@@ -10,7 +10,8 @@ export default function Card({
   buttonPath,
   imageName,
   hasButton,
-  hasImage
+  hasImage,
+  hasTwoLines
 }: any) {
   return (
     <div className="card 2xl:card-side bg-base-100 shadow-2xl">
