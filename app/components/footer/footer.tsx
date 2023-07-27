@@ -23,10 +23,10 @@ export default function Footer() {
       </div>
       <div>
         <span className="footer-title">Locations</span>
-        <a className="link link-hover">Roseville Loft</a>
-        <a className="link link-hover">Warren Home (West)</a>
-        <a className="link link-hover">Southfield Home</a>
-        <a className="link link-hover">Warren Home (East)</a>
+        <a href="/roseville" className="link link-hover">Roseville Loft</a>
+        <a href="/southfield" className="link link-hover">Southfield Home</a>
+        <a href="/warreneast" className="link link-hover">Warren Home (East)</a>
+        <a href="/warrenwest" className="link link-hover">Warren Home (West)</a>
       </div>
       <div>
         <span className="footer-title">Who are PC LLC?</span>
