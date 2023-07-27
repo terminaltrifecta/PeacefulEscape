@@ -19,6 +19,8 @@ export default function Home() {
             buttonText="Check It Out!"
             imageName="app/assets/stockhome.jpg"
             buttonPath="/property1"
+            hasButton="true"
+            hasImage="true"
           />
           <Card
             headerText="Warren Home (West)"
@@ -26,6 +28,8 @@ export default function Home() {
             buttonText="Check It Out!"
             imageName="app/assets/stockhome.jpg"
             buttonPath="/property2"
+            hasButton="true"
+            hasImage="true"
           />
         </div>
         <div className="grid gap-10">
@@ -35,6 +39,8 @@ export default function Home() {
             buttonText="Check It Out!"
             imageName="app/assets/stockhome.jpg"
             buttonPath="/property3"
+            hasButton="true"
+            hasImage="true"
           />
 
           <Card
@@ -43,6 +49,8 @@ export default function Home() {
             buttonText="Check It Out!"
             imageName="app/assets/stockhome.jpg"
             buttonPath="/property4"
+            hasButton="true"
+            hasImage="true"
           />
         </div>
       </div>
