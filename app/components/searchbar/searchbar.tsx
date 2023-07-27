@@ -12,10 +12,11 @@ export default function Searchbar({setResults}:any) {
             value &&
             user &&
             user.name &&
-            user.name.toLowerCase().includes(value)
+            user.name.toLowerCase().includes(value.toLowerCase())
           );
         });
         setResults(results);
+        console.log(results);
       });
   };
 
@@ -30,7 +31,7 @@ export default function Searchbar({setResults}:any) {
       value={input}
       onChange={(e) => handleChange(e.target.value)}
       type="text"
-      className="input input-ghost input-bordered w-full max-w-xs"
+      className="searchbar input input-ghost input-bordered w-full max-w-xs"
     />
   );
 }

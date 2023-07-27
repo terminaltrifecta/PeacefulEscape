@@ -1,35 +1,14 @@
 import React from "react";
+import SearchResult from "./searchresult";
 
-export default function Searchresultslist() {
-  return <div className="w-full bg-base-200 flex flex-col mt-1 max-h-0">
-    <div className="">A</div>
-    <div className="">B</div>
-    <div className="">C</div>
-    <div className="">D</div>
-    <div className="">A</div>
-    <div className="">B</div>
-    <div className="">C</div>
-    <div className="">D</div>
-    <div className="">A</div>
-    <div className="">B</div>
-    <div className="">C</div>
-    <div className="">D</div>
-    <div className="">A</div>
-    <div className="">B</div>
-    <div className="">C</div>
-    <div className="">D</div>
-    <div className="">A</div>
-    <div className="">B</div>
-    <div className="">C</div>
-    <div className="">D</div>
-    <div className="">A</div>
-    <div className="">B</div>
-    <div className="">C</div>
-    <div className="">D</div>
-    <div className="">A</div>
-    <div className="">B</div>
-    <div className="">C</div>
-    <div className="">D</div>
-
-  </div>;
+export default function Searchresultslist({ results }: any) {
+  return (
+    <div className="w-1/3 lg:w-1/6 join join-vertical absolute translate-y-16 grid max-h-80 overflow-y-scroll">
+      {results.map((result: any, id: any) => {
+        return (
+          <SearchResult result={result}/>
+        );
+      })}
+    </div>
+  );
 }

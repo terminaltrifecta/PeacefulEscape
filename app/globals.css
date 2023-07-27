@@ -27,12 +27,12 @@ hr {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #6908d7;
+  background: #bfaed4;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #610bbc;
+  background: #b671ff;
 }
 
 [class^="number-slide"],
@@ -60,4 +60,8 @@ hr {
 
 .propertylayout {
   max-width: 1000px;
+}
+
+.searchbar{
+  transition: 0.1s ease-in-out;
 }

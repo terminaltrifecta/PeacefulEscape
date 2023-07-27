@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="hero-content text-center z-10">
         <div className="max-w-md -translate-y-10">
           <h1 className="text-3xl lg:text-5xl break-words font-bold">Peaceful Accomodations LLC</h1>
-          <p className="py-6 bg-base-100 rounded-2xl my-4">
+          <p className="py-4 bg-base-100 rounded-2xl my-4">
             Here at Peaceful Accomodations LLC, we offer the best prices for the
             highest quality properties you can find!
           </p>
