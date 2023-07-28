@@ -12,12 +12,17 @@ export default function WarrenEast() {
         </div>
         <div className="slideshow p-4 bg-primary w-full join grid gap-2">
           <Slideshow
-            slide1="/assets/warrenEastLocation/warrenEast1.jpg"
-            slide2="/assets/warrenEastLocation/warrenEast2.jpg"
-            slide3="/assets/warrenEastLocation/warrenEast3.jpg"
-            slide4="/assets/warrenEastLocation/warrenEast4.jpg"
-            slide5="/assets/warrenEastLocation/warrenEast5.jpg"
-            slide6="/assets/warrenEastLocation/warrenEast.jpg"
+            slide1="/assets/warrenEastLocation/warrenEast1.webp"
+            slide2="/assets/warrenEastLocation/warrenEast2.webp"
+            slide3="/assets/warrenEastLocation/warrenEast3.webp"
+            slide4="/assets/warrenEastLocation/warrenEast4.webp"
+            slide5="/assets/warrenEastLocation/warrenEast5.webp"
+            slide6="/assets/warrenEastLocation/warrenEast6.webp"
+            slide7="/assets/warrenEastLocation/warrenEast7.webp"
+            slide8="/assets/warrenEastLocation/warrenEast8.webp"
+            slide9="/assets/warrenEastLocation/warrenEast9.webp"
+            slide10="/assets/warrenEastLocation/warrenEast10.webp"
+            slide11="/assets/warrenEastLocation/warrenEast11.webp"
           />
         </div>
         <hr className="border-base-200" />
