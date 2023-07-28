@@ -39,18 +39,16 @@ export default function Roseville() {
             Things to Know
           </div>
           <hr className="border-base-200" />
-          <div className="inline-grid grid-cols-3">
+          <div className="inline-grid grid-cols-2">
             <div className="">
-              <div className="font-bold">House rules</div>
-              <div>House rules</div>
+              <div className="font-bold">Guest access</div>
+              <div>Guests have access to the whole apartment.</div>
             </div>
             <div className="col">
-              <div className="font-bold">Safety & property</div>
-              <div>Safety & property</div>
-            </div>
-            <div className="col">
-              <div className="font-bold">Cancellation policy</div>
-              <div>Cancellation policy</div>
+              <div className="font-bold">The space</div>
+              <div>For the safety and comfort of all our guests, this apartment is following CDC guidance to ensure every guest has a clean place to stay. Some of the steps we are taking include:
+- Thoroughly disinfecting the whole apartment including countertops, doorknobs, faucets, light switches, remote control units, and all the appliances. We have also stocked up extra supplies such as soaps and cleaning products in case you need it (yes, including toilet paper)
+- Minimizing in-person contact with our guests whenever possible. You will enjoy this sunny and peaceful private loft</div>
             </div>
           </div>
         </div>

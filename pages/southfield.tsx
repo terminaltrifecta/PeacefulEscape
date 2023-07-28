@@ -41,18 +41,14 @@ export default function Southfield() {
             Things to Know
           </div>
           <hr className="border-base-200" />
-          <div className="inline-grid grid-cols-3">
+          <div className="inline-grid grid-cols-2">
             <div className="">
-              <div className="font-bold">House rules</div>
-              <div>House rules</div>
+              <div className="font-bold">Guest access</div>
+              <div>My guests have excess to kitchen .living room, Moroccan room, and the patio. You also get free parking.</div>
             </div>
             <div className="col">
-              <div className="font-bold">Safety & property</div>
-              <div>Safety & property</div>
-            </div>
-            <div className="col">
-              <div className="font-bold">Cancellation policy</div>
-              <div>Cancellation policy</div>
+              <div className="font-bold">Other things to note</div>
+              <div>As a precautionary measure, security cameras are installed outside of the house. The house has a keyless pad lock for the convenience of my guests. No need to carry a key around or worry about losing it.</div>
             </div>
           </div>
         </div>
