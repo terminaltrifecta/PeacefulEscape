@@ -2,6 +2,7 @@ import Layout from "@/app/components/layout";
 import Proplayout from "@/app/components/proplayout/proplayout";
 import Slideshow from "@/app/components/slideshow/slideshow";
 import { HomeIcon, WifiIcon } from "@heroicons/react/24/solid";
+import Modal from "@/app/components/Modal/modal";
 
 export default function Roseville() {
   return (
@@ -55,34 +56,15 @@ export default function Roseville() {
         </div>
         <hr className="border-base-200" />
 
-        <div className="p-4 card bg-purple-500">
-          <div className="inline-grid grid-cols-2 md:grid-cols-3 gap-3">
-            <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
-              <p>Four Bedrooms</p>
-            </div>
-            <div className="flex gap-x-3">
-              <WifiIcon className="h-6" />
-              <p>Chimeny</p>
-            </div>
-            <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
-              <p>Four Bedrooms</p>
-            </div>
-            <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
-              <p>Four Bedrooms</p>
-            </div>
-            <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
-              <p>Four Bedrooms</p>
-            </div>
-            <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
-              <p>Four Bedrooms</p>
-            </div>
-          </div>
-        </div>
+        <Modal
+      amenText1="one"
+      amenText2="too"
+      amenText3="free"
+      amenText4="fowr"
+      amenText5="fiyve"
+      amenText6="secks"
+      />
+        
       </div>
     </div>
   );
