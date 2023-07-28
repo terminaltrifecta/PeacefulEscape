@@ -12,12 +12,12 @@ export default function WarrenWest() {
         </div>
         <div className="slideshow p-4 bg-primary w-full join grid gap-2">
           <Slideshow
-            slide2="/assets/warrenWestLocation/warrenWest1.jpg"
-            slide1="/assets/warrenWestLocation/warrenWest2.jpg"
-            slide3="/assets/warrenWestLocation/warrenWest3.jpg"
-            slide4="/assets/warrenWestLocation/warrenWest4.jpg"
-            slide6="/assets/warrenWestLocation/warrenWest5.jpg"
-            slide5="/assets/warrenWestLocation/warrenWest6.jpg"
+            slide2="/assets/warrenWestLocation/warrenWest1.webp"
+            slide1="/assets/warrenWestLocation/warrenWest2.webp"
+            slide3="/assets/warrenWestLocation/warrenWest3.webp"
+            slide4="/assets/warrenWestLocation/warrenWest4.webp"
+            slide6="/assets/warrenWestLocation/warrenWest5.webp"
+            slide5="/assets/warrenWestLocation/warrenWest6.webp"
           />
         </div>
         <hr className="border-base-200" />
@@ -26,7 +26,7 @@ export default function WarrenWest() {
           <b>About this place</b>
           <div className="divider divider-horizontal rounded-full bg-purple-500"></div>
           <p>
-          warren west about
+          Enjoy a private room. in a quiet neighborhood. The house is centrally located and close to shopping malls and major freeways.
           </p>
         </div>
         <hr className="border-base-200" />
@@ -38,24 +38,24 @@ export default function WarrenWest() {
             Things to Know
           </div>
           <hr className="border-base-200" />
-          <div className="inline-grid grid-cols-3">
+          <div className="inline-grid grid-cols-2">
             <div className="">
-              <div className="font-bold">House rules</div>
-              <div>House rules</div>
+              <div className="font-bold">Guest Access</div>
+              <div>Driveway and street parking are allowed.</div>
             </div>
             <div className="col">
-              <div className="font-bold">Safety & property</div>
-              <div>Safety & property</div>
-            </div>
-            <div className="col">
-              <div className="font-bold">Cancellation policy</div>
-              <div>Cancellation policy</div>
+              <div className="font-bold">During your stay</div>
+              <div>I can be home to interact with guests if they want to.</div>
             </div>
           </div>
         </div>
         <hr className="border-base-200" />
 
-        <div className="p-4 card bg-purple-500">
+        <div className="p-4 gap-5 card bg-purple-500">
+        <div className="text-3xl font-extrabold text-center">
+          Amenities
+          </div>
+          <hr className="border-base-200" />
           <div className="inline-grid grid-cols-2 md:grid-cols-3 gap-3">
             <div className="flex gap-x-3">
               <HomeIcon className="h-6" />
