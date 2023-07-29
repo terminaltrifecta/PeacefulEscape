@@ -1,13 +1,13 @@
 import Layout from "@/app/components/layout";
 import Proplayout from "@/app/components/proplayout/proplayout";
 import Slideshow from "@/app/components/slideshow/slideshow";
-import { HomeIcon, WifiIcon } from "@heroicons/react/24/solid";
+import HouseRoundedIcon from "@mui/icons-material/HouseRounded";
 
 export default function Southfield() {
   return (
-    <div className="justify-center flex">
-      <div className="propertylayout justify-center grid p-8 gap-8">
-        <div className="text-2xl font-bold text-white text-center justify-center">
+    <div className="bg-base-100 bgpattern justify-center flex">
+      <div className="bg-base-100 propertylayout justify-center grid p-8 gap-8">
+        <div className="text-2xl font-bold text-accent-content text-center justify-center">
           Exotic Mediterranean Oasis
         </div>
         <div className="slideshow p-4 bg-primary w-full join grid gap-2">
@@ -22,7 +22,7 @@ export default function Southfield() {
         </div>
         <hr className="border-base-200" />
 
-        <div className="p-4 h-36 card bg-primary text-white flex items-center flex-row">
+        <div className="p-4 card bg-primary text-white flex items-center flex-row">
           <b>Enjoy a beautiful Mediterranean styled home.</b>
           <div className="divider divider-horizontal rounded-full bg-purple-500"></div>
           <p>
@@ -57,30 +57,30 @@ export default function Southfield() {
         </div>
         <hr className="border-base-200" />
 
-        <div className="p-4 card bg-purple-500">
+        <div className="p-4 card bg-purple-700 text-white ">
           <div className="inline-grid grid-cols-2 md:grid-cols-3 gap-3">
             <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
+              <HouseRoundedIcon />
               <p>Four Bedrooms</p>
             </div>
             <div className="flex gap-x-3">
-              <WifiIcon className="h-6" />
+              <HouseRoundedIcon />
               <p>Chimeny</p>
             </div>
             <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
+              <HouseRoundedIcon />
               <p>Four Bedrooms</p>
             </div>
             <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
+              <HouseRoundedIcon />
               <p>Four Bedrooms</p>
             </div>
             <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
+              <HouseRoundedIcon />
               <p>Four Bedrooms</p>
             </div>
             <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
+              <HouseRoundedIcon />
               <p>Four Bedrooms</p>
             </div>
           </div>

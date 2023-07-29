@@ -65,3 +65,8 @@ hr {
 .searchbar{
   transition: 0.1s ease-in-out;
 }
+
+.bgpattern {
+  background-image: url("/assets/whitebackground.png");
+  background-blend-mode: multiply;
+}

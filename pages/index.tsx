@@ -5,7 +5,7 @@ import Hero from "@/app/components/hero/hero";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-base-100 bgpattern">
       {/* Hero */}
       <Hero />
 
@@ -54,6 +54,6 @@ export default function Home() {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }
