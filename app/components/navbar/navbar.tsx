@@ -30,6 +30,34 @@ const Navbar = () => {
   const [results, setResults] = useState([]);
 
   return (
+    <div className="navbar sticky top-0 bg-primary z-50 text-white">
+      <div className="flex-1">
+        <Image alt="" src="/assets/peaceful.png" fill={true} className="!relative !h-12 !w-12 p-0 mix-blend-color-dodge btn btn-ghost"/>
+      </div>
+      <div className="gap-2">
+        <div className="grid">
+          <Searchbar setResults={setResults} />
+          <Searchresultslist results={results} />
+        </div>
+        <button className="btn btn-ghost btn-square">
+            <label className="swap swap-rotate w-12 h-12 ">
+              <input
+                type="checkbox"
+                onChange={handleToggle}
+                // show toggle image based on localstorage theme
+                checked={theme === "light" ? false : true}
+              />
+              {/* light theme sun image */}
+              <SunIcon className="text-base-accent w-8 h-8 swap-on" />
+              {/* dark theme moon image */}
+              <MoonIcon className="text-base-accent w-8 h-8 swap-off" />
+            </label>
+          </button>
+      </div>
+    </div>
+  );
+
+  return (
     <div className="navbar sticky top-0 z-50 bg-primary text-white">
       <div className="navbar-start">
         <div className="dropdown">
@@ -65,30 +93,23 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <Link className="btn btn-ghost normal-case text-xl" href="/">
-        <div className="navbar-center"> PA</div>
-      </Link>
+      <div className="navbar-center w-14">
+        <Link
+          className="btn btn-ghost normal-case text-xl w-full h-full px-0"
+          href="/"
+        >
+          <Image
+            src="/assets/peaceful.png"
+            className="!relative"
+            alt=""
+            fill={true}
+          />
+        </Link>
+      </div>
       <div className="navbar-end">
         <div className="flex">
-          <div className="grid">
-            <Searchbar setResults={setResults} />
-            <Searchresultslist results={results}/>
-          </div>
           {/* Toggle button here */}
-          <button className="btn btn-ghost btn-square">
-            <label className="swap swap-rotate w-12 h-12 ">
-              <input
-                type="checkbox"
-                onChange={handleToggle}
-                // show toggle image based on localstorage theme
-                checked={theme === "light" ? false : true}
-              />
-              {/* light theme sun image */}
-              <SunIcon className="text-base-accent w-8 h-8 swap-on" />
-              {/* dark theme moon image */}
-              <MoonIcon className="text-base-accent w-8 h-8 swap-off" />
-            </label>
-          </button>
+          
         </div>
       </div>
     </div>
