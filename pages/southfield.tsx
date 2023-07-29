@@ -66,9 +66,9 @@ export default function Southfield() {
 
       <dialog id="my_modal_2" className="modal">
         <form method="dialog" className="modal-box">
-          <div className="inline-grid grid-rows-6 md:grid-rows-6 grid-cols-2 md:grid-cols-2 w-full p-1">
+          <div className="inline-grid grid-rows-6 md:grid-rows-6 grid-cols-2 md:grid-cols-2 w-full">
 
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Scenic Views</h3>
               <div>
                 <li>
@@ -76,7 +76,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Bathroom</h3>
               <div>
                 <li>
@@ -99,7 +99,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit grid-row-1">
               <h3 className="font-bold text-lg">Bedroom and laundry</h3>
               <div>
                 <li>
@@ -128,7 +128,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Entertainment</h3>
               <div>
                 <li>
@@ -136,7 +136,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Family</h3>
               <div>
                 <li>
@@ -150,7 +150,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Heating and cooling</h3>
               <div>
                 <li>
@@ -164,7 +164,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Home safety</h3>
               <div>
                 <li>
@@ -184,7 +184,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Internet and office</h3>
               <div>
                 <li>
@@ -195,7 +195,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Kitchen and dining</h3>
               <div>
                 <li>
@@ -245,7 +245,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Location features</h3>
               <div>
               <li>
@@ -253,7 +253,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Outdoor</h3>
               <div>
                 <li>
@@ -273,7 +273,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Parking and facilities</h3>
               <div>
                 <li>
@@ -284,7 +284,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
+            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
               <h3 className="font-bold text-lg">Services</h3>
               <div>
                 <li>
@@ -301,12 +301,7 @@ export default function Southfield() {
                 </li>
               </div>
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1">
-              <h3 className="font-bold text-lg">Scenic Views</h3>
-              <div>
-                lorem
-              </div>
-            </div>
+           
             
 
           </div>
