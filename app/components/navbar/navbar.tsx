@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { json } from "stream/consumers";
 import Searchbar from "../searchbar/searchbar";
@@ -30,87 +29,35 @@ const Navbar = () => {
   const [results, setResults] = useState([]);
 
   return (
-    <div className="navbar sticky top-0 bg-primary z-50 text-white">
-      <div className="flex-1">
-        <Image alt="" src="/assets/peaceful.png" fill={true} className="!relative !h-12 !w-12 p-0 mix-blend-color-dodge btn btn-ghost"/>
+    <div className="p-0 navbar sticky top-0 bg-primary z-50 text-white">
+      <div className="w-1/3 justify-start">
+        <Link href="/">
+          <img
+            alt=""
+            src="/assets/peaceful.png"
+            className=" p-0 btn btn-ghost h-16 pl-2"
+          />
+        </Link>
       </div>
-      <div className="gap-2">
+      <div className="gap-2 w-2/3 justify-end">
         <div className="grid">
           <Searchbar setResults={setResults} />
           <Searchresultslist results={results} />
         </div>
         <button className="btn btn-ghost btn-square">
-            <label className="swap swap-rotate w-12 h-12 ">
-              <input
-                type="checkbox"
-                onChange={handleToggle}
-                // show toggle image based on localstorage theme
-                checked={theme === "light" ? false : true}
-              />
-              {/* light theme sun image */}
-              <SunIcon className="text-base-accent w-8 h-8 swap-on" />
-              {/* dark theme moon image */}
-              <MoonIcon className="text-base-accent w-8 h-8 swap-off" />
-            </label>
-          </button>
-      </div>
-    </div>
-  );
-
-  return (
-    <div className="navbar sticky top-0 z-50 bg-primary text-white">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h7"
-              />
-            </svg>
+          <label className="swap swap-rotate w-12 h-12 ">
+            <input
+              type="checkbox"
+              onChange={handleToggle}
+              // show toggle image based on localstorage theme
+              checked={theme === "light" ? false : true}
+            />
+            {/* light theme sun image */}
+            <SunIcon className="text-base-accent w-8 h-8 swap-on" />
+            {/* dark theme moon image */}
+            <MoonIcon className="text-base-accent w-8 h-8 swap-off" />
           </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base-content"
-          >
-            <li>
-              <Link href="/">Homepage</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link href="/about">About Us</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="navbar-center w-14">
-        <Link
-          className="btn btn-ghost normal-case text-xl w-full h-full px-0"
-          href="/"
-        >
-          <Image
-            src="/assets/peaceful.png"
-            className="!relative"
-            alt=""
-            fill={true}
-          />
-        </Link>
-      </div>
-      <div className="navbar-end">
-        <div className="flex">
-          {/* Toggle button here */}
-          
-        </div>
+        </button>
       </div>
     </div>
   );

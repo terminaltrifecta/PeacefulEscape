@@ -7,7 +7,7 @@ import Modal from "@/app/components/Modal/modal";
 export default function Southfield() {
   return (
     <div className="justify-center flex">
-      <div className="bgpattern propertylayout justify-center grid p-8 gap-8">
+      <div className="bgpattern bg-base-100 propertylayout justify-center grid p-8 gap-8">
         <div className="text-2xl font-bold text-accent-content text-center justify-center">
           Exotic Mediterranean Oasis
         </div>
