@@ -1,23 +1,46 @@
 import React, { useState } from "react";
 
-export default function Searchbar({setResults}:any) {
+export default function Searchbar({ setResults }: any) {
   const [input, setInput] = useState("");
 
+  const properties = [
+    {
+      id: 1,
+      name: "Exotic Mediterranean Oasis",
+      location: "Southfield, Michigan",
+      href: "/southfield"
+    },
+    {
+      id: 2,
+      name: "Modern Spacious Loft",
+      location: "Roseville, Michigan",
+      href: "/roseville"
+    },
+    {
+      id: 3,
+      name: "Cheerful Bedroom in a Cozy Home",
+      location: "Warren, Michigan",
+      href: "/warrenwest"
+    },
+    {
+      id: 4,
+      name: "Comfortable Home in a Quiet Neighborhood",
+      location: "Warren, Michigan",
+      href: "/warreneast"
+    },
+  ];
+
   const fetchData = (value: any) => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((json) => {
-        const results = json.filter((user: any) => {
-          return (
-            value &&
-            user &&
-            user.name &&
-            user.name.toLowerCase().includes(value.toLowerCase())
-          );
-        });
-        setResults(results);
-        console.log(results);
-      });
+    const results = properties.filter((user: any) => {
+      return (
+        value &&
+        user &&
+        user.name &&
+        (user.name.toLowerCase().includes(value.toLowerCase()) || user.location.toLowerCase().includes(value.toLowerCase()))
+      );
+    });
+    setResults(results);
+    console.log(results);
   };
 
   const handleChange = (value: any) => {

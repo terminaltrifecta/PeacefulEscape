@@ -11,11 +11,12 @@ export default function About() {
   return (
     <div className="grid p-10 bgpattern bg-base-100 gap-10">
       <div className="grid gap-10 justify-center md:grid-cols-2">
-        <Card
-          headerText="About Raf"
-          paragraphText="I am a man who enjoys traveling and attending cultural events while visiting new spots. I was born In the middle east and lived in Sydney, Detroit, and San Diego. I love many beautiful things the world offers-color, gardens, books, music, travel, culture, good vegetarian food, and the joy of being around people. I have made it to 32 countries so far. While traveling, I like to explore museums and converse with the locals. Some of my favorite cities are Barcelona, Marrakesh, and Bangkok. I love making new friends and having intimate conversations about the world—a professional jewelry designer by trade and a tour guide at the national museum on my fun times. I  enjoy reading non-fiction books and magazines. I  do not watch TV much, but I enjoy watching foreign movies. I like meeting the hosts or the guests and getting to know them in their town."
-          hasButton="false"
-        />
+        <div className="card bg-base-100 shadow-2xl p-10 gap-5">
+          <div className="font-bold text-5xl">About Raf</div>
+          <div>
+            I am a man who enjoys traveling and attending cultural events while visiting new spots. I was born In the middle east and lived in Sydney, Detroit, and San Diego. I love many beautiful things the world offers-color, gardens, books, music, travel, culture, good vegetarian food, and the joy of being around people. I have made it to 32 countries so far. While traveling, I like to explore museums and converse with the locals. Some of my favorite cities are Barcelona, Marrakesh, and Bangkok. I love making new friends and having intimate conversations about the world—a professional jewelry designer by trade and a tour guide at the national museum on my fun times. I  enjoy reading non-fiction books and magazines. I  do not watch TV much, but I enjoy watching foreign movies. I like meeting the hosts or the guests and getting to know them in their town.
+          </div>
+        </div>
         <div className="grid gap-4">
           <div className="h-fit p-8 rounded-xl flex flex-col gap-6 lg:flex-row bg-primary text-primary-content">
             <div className="avatar justify-center p-4 col-span-2">
@@ -26,7 +27,7 @@ export default function About() {
             <div className="col-span-1 flex flex-col gap-1">
               <div className="font-bold">416</div>
               <div className="text-sm">Reviews</div>
-              <hr />
+              <hr/>
               <div className="font-bold">4.87</div>
               <div className="text-sm">Rating</div>
               <hr />
@@ -62,7 +63,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <Contact/>
+      <Contact />
     </div>
   );
 }

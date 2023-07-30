@@ -44,7 +44,7 @@ const Navbar = () => {
           <Searchbar setResults={setResults} />
           <Searchresultslist results={results} />
         </div>
-        <button className="btn btn-ghost btn-square">
+        <button className="btn btn-ghost btn-square ">
           <label className="swap swap-rotate w-12 h-12 ">
             <input
               type="checkbox"
@@ -53,9 +53,9 @@ const Navbar = () => {
               checked={theme === "light" ? false : true}
             />
             {/* light theme sun image */}
-            <SunIcon className="text-base-accent w-8 h-8 swap-on" />
+            <SunIcon className="text-white w-8 h-8 swap-on" />
             {/* dark theme moon image */}
-            <MoonIcon className="text-base-accent w-8 h-8 swap-off" />
+            <MoonIcon className="text-white w-8 h-8 swap-off" />
           </label>
         </button>
       </div>

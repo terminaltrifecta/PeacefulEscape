@@ -11,7 +11,7 @@ export default function Southfield() {
         <div className="text-2xl font-bold text-accent-content text-center justify-center">
           Exotic Mediterranean Oasis
         </div>
-        <div className="slideshow p-4 bg-primary w-full join grid gap-2">
+        <div className="shadow-2xl slideshow p-4 bg-primary w-full join grid gap-2">
           <Slideshow
             slide1="/assets/southfieldLocation/southfield1.jpg"
             slide2="/assets/southfieldLocation/southfield2.jpg"
@@ -23,7 +23,7 @@ export default function Southfield() {
         </div>
         <hr className="border-base-200" />
 
-        <div className="p-4 card bg-primary text-white flex items-center flex-row">
+        <div className="p-4 card shadow-2xl bg-primary text-white flex items-center flex-row">
           <b>Enjoy a beautiful Mediterranean styled home.</b>
           <div className="divider divider-horizontal rounded-full bg-purple-500"></div>
           <p>
@@ -33,14 +33,14 @@ export default function Southfield() {
           </p>
         </div>
         <hr className="border-base-200" />
-        <div className="p-4 h-36 xl:h-80 card bg-primary text-white">Hai</div>
+        <div className="p-4 h-36 xl:h-80 card shadow-2xl bg-primary text-white">Hai</div>
         <hr className="border-base-200" />
 
-        <div className="p-4 gap-5 card bg-primary text-white">
+        <div className="p-4 gap-5 card shadow-2xl bg-primary text-white">
           <div className="text-3xl font-extrabold text-center">
             Things to Know
           </div>
-          <hr className="border-base-200" />
+          <hr className="border-yellow" />
           <div className="inline-grid grid-cols-2">
             <div className="p-2">
               <div className="font-bold">Guest access</div>
