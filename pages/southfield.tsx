@@ -33,7 +33,27 @@ export default function Southfield() {
           </p>
         </div>
         <hr className="border-base-200" />
-        <div className="p-4 h-36 xl:h-80 card shadow-2xl bg-primary text-white">Hai</div>
+        <div className="p-4 card bg-primary text-white flex">
+          <b>Check out Customer Reviews!</b>
+          <div className="reviewBody flex">
+            <div className="items-start p-2 w-1/2">
+              <p>
+                "We enjoyed our stayed. Ralf was very attentive and always made
+                sure we didn't have any questions or needed anything. GREAT
+                HOST!" - Yaleb, a past customer
+              </p>
+            </div>
+            <div className="divider divider-horizontal rounded-full bg-purple-500 w-2"></div>
+            <div className="items-end p-2 w-1/2">
+              <p>
+                "Mr. Raf responded quickly. He made my family feel comfortable
+                in his home. He is extremely kind and welcoming! Nice clean
+                home, we didn’t have any issues! This home was perfect for our
+                family trip to Michigan." - Dominque, another past customer
+              </p>
+            </div>
+          </div>
+        </div>
         <hr className="border-base-200" />
 
         <div className="p-4 gap-5 card shadow-2xl bg-primary text-white">
