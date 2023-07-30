@@ -31,8 +31,6 @@ export default function Roseville() {
           </p>
         </div>
         <hr className="border-base-200" />
-        <div className="p-4 h-36 xl:h-80 card bg-primary text-white">Hai</div>
-        <hr className="border-base-200" />
 
         <div className="p-4 gap-5 card bg-primary text-white">
           <div className="text-3xl font-extrabold text-center">
@@ -65,103 +63,160 @@ export default function Roseville() {
 
       <dialog id="my_modal_2" className="modal">
         <form method="dialog" className="modal-box">
-          <div className="inline-grid grid-rows-6 md:grid-rows-6 grid-cols-2 md:grid-cols-2 w-full">
+          <div className="grid w-full">
 
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
-              <h3 className="font-bold text-lg">Scenic Views</h3>
-              <div>
-                <li>
 
-                </li>
-              </div>
-            </div>
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
+            <div className="p-4">
               <h3 className="font-bold text-lg">Bathroom</h3>
-              <div>
+
                 <li>
-                  
+                  Hair dryer
                 </li>
-              </div>
+                <li>
+                  Shampoo
+                </li>
+                <li>
+                  Hot water
+                </li>
+
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit grid-row-1">
+            <div className="p-4">
               <h3 className="font-bold text-lg">Bedroom and laundry</h3>
-              <div>
+
                 <li>
-                  
+                  Free washer - In unit
                 </li>
-              </div>
+                <li>
+                  Free dryer - In unit
+                </li>
+                <li>
+                  Essentials (Towels, bed sheets, soap, toilet paper)
+                </li>
+                <li>
+                  Hangers
+                </li>
+                <li>
+                  Iron
+                </li>
+
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
+            <div className="p-4">
               <h3 className="font-bold text-lg">Entertainment</h3>
-              <div>
-                <li>
 
+                <li>
+                  <li>
+                    TV
+                  </li>
+                  <li>
+                    Exercise equipment
+                  </li>
                 </li>
-              </div>
+
             </div>
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
+            <div className="p-4">
               <h3 className="font-bold text-lg">Family</h3>
-              <div>
-                <li>
-                  
-                </li>
-              </div>
-            </div>
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
-              <h3 className="font-bold text-lg">Heating and cooling</h3>
-              <div>
-                <li>
-                  
-                </li>
-              </div>
-            </div>
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
-              <h3 className="font-bold text-lg">Home safety</h3>
-              <div>
-                <li>
-                  
-                </li>
-              </div>
-            </div>
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
-              <h3 className="font-bold text-lg">Internet and office</h3>
-              <div>
-                <li>
-                  
-                </li>
-              </div>
-            </div>
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
-              <h3 className="font-bold text-lg">Kitchen and dining</h3>
-              <div>
-                <li>
-                  
-                </li>
-              </div>
-            </div>
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
-              <h3 className="font-bold text-lg">Outdoor</h3>
-              <div>
-                <li>
-                  
-                </li>
-              </div>
-            </div>
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
-              <h3 className="font-bold text-lg">Parking and facilities</h3>
-              <div>
-                <li>
-                  
-                </li>
-              </div>
-            </div>
-            <div className="col gap-x-3 justify-self-stretch p-1 h-fit">
-              <h3 className="font-bold text-lg">Services</h3>
-              <div>
-                <li>
 
+                <li>
+                  Crib
                 </li>
-              </div>
+
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-lg">Heating and cooling</h3>
+
+                <li>
+                  Security cameras on property (outside of property)
+                </li>
+                <li>
+                  Smoke alarm
+                </li>
+                <li>
+                  Carbon monoxide alarm
+                </li>
+                <li>
+                  Fire extinguisher
+                </li>
+                <li>
+                  First aid kit
+                </li>
+
+            </div>
+
+            <div className="p-4">
+              <h3 className="font-bold text-lg">Internet and office</h3>
+
+                <li>
+                  Wifi
+                </li>
+                <li>
+                  Dedicated workspace
+                </li>
+
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-lg">Kitchen and dining</h3>
+
+                <li>
+                  Kitchen
+                </li>
+                <li>
+                  Refrigerator
+                </li>
+                <li>
+                  Microwave
+                </li>
+                <li>
+                  Cooking basics (Pots and pans, oil, salt, pepper)
+                </li>
+                <li>
+                  Dishes and silverware (Bowls, chopsticks, plates, cups, etc.)
+                </li>
+                <li>
+                  Stove
+                </li>
+                <li>
+                  Oven
+                </li>
+                <li>
+                  Coffee maker
+                </li>
+
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-lg">Outdoor</h3>
+
+                <li>
+                  Backyard
+                </li>
+                <li>
+                  Outdoor furniture
+                </li>
+
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-lg">Parking and facilities</h3>
+
+                <li>
+                  Free parking on premises
+                </li>
+                <li>
+                  Free street parking
+                </li>
+
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-lg">Services</h3>
+
+                <li>
+                  Pets allowed
+                </li>
+                <li>
+                  Self check-in
+                </li>
+                <li>
+                  Keypad
+                </li>
+
             </div>
            
             

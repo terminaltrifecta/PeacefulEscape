@@ -33,8 +33,6 @@ export default function Southfield() {
           </p>
         </div>
         <hr className="border-base-200" />
-        <div className="p-4 h-36 xl:h-80 card bg-primary text-white">Hai</div>
-        <hr className="border-base-200" />
 
         <div className="p-4 gap-5 card bg-primary text-white">
           <div className="text-3xl font-extrabold text-center">
