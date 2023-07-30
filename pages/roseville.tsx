@@ -27,7 +27,7 @@ export default function Roseville() {
           <b>About this place</b>
           <div className="divider divider-horizontal rounded-full bg-purple-500"></div>
           <p>
-          When you rent this beautiful space, you’ll experience the modern loft lifestyle living. Over 1200 sq feet of space, two large bedrooms, a huge kitchen with brand new appliances ,tons of living space, a stunning remodeled bathroom, and a private access to the apartment. This apartment is conveniently located in the heart of the city with a walking distance to grocery stores and major city Freeways.
+            When you rent this beautiful space, you’ll experience the modern loft lifestyle living. With over 1200 sq feet of space, two large bedrooms, a huge kitchen with brand new appliances, tons of living space, a stunning remodeled bathroom, and private access to the apartment. This apartment is conveniently located in the heart of the city, within walking distance to grocery stores and major city freeways.
           </p>
         </div>
         <hr className="border-base-200" />
@@ -45,8 +45,9 @@ export default function Roseville() {
             <div className="col">
               <div className="font-bold">The space</div>
               <div>For the safety and comfort of all our guests, this apartment is following CDC guidance to ensure every guest has a clean place to stay. Some of the steps we are taking include:
-- Thoroughly disinfecting the whole apartment including countertops, doorknobs, faucets, light switches, remote control units, and all the appliances. We have also stocked up extra supplies such as soaps and cleaning products in case you need it (yes, including toilet paper)
-- Minimizing in-person contact with our guests whenever possible. You will enjoy this sunny and peaceful private loft</div>
+
+Thoroughly disinfecting the entire apartment, including countertops, doorknobs, faucets, light switches, remote control units, and all appliances. We have also stocked up on extra supplies such as soaps and cleaning products in case you need them (yes, including toilet paper).
+Minimizing in-person contact with our guests whenever possible. You will enjoy this sunny and peaceful private loft.</div>
             </div>
           </div>
         </div>

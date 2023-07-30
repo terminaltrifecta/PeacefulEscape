@@ -27,9 +27,7 @@ export default function Southfield() {
           <b>Enjoy a beautiful Mediterranean styled home.</b>
           <div className="divider divider-horizontal rounded-full bg-purple-500"></div>
           <p>
-            In a peaceful neighborhood. The house is situated close to shopping
-            malls and major freeways, allowing for easy transportation to all
-            your favorite locations.
+          Located in a peaceful neighborhood, the house is situated close to shopping malls and major freeways, allowing for easy transportation to all your favorite locations.
           </p>
         </div>
         <hr className="border-base-200" />
@@ -43,17 +41,13 @@ export default function Southfield() {
             <div className="p-2">
               <div className="font-bold">Guest access</div>
               <div>
-                My guests have excess to kitchen .living room, Moroccan room,
-                and the patio. You also get free parking.
+                My guests have access to the kitchen, living room, Moroccan room, and the patio. You also get free parking.
               </div>
             </div>
             <div className="p-2">
               <div className="font-bold">Other things to note</div>
               <div>
-                As a precautionary measure, security cameras are installed
-                outside of the house. The house has a keyless pad lock for the
-                convenience of my guests. No need to carry a key around or worry
-                about losing it.
+              As a precautionary measure, security cameras are installed outside of the house. The house has a keyless padlock for the convenience of my guests, so there's no need to carry a key around or worry about losing it.
               </div>
             </div>
           </div>

@@ -28,7 +28,7 @@ export default function WarrenWest() {
           <b>About this place</b>
           <div className="divider divider-horizontal rounded-full bg-purple-500"></div>
           <p>
-          Enjoy a private room. in a quiet neighborhood. The house is centrally located and close to shopping malls and major freeways.
+          Enjoy a private room in a quiet neighborhood. The house is centrally located and close to shopping malls and major freeways.
           </p>
         </div>
         <hr className="border-base-200" />
