@@ -2,6 +2,7 @@ import Layout from "@/app/components/layout";
 import Proplayout from "@/app/components/proplayout/proplayout";
 import Slideshow from "@/app/components/slideshow/slideshow";
 import { HomeIcon, WifiIcon } from "@heroicons/react/24/solid";
+import Modal from "@/app/components/Modal/modal";
 
 export default function WarrenEast() {
   return (
@@ -31,11 +32,9 @@ export default function WarrenEast() {
           <b>About this place</b>
           <div className="divider divider-horizontal rounded-full bg-purple-500"></div>
           <p>
-          warren east about
+          Enjoy this spacious newly remodeled house in the heart of Warren city. Residents will enjoy an abundance of attractions near the house while relaxing in a quiet neighborhood. The property is within proximity to the local hospital as well as shopping malls. Washer and dryer in unit, Clean fresh towels, 65" Smart TV, and a fully equipped kitchen to enjoy. This home is owned by a super host, so expect an exceptional stay.
           </p>
         </div>
-        <hr className="border-base-200" />
-        <div className="p-4 h-36 xl:h-80 card bg-primary text-white">Hai</div>
         <hr className="border-base-200" />
 
         <div className="p-4 gap-5 card bg-primary text-white">
@@ -60,34 +59,127 @@ export default function WarrenEast() {
         </div>
         <hr className="border-base-200" />
 
-        <div className="p-4 card bg-purple-500">
-          <div className="inline-grid grid-cols-2 md:grid-cols-3 gap-3">
-            <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
-              <p>Four Bedrooms</p>
+        <Modal
+      amenText1="one"
+      amenText2="too"
+      amenText3="free"
+      amenText4="fowr"
+      amenText5="fiyve"
+      amenText6="secks"
+      />
+
+      <dialog id="my_modal_2" className="modal">
+          <form method="dialog" className="modal-box">
+            <div className="grid w-full">
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Scenic Views</h3>
+                <li>Garden View</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Bathroom</h3>
+                <li>Hair dryer</li>
+                <li>Cleaning products</li>
+                <li>Shampoo</li>
+                <li>Dove conditioner</li>
+                <li>Body soap</li>
+                <li>Hot water</li>
+              </div>
+              <div className="p-4 grid-row-1">
+                <h3 className="font-bold text-lg">Bedroom and laundry</h3>
+                <li>Free washer - In unit</li>
+                <li>Free dryer - In unit</li>
+                <li>Essentials (Towels, bed sheets, soap, toilet paper)</li>
+                <li>Hangers</li>
+                <li>Bed linens</li>
+                <li>Extra pillows and blankets</li>
+                <li>Iron</li>
+                <li>Clothing storage (closet)</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Entertainment</h3>
+                  <li>TV with Hulu, Netflix, Roku</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Family</h3>
+                  <li>Crib</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Heating and cooling</h3>
+                  <li>Central air conditioning</li>
+                  <li>Indoor fireplace</li>
+                  <li>Portable fans</li>
+                  <li>Heating</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Home safety</h3>
+                  <li>Smoke alarm</li>
+                  <li>Carbon monoxide alarm</li>
+                  <li>Fire extinguisher</li>
+                  <li>First aid kit</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Internet and office</h3>
+                  <li>Wifi</li>
+                  <li>Dedicated workspace</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Kitchen and dining</h3>
+                  <li>Kitchen</li>
+                  <li>Refrigerator</li>
+                  <li>Microwave</li>
+                  <li>Cooking basics (Pots, pans, oil, salt, pepper)</li>
+                  <li>
+                    Dishes and silverware (Bowls, chopsticks, plates, cups,
+                    etc.)
+                  </li>
+                  <li>Freezer</li>
+                  <li>Dishwasher</li>
+                  <li>Stainless steel stove</li>
+                  <li>Stainless steel oven</li>
+                  <li>Coffee maker</li>
+                  <li>Wine glasses</li>
+                  <li>Baking sheet</li>
+                  <li>Blender</li>
+                  <li>Dining table</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Location features</h3>
+                  <li>Private entrance</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Location features</h3>
+                  <li>Private entrance</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Outdoor</h3>
+                  <li>Shared patio or balcony</li>
+                  <li>Fully fenced private backyard</li>
+                  <li>BBQ grill</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Parking and facilities</h3>
+                  <li>Free marking on premises</li>
+                  <li>Free street parking</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Services</h3>
+                  <li>Pets allowed</li>
+                  <li>Luggage dropoff allowed</li>
+                  <li>Long term stays allowed (28 days or more)</li>
+                  <li>Self check-in</li>
+                  <li>Keypad</li>
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Not included</h3>
+                  <li>Security cameras on property</li>
+              </div>
             </div>
-            <div className="flex gap-x-3">
-              <WifiIcon className="h-6" />
-              <p>Chimeny</p>
-            </div>
-            <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
-              <p>Four Bedrooms</p>
-            </div>
-            <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
-              <p>Four Bedrooms</p>
-            </div>
-            <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
-              <p>Four Bedrooms</p>
-            </div>
-            <div className="flex gap-x-3">
-              <HomeIcon className="h-6" />
-              <p>Four Bedrooms</p>
-            </div>
-          </div>
-        </div>
+          </form>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+        
       </div>
     </div>
   );

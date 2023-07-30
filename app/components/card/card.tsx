@@ -14,7 +14,7 @@ export default function Card({
   hasTwoLines
 }: any) {
   return (
-    <div className="card 2xl:card-side bg-base-100 shadow-2xl">
+    <div className="join-item card 2xl:card-side bg-base-100 shadow-2xl">
 
     {hasImage === "true" ? (
       <figure className="2xl:w-1/2">
