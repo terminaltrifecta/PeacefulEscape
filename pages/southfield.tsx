@@ -31,8 +31,11 @@ export default function Southfield() {
           </p>
         </div>
         <hr className="border-base-200" />
-        <div className="p-4 card bg-primary text-white flex">
-          <b>Check out Customer Reviews!</b>
+        <div className="p-4 gap-5 card bg-primary text-white flex">
+          <div className="text-3xl font-extrabold text-center">
+            Customer Reviews
+          </div>
+          <hr className="border-yellow" />
           <div className="reviewBody flex">
             <div className="items-start p-2 w-1/2">
               <p>
@@ -41,7 +44,6 @@ export default function Southfield() {
                 HOST!" - Yaleb, a past customer
               </p>
             </div>
-            <div className="divider divider-horizontal rounded-full bg-purple-500 w-2"></div>
             <div className="items-end p-2 w-1/2">
               <p>
                 "Mr. Raf responded quickly. He made my family feel comfortable
@@ -76,14 +78,7 @@ export default function Southfield() {
         </div>
         <hr className="border-base-200" />
 
-        <Modal
-          amenText1="one"
-          amenText2="too"
-          amenText3="free"
-          amenText4="fowr"
-          amenText5="fiyve"
-          amenText6="secks"
-        />
+        <Modal id="2" />
 
         <dialog id="my_modal_2" className="modal">
           <form method="dialog" className="modal-box">
@@ -114,77 +109,76 @@ export default function Southfield() {
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-lg">Entertainment</h3>
-                  <li>65" TV</li>
+                <li>65" TV</li>
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-lg">Family</h3>
-                  <li>Standard crib (52 inches long x 28 inches wide)</li>
-                  <li>Children's dinnerware</li>
-                  <li>Baby safety gates</li>
+                <li>Standard crib (52 inches long x 28 inches wide)</li>
+                <li>Children's dinnerware</li>
+                <li>Baby safety gates</li>
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-lg">Heating and cooling</h3>
-                  <li>Central air conditioning</li>
-                  <li>Ceiling fan</li>
-                  <li>Heating</li>
+                <li>Central air conditioning</li>
+                <li>Ceiling fan</li>
+                <li>Heating</li>
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-lg">Home safety</h3>
-                  <li>Security cameras on property</li>
-                  <li>Smoke alarm</li>
-                  <li>Carbon monoxide alarm</li>
-                  <li>Fire extinguisher</li>
-                  <li>First aid kit</li>
+                <li>Security cameras on property</li>
+                <li>Smoke alarm</li>
+                <li>Carbon monoxide alarm</li>
+                <li>Fire extinguisher</li>
+                <li>First aid kit</li>
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-lg">Internet and office</h3>
-                  <li>Wifi</li>
-                  <li>Dedicated workspace</li>
+                <li>Wifi</li>
+                <li>Dedicated workspace</li>
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-lg">Kitchen and dining</h3>
-                  <li>Kitchen</li>
-                  <li>Refrigerator</li>
-                  <li>Microwave</li>
-                  <li>Cooking basics (Pots, pans, oil, salt, pepper)</li>
-                  <li>
-                    Dishes and silverware (Bowls, chopsticks, plates, cups,
-                    etc.)
-                  </li>
-                  <li>Mini fridge</li>
-                  <li>Freezer</li>
-                  <li>Dishwasher</li>
-                  <li>Stove</li>
-                  <li>Oven</li>
-                  <li>Hot water kettle</li>
-                  <li>Coffee maker</li>
-                  <li>Wine glasses</li>
-                  <li>Toaster</li>
-                  <li>Dining table</li>
+                <li>Kitchen</li>
+                <li>Refrigerator</li>
+                <li>Microwave</li>
+                <li>Cooking basics (Pots, pans, oil, salt, pepper)</li>
+                <li>
+                  Dishes and silverware (Bowls, chopsticks, plates, cups, etc.)
+                </li>
+                <li>Mini fridge</li>
+                <li>Freezer</li>
+                <li>Dishwasher</li>
+                <li>Stove</li>
+                <li>Oven</li>
+                <li>Hot water kettle</li>
+                <li>Coffee maker</li>
+                <li>Wine glasses</li>
+                <li>Toaster</li>
+                <li>Dining table</li>
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-lg">Location features</h3>
-                  <li>Private entrance</li>
+                <li>Private entrance</li>
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-lg">Outdoor</h3>
-                  <li>Private patio or balcony</li>
-                  <li>Fully fenced private backyard</li>
-                  <li>Outdoor furniture</li>
-                  <li>Outdoor dining area</li>
-                  <li>BBQ grill</li>
+                <li>Private patio or balcony</li>
+                <li>Fully fenced private backyard</li>
+                <li>Outdoor furniture</li>
+                <li>Outdoor dining area</li>
+                <li>BBQ grill</li>
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-lg">Parking and facilities</h3>
-                  <li>Free marking on premises</li>
-                  <li>Free street parking</li>
+                <li>Free marking on premises</li>
+                <li>Free street parking</li>
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-lg">Services</h3>
-                  <li>Pets allowed</li>
-                  <li>Luggage dropoff allowed</li>
-                  <li>Self check-in</li>
-                  <li>Keypad</li>
+                <li>Pets allowed</li>
+                <li>Luggage dropoff allowed</li>
+                <li>Self check-in</li>
+                <li>Keypad</li>
               </div>
             </div>
           </form>
@@ -192,7 +186,6 @@ export default function Southfield() {
             <button>close</button>
           </form>
         </dialog>
-
       </div>
     </div>
   );

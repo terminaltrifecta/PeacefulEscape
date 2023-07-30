@@ -18,7 +18,7 @@ export default function Card({
 
     {hasImage === "true" ? (
       <figure className="2xl:w-1/2">
-        <Image className="w-full h-full" src={`${imagePath}`} alt="Album" />
+        <Image width={512} height={512} className="w-full h-full" src={imagePath} alt="Album" />
       </figure>
     ) : (
       <div></div>

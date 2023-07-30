@@ -31,12 +31,12 @@ export default function Searchbar({ setResults }: any) {
   ];
 
   const fetchData = (value: any) => {
-    const results = properties.filter((user: any) => {
+    const results = properties.filter((location: any) => {
       return (
         value &&
-        user &&
-        user.name &&
-        (user.name.toLowerCase().includes(value.toLowerCase()) || user.location.toLowerCase().includes(value.toLowerCase()))
+        location &&
+        location.name &&
+        (location.name.toLowerCase().includes(value.toLowerCase()) || location.location.toLowerCase().includes(value.toLowerCase()))
       );
     });
     setResults(results);
