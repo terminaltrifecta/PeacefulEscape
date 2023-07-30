@@ -16,7 +16,7 @@ export default function Home() {
             headerText="Exotic Mediterranean Oasis (Southfield)"
             paragraphText="Beautifully decorated, spacious house in Mediterranean style with 5 bedrooms, two dining areas, and an inviting living room with a newly remodeled bathroom. This house also offers you a comfortable, unique-style TV room with Moroccan-style sectional seating. Free WiFi and free parking are provided."
             buttonText="Check It Out!"
-            imageName="app/assets/stockhome.jpg"
+            imagePath="public/assets/realhome/southfield.webp"
             buttonPath="/southfield"
             hasButton="true"
             hasImage="true"

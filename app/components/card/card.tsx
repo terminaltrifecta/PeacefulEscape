@@ -8,7 +8,7 @@ export default function Card({
   paragraphText,
   buttonText,
   buttonPath,
-  imageName,
+  imagePath,
   hasButton,
   hasImage,
   hasTwoLines
@@ -18,7 +18,7 @@ export default function Card({
 
     {hasImage === "true" ? (
       <figure className="2xl:w-1/2">
-        <Image className="w-full h-full" src={Stock} alt="Album" />
+        <Image className="w-full h-full" src={`${imagePath}`} alt="Album" />
       </figure>
     ) : (
       <div></div>
