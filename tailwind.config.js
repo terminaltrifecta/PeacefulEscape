@@ -15,6 +15,20 @@ module.exports = {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ["light", "dark"],
+    themes: [
+      {
+        peacefulLight: {
+          "primary": "#FFB703",
+          "secondary": "#219EBC",
+          "accent": "#1fb2a6",
+          "neutral": "#2a323c",
+          "base-100": "#f4f3ee",
+          "info": "#3abff8",
+          "success": "#36d399",
+          "warning": "#fbbd23",
+          "error": "#f87272",
+        },
+      },
+    ],
   },
 }

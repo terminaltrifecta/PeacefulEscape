@@ -23,12 +23,11 @@ export default function Southfield() {
         </div>
         <hr className="border-base-200" />
 
-        <div className="p-4 card shadow-2xl bg-primary text-white flex items-center flex-row">
-          <b>Enjoy a beautiful Mediterranean styled home.</b>
-          <div className="divider divider-horizontal rounded-full bg-purple-500"></div>
-          <p>
+        <div className="p-4 gap-5 card bg-primary text-white flex md:flex-row">
+          <div className="font-bold">Enjoy a beautiful Mediterranean styled home.</div>
+          <div>
           Located in a peaceful neighborhood, the house is situated close to shopping malls and major freeways, allowing for easy transportation to all your favorite locations.
-          </p>
+          </div>
         </div>
         <hr className="border-base-200" />
         <div className="p-4 gap-5 card bg-primary text-white flex">
@@ -36,22 +35,18 @@ export default function Southfield() {
             Customer Reviews
           </div>
           <hr className="border-yellow" />
-          <div className="reviewBody flex">
-            <div className="items-start p-2 w-1/2">
+          <div className="reviewBody grid gap-5 md:grid-cols-2">
               <p>
                 "We enjoyed our stayed. Ralf was very attentive and always made
                 sure we didn't have any questions or needed anything. GREAT
                 HOST!" - Yaleb, a past customer
               </p>
-            </div>
-            <div className="items-end p-2 w-1/2">
               <p>
                 "Mr. Raf responded quickly. He made my family feel comfortable
                 in his home. He is extremely kind and welcoming! Nice clean
                 home, we didn’t have any issues! This home was perfect for our
                 family trip to Michigan." - Dominque, another past customer
               </p>
-            </div>
           </div>
         </div>
         <hr className="border-base-200" />
@@ -61,7 +56,7 @@ export default function Southfield() {
             Things to Know
           </div>
           <hr className="border-yellow" />
-          <div className="inline-grid grid-cols-2">
+          <div className="grid gap-5 md:grid-cols-2">
             <div className="p-2">
               <div className="font-bold">Guest access</div>
               <div>
