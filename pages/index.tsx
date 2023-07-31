@@ -2,6 +2,7 @@ import Image from "next/image";
 import Stock from "app/assets/stockhome.jpg";
 import Card from "@/app/components/card/card";
 import Hero from "@/app/components/hero/hero";
+import Calendar from "@/app/components/calendar/calendar";
 
 export default function Home() {
   return (
@@ -47,7 +48,6 @@ export default function Home() {
             paragraphText="Enjoy this spacious, newly remodeled house in the heart of Warren City. Residents will enjoy an abundance of attractions near the house while relaxing in a quiet neighborhood. The property is within proximity to the local hospital as well as shopping malls. Washer and dryer are in the unit, along with clean, fresh towels, a 65 inch Smart TV, and a fully equipped kitchen to enjoy. This home is owned by a super host, so expect an exceptional stay."
             buttonText="Check It Out!"
             imagePath="/assets/warrenEastLocation/warrenEast1.webp"
-
             buttonPath="/warreneast"
             hasButton="true"
             hasImage="true"

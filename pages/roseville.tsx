@@ -23,7 +23,7 @@ export default function Roseville() {
         </div>
         <hr className="border-base-200" />
 
-         <div className="p-4 card bg-primary text-white flex flex-row">
+        <div className="p-4 card bg-primary text-white flex flex-row">
           <b>About this place</b>
           <div className="divider divider-horizontal rounded-full bg-purple-500"></div>
           <div className="">

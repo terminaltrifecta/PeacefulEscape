@@ -87,7 +87,7 @@ export default function WarrenEast() {
           </div>
         </div>
         <hr className="border-base-200" />
-        <Modal id="4"/>
+        <Modal id="4" />
 
         <dialog id="my_modal_4" className="modal">
           <form method="dialog" className="modal-box">
