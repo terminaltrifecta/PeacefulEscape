@@ -4,14 +4,14 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="text-center card bg-base-100 shadow-2xl p-8 gap-4">
+    <div className="text-center card bg-base-100 shadow-2xl gap-4 p-4">
       <div className="text-3xl font-semibold">Contact Me</div>
       <hr className="border-yellow" />
-      <div className="flex gap-x-3">
+      <div className="flex ">
         <PhoneIcon className="h-6"/>
         <div>(586) 907-6261</div>
       </div>
-      <div className="flex gap-x-3">
+      <div className="flex ">
         <EmailIcon className="h-6"/>
         <div>gmandwee@gmail.com</div>
       </div>

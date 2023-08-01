@@ -8,25 +8,29 @@ export default function Searchbar({ setResults }: any) {
       id: 1,
       name: "Exotic Mediterranean Oasis",
       location: "Southfield, Michigan",
-      href: "/southfield"
+      href: "/southfield",
+      image: "/assets/southfieldLocation/southfield1.jpg"
     },
     {
       id: 2,
       name: "Modern Spacious Loft",
       location: "Roseville, Michigan",
-      href: "/roseville"
+      href: "/roseville",
+      image: "/assets/rosevilleLocation/roseville1.webp"
     },
     {
       id: 3,
       name: "Cheerful Bedroom in a Cozy Home",
       location: "Warren, Michigan",
-      href: "/warrenwest"
+      href: "/warrenwest",
+      image: "/assets/warrenWestLocation/warrenwest1.webp"
     },
     {
       id: 4,
       name: "Comfortable Home in a Quiet Neighborhood",
       location: "Warren, Michigan",
-      href: "/warreneast"
+      href: "/warreneast",
+      image: "/assets/warrenEastLocation/warreneast1.webp"
     },
   ];
 
@@ -54,7 +58,7 @@ export default function Searchbar({ setResults }: any) {
       value={input}
       onChange={(e) => handleChange(e.target.value)}
       type="text"
-      className="searchbar input input-ghost input-bordered w-full max-w-xs"
+      className="searchbar input input-ghost input-secondary input-bordered w-full max-w-xs"
     />
   );
 }

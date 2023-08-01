@@ -18,10 +18,10 @@ module.exports = {
     themes: [
       {
         peacefulLight: {
-          "primary": "#FFB703",
+          "primary": "#ffd97f",
           "secondary": "#219EBC",
           "accent": "#1fb2a6",
-          "neutral": "#2a323c",
+          "neutral": "#FAF8ED",
           "base-100": "#f4f3ee",
           "info": "#3abff8",
           "success": "#36d399",

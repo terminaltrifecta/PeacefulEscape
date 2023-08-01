@@ -28,12 +28,12 @@ hr {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #bfaed4;
+  background: #1d89a4;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b671ff;
+  background: #176b80;
 }
 
 [class^="number-slide"],

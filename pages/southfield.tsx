@@ -10,13 +10,13 @@ export default function Southfield() {
   return (
     <div className="justify-center flex">
       <div className="bgpattern bg-base-100 grid p-9 gap-9 justify-between">
-        <div className="text-2xl font-bold text-accent-content text-center justify-center">
-          Exotic Mediterranean Oasis
+        <div className="text-5xl font-bold  text-center justify-center">
+          Exotic Mediterranian Oasis
         </div>
 
         <div className="grid grid-cols-5 justify-between gap-5">
-          <div className="col-span-3">
-            <div className="shadow-2xl slideshow p-4 bg-primary w-full join grid gap-2">
+          <div className="col-span-3 grid gap-5">
+            <div className="shadow-2xl slideshow p-4 bg-neutral w-full join grid gap-2">
               <Slideshow
                 slide1="/assets/southfieldLocation/southfield1.jpg"
                 slide2="/assets/southfieldLocation/southfield2.jpg"
@@ -26,16 +26,16 @@ export default function Southfield() {
                 slide6="/assets/southfieldLocation/southfield6.jpg"
               />
             </div>
-            <hr className="border-base-200" />
+            <hr className="border-secondary" />
 
-        <div className="p-4 gap-5 card bg-primary text-white flex md:flex-row">
+        <div className="p-4 gap-5 card bg-neutral text-accent-content flex md:flex-row">
           <div className="font-bold">Enjoy a beautiful Mediterranean styled home.</div>
           <div>
           Located in a peaceful neighborhood, the house is situated close to shopping malls and major freeways, allowing for easy transportation to all your favorite locations.
           </div>
         </div>
-        <hr className="border-base-200" />
-        <div className="p-4 gap-5 card bg-primary text-white flex">
+        <hr className="border-secondary" />
+        <div className="p-4 gap-5 card bg-neutral text-accent-content flex">
           <div className="text-3xl font-extrabold text-center">
             Customer Reviews
           </div>
@@ -54,9 +54,9 @@ export default function Southfield() {
               </p>
           </div>
         </div>
-        <hr className="border-base-200" />
+        <hr className="border-secondary" />
 
-        <div className="p-4 gap-5 card shadow-2xl bg-primary text-white">
+        <div className="p-4 gap-5 card shadow-2xl bg-neutral text-accent-content">
           <div className="text-3xl font-extrabold text-center">
             Things to Know
           </div>
@@ -76,7 +76,7 @@ export default function Southfield() {
             </div>
           </div>
         </div>
-        <hr className="border-base-200" />
+        <hr className="border-secondary" />
 
             <Modal id="2" />
 
@@ -191,8 +191,8 @@ export default function Southfield() {
             </dialog>
           </div>
           <div className="col-start-4 col-span-2">
-            <div className="grid gap-1 sticky top-20">
-              <div className="join-item card 2xl:card-side shadow-2xl bg-primary">
+            <div className="grid gap-1 sticky top-20 gap-5">
+              <div className="join-item card 2xl:card-side shadow-2xl bg-neutral">
                 <div className="card-body w-full h-96">
                   <iframe
                     src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FDetroit&src=dGVybWluYWx0cmlmZWN0YUBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043"

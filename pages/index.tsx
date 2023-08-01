@@ -6,12 +6,12 @@ import Calendar from "@/app/components/calendar/calendar";
 
 export default function Home() {
   return (
-    <div className="bg-base-100 bgpattern">
+    <div className="bg-base-100">
       {/* Hero */}
       <Hero />
 
       {/* Cards */}
-      <div className="p-10 grid gap-10 justify-center md:grid-cols-2">
+      <div className="bgpattern p-10 grid gap-10 justify-center md:grid-cols-2">
         <div className="grid gap-10">
           <Card
             headerText="Exotic Mediterranean Oasis (Southfield)"
