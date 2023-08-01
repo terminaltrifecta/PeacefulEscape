@@ -14,8 +14,12 @@ export default function Southfield() {
           Exotic Mediterranian Oasis
         </div>
 
-        <div className="grid grid-cols-5 justify-between gap-5">
-          <div className="col-span-3 grid gap-5">
+        <div className="text-2xl font-bold  text-center justify-center">
+          14 guests · 5 bedrooms · 5 beds · 2.5 baths
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-5 justify-center gap-5">
+          <div className="col-span-1 md:col-span-3 grid gap-5">
             <div className="shadow-2xl slideshow p-4 bg-neutral w-full join grid gap-2">
               <Slideshow
                 slide1="/assets/southfieldLocation/southfield1.jpg"
@@ -198,7 +202,7 @@ export default function Southfield() {
               </form>
             </dialog>
           </div>
-          <div className="col-start-4 col-span-2">
+          <div className="md:col-start-4 md:col-span-2">
             <div className="grid sticky top-20 gap-5">
               <div className="join-item card 2xl:card-side shadow-2xl bg-neutral">
                 <div className="card-body w-full h-96">
@@ -211,7 +215,13 @@ export default function Southfield() {
               </div>
 
               <div className="join-item card 2xl:card-side shadow-2xl bg-primary">
-                <div className="card-body w-full">pricing and shit</div>
+                <div className="card-body w-full">
+                  <div className="text-3xl font-extrabold">$230 / night</div>
+                  <div className="join join-vertical">
+                    <button className="btn join-item">Button</button>
+                    <button className="btn join-item">Button</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
