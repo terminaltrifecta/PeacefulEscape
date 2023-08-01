@@ -13,7 +13,7 @@ export default function Modal(id: any) {
   };
 
   return (
-    <div className="">
+    <div className="shadow-2xl">
       <button className="w-full btn btn-primary" onClick={handleChange}>
         Show Ameneties
       </button>

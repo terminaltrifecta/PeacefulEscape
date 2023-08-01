@@ -28,55 +28,63 @@ export default function Southfield() {
             </div>
             <hr className="border-secondary" />
 
-        <div className="p-4 gap-5 card bg-neutral text-accent-content flex md:flex-row">
-          <div className="font-bold">Enjoy a beautiful Mediterranean styled home.</div>
-          <div>
-          Located in a peaceful neighborhood, the house is situated close to shopping malls and major freeways, allowing for easy transportation to all your favorite locations.
-          </div>
-        </div>
-        <hr className="border-secondary" />
-        <div className="p-4 gap-5 card bg-neutral text-accent-content flex">
-          <div className="text-3xl font-extrabold text-center">
-            Customer Reviews
-          </div>
-          <hr className="border-yellow" />
-          <div className="reviewBody grid gap-5 md:grid-cols-2">
-              <p>
-                "We enjoyed our stayed. Ralf was very attentive and always made
-                sure we didn't have any questions or needed anything. GREAT
-                HOST!" - Yaleb, a past customer
-              </p>
-              <p>
-                "Mr. Raf responded quickly. He made my family feel comfortable
-                in his home. He is extremely kind and welcoming! Nice clean
-                home, we didn’t have any issues! This home was perfect for our
-                family trip to Michigan." - Dominque, another past customer
-              </p>
-          </div>
-        </div>
-        <hr className="border-secondary" />
+            <div className="p-4 gap-5 card bg-neutral text-accent-content flex md:flex-row">
+              <div className="font-bold">
+                Enjoy a beautiful Mediterranean styled home.
+              </div>
+              <div>
+                Located in a peaceful neighborhood, the house is situated close
+                to shopping malls and major freeways, allowing for easy
+                transportation to all your favorite locations.
+              </div>
+            </div>
+            <hr className="border-secondary" />
+            <div className="p-4 gap-5 card bg-neutral text-accent-content flex">
+              <div className="text-3xl font-extrabold text-center">
+                Customer Reviews
+              </div>
+              <hr className="border-yellow" />
+              <div className="reviewBody grid gap-5 md:grid-cols-2">
+                <p>
+                  "We enjoyed our stayed. Ralf was very attentive and always
+                  made sure we didn't have any questions or needed anything.
+                  GREAT HOST!" - Yaleb, a past customer
+                </p>
+                <p>
+                  "Mr. Raf responded quickly. He made my family feel comfortable
+                  in his home. He is extremely kind and welcoming! Nice clean
+                  home, we didn’t have any issues! This home was perfect for our
+                  family trip to Michigan." - Dominque, another past customer
+                </p>
+              </div>
+            </div>
+            <hr className="border-secondary" />
 
-        <div className="p-4 gap-5 card shadow-2xl bg-neutral text-accent-content">
-          <div className="text-3xl font-extrabold text-center">
-            Things to Know
-          </div>
-          <hr className="border-yellow" />
-          <div className="grid gap-5 md:grid-cols-2">
-            <div className="p-2">
-              <div className="font-bold">Guest access</div>
-              <div>
-                My guests have access to the kitchen, living room, Moroccan room, and the patio. You also get free parking.
+            <div className="p-4 gap-5 card shadow-2xl bg-neutral text-accent-content">
+              <div className="text-3xl font-extrabold text-center">
+                Things to Know
+              </div>
+              <hr className="border-yellow" />
+              <div className="grid gap-5 md:grid-cols-2">
+                <div className="p-2">
+                  <div className="font-bold">Guest access</div>
+                  <div>
+                    My guests have access to the kitchen, living room, Moroccan
+                    room, and the patio. You also get free parking.
+                  </div>
+                </div>
+                <div className="p-2">
+                  <div className="font-bold">Other things to note</div>
+                  <div>
+                    As a precautionary measure, security cameras are installed
+                    outside of the house. The house has a keyless padlock for
+                    the convenience of my guests, so there's no need to carry a
+                    key around or worry about losing it.
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="p-2">
-              <div className="font-bold">Other things to note</div>
-              <div>
-              As a precautionary measure, security cameras are installed outside of the house. The house has a keyless padlock for the convenience of my guests, so there's no need to carry a key around or worry about losing it.
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr className="border-secondary" />
+            <hr className="border-secondary" />
 
             <Modal id="2" />
 
@@ -191,7 +199,7 @@ export default function Southfield() {
             </dialog>
           </div>
           <div className="col-start-4 col-span-2">
-            <div className="grid gap-1 sticky top-20 gap-5">
+            <div className="grid sticky top-20 gap-5">
               <div className="join-item card 2xl:card-side shadow-2xl bg-neutral">
                 <div className="card-body w-full h-96">
                   <iframe
@@ -203,9 +211,7 @@ export default function Southfield() {
               </div>
 
               <div className="join-item card 2xl:card-side shadow-2xl bg-primary">
-                <div className="card-body w-full">
-                  pricing and shit
-                </div>
+                <div className="card-body w-full">pricing and shit</div>
               </div>
             </div>
           </div>

@@ -54,7 +54,7 @@ export default function Searchbar({ setResults }: any) {
 
   return (
     <input
-      placeholder="Type here"
+      placeholder="Enter a location..."
       value={input}
       onChange={(e) => handleChange(e.target.value)}
       type="text"
