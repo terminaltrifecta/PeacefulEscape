@@ -200,14 +200,8 @@ export default function Southfield() {
           </div>
           <div className="col-start-4 col-span-2">
             <div className="grid sticky top-20 gap-5">
-              <div className="join-item card 2xl:card-side shadow-2xl bg-neutral">
-                <div className="card-body w-full h-96">
-                  <iframe
-                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FDetroit&src=dGVybWluYWx0cmlmZWN0YUBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043"
-                    width="100%"
-                    height="100%"
-                  ></iframe>
-                </div>
+              <div className="card shadow-2xl bg-neutral">
+                  <Calendar/>
               </div>
 
               <div className="join-item card 2xl:card-side shadow-2xl bg-primary">
