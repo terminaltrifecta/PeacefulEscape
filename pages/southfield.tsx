@@ -5,6 +5,7 @@ import { HomeIcon, WifiIcon } from "@heroicons/react/24/solid";
 import Modal from "@/app/components/Modal/modal";
 import Card from "@/app/components/card/card";
 import Calendar from "@/app/components/calendar/calendar";
+import Pricecard from "@/app/components/pricecard/pricecard";
 
 export default function Southfield() {
   return (
@@ -214,15 +215,8 @@ export default function Southfield() {
                 </div>
               </div>
 
-              <div className="join-item card 2xl:card-side shadow-2xl bg-primary">
-                <div className="card-body w-full">
-                  <div className="text-3xl font-extrabold">$230 / night</div>
-                  <div className="join join-vertical">
-                    <button className="btn join-item">Button</button>
-                    <button className="btn join-item">Button</button>
-                  </div>
-                </div>
-              </div>
+              <Pricecard />
+              
             </div>
           </div>
         </div>
