@@ -5,7 +5,7 @@ import { HomeIcon, WifiIcon } from "@heroicons/react/24/solid";
 import Modal from "@/app/components/Modal/modal";
 import Card from "@/app/components/card/card";
 import Calendar from "@/app/components/calendar/calendar";
-import Pricecard from "@/app/components/pricecard/pricecard";
+import Priceblock from "@/app/components/searchbar/priceblock/priceblock";
 
 export default function Southfield() {
   return (
@@ -206,11 +206,18 @@ export default function Southfield() {
           <div className="md:col-start-4 md:col-span-2">
             <div className="grid sticky top-20 gap-5">
               <div className="card shadow-2xl bg-neutral">
-                  <Calendar/>
+                <Calendar />
               </div>
-
-              <Pricecard />
               
+              <Priceblock
+              minGuests={1}
+              maxGuests={14}
+              minNights={1}
+              maxNights={30}
+              basePricePerNight={230}
+              extraGuestChargePerNight={15}
+              guestThresholdForExtraCharge={5} />
+
             </div>
           </div>
         </div>
