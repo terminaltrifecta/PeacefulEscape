@@ -16,7 +16,7 @@ export default function Southfield() {
         </div>
 
         <div className="text-2xl font-bold  text-center justify-center">
-        8 guests · 2 bedrooms · 3 beds · 1 bath
+        15 guests · 3 bedrooms · 3 beds · 2.5 baths
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-5 justify-center gap-5">
@@ -74,12 +74,18 @@ export default function Southfield() {
               <hr className="border-yellow" />
               <div className="grid gap-5 md:grid-cols-2">
                 <div className="p-2">
-                  <div className="font-bold">Guest access</div>
-                  <div>edit</div>
+                  <div className="font-bold">House rules</div>
+                    <li>Check-in after 5:00 PM</li>
+                    <li>Checkout before 11:00 AM</li>
+                    <li>Self check-in with keypad</li>
+                    <li>15 guests maximum</li>
+                    <li>Pets allowed</li>
+                    <li>No smoking</li>
                 </div>
                 <div className="p-2">
-                  <div className="font-bold">Other things to note</div>
-                  <div>edit</div>
+                  <div className="font-bold">Safety & property</div>
+                    <li>Carbon monoxide alarm installed</li>
+                    <li>Smoke alarm installed</li>
                 </div>
               </div>
             </div>
@@ -210,9 +216,9 @@ export default function Southfield() {
               <Priceblock
                 minGuests={1}
                 maxGuests={14}
-                minNights={1}
+                minNights={4}
                 maxNights={30}
-                basePricePerNight={230}
+                basePricePerNight={53}
                 extraGuestChargePerNight={15}
                 guestThresholdForExtraCharge={5}
               />

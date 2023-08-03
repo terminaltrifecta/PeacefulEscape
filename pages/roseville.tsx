@@ -75,20 +75,20 @@ export default function Southfield() {
               <div className="grid gap-5 md:grid-cols-2">
                 <div className="p-2">
                   <div className="font-bold">House rules</div>
-                  <li>Check-in after 5:00 PM</li>
-                  <li>Checkout before 11:00 AM</li>
-                  <li>Self check-in with keypad</li>
-                  <li>Pets allowed</li>
-                  <li>No parties or events</li>
-                  <li>No smoking</li>
+                  <li className="list-inside">Check-in after 5:00 PM</li>
+                  <li className="list-inside">Checkout before 11:00 AM</li>
+                  <li className="list-inside">Self check-in with keypad</li>
+                  <li className="list-inside">Pets allowed</li>
+                  <li className="list-inside">No parties or events</li>
+                  <li className="list-inside">No smoking</li>
                 </div>
                 <div className="p-2">
                   <div className="font-bold">Safety & Property</div>
-                  <li>Security camera outside of property</li>
-                  <li>Carbon monoxide alarm installed</li>
-                  <li>Smoke alarm installed</li>
-                  <li>Potential noise during the day</li>
-                  <li>Apartment is on the second floor, guests must climb stairs.</li>
+                  <li className="list-inside">Security camera outside of property</li>
+                  <li className="list-inside">Carbon monoxide alarm installed</li>
+                  <li className="list-inside">Smoke alarm installed</li>
+                  <li className="list-inside">Potential noise during the day</li>
+                  <li className="list-inside">Apartment is on the second floor, guests must climb stairs.</li>
                 </div>
                 
               </div>
@@ -103,83 +103,82 @@ export default function Southfield() {
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Bathroom</h3>
 
-                    <li>Hair dryer</li>
-                    <li>Shampoo</li>
-                    <li>Hot water</li>
+                    <li className="list-inside">Hair dryer</li>
+                    <li className="list-inside">Shampoo</li>
+                    <li className="list-inside">Hot water</li>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Bedroom and laundry</h3>
 
-                    <li>Free washer - In unit</li>
-                    <li>Free dryer - In unit</li>
-                    <li>Essentials (Towels, bed sheets, soap, toilet paper)</li>
-                    <li>Hangers</li>
-                    <li>Iron</li>
+                    <li className="list-inside">Free washer - In unit</li>
+                    <li className="list-inside">Free dryer - In unit</li>
+                    <li className="list-inside">Essentials (Towels, bed sheets, soap, toilet paper)</li>
+                    <li className="list-inside">Hangers</li>
+                    <li className="list-inside">Iron</li>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Entertainment</h3>
 
-                    <li>
-                      <li>TV</li>
-                      <li>Exercise equipment</li>
-                    </li>
+                      <li className="list-inside">TV</li>
+                      <li className="list-inside">Exercise equipment</li>
+
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Family</h3>
 
-                    <li>Crib</li>
+                    <li className="list-inside">Crib</li>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Heating and cooling</h3>
 
-                    <li>Security cameras on property (outside of property)</li>
-                    <li>Smoke alarm</li>
-                    <li>Carbon monoxide alarm</li>
-                    <li>Fire extinguisher</li>
-                    <li>First aid kit</li>
+                    <li className="list-inside">Security cameras on property (outside of property)</li>
+                    <li className="list-inside">Smoke alarm</li>
+                    <li className="list-inside">Carbon monoxide alarm</li>
+                    <li className="list-inside">Fire extinguisher</li>
+                    <li className="list-inside">First aid kit</li>
                   </div>
 
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Internet and office</h3>
 
-                    <li>Wifi</li>
-                    <li>Dedicated workspace</li>
+                    <li className="list-inside">Wifi</li>
+                    <li className="list-inside">Dedicated workspace</li>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Kitchen and dining</h3>
 
-                    <li>Kitchen</li>
-                    <li>Refrigerator</li>
-                    <li>Microwave</li>
-                    <li>Cooking basics (Pots and pans, oil, salt, pepper)</li>
-                    <li>
+                    <li className="list-inside">Kitchen</li>
+                    <li className="list-inside">Refrigerator</li>
+                    <li className="list-inside">Microwave</li>
+                    <li className="list-inside">Cooking basics (Pots and pans, oil, salt, pepper)</li>
+                    <li className="list-inside">
                       Dishes and silverware (Bowls, chopsticks, plates, cups,
                       etc.)
                     </li>
-                    <li>Stove</li>
-                    <li>Oven</li>
-                    <li>Coffee maker</li>
+                    <li className="list-inside">Stove</li>
+                    <li className="list-inside">Oven</li>
+                    <li className="list-inside">Coffee maker</li>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Outdoor</h3>
 
-                    <li>Backyard</li>
-                    <li>Outdoor furniture</li>
+                    <li className="list-inside">Backyard</li>
+                    <li className="list-inside">Outdoor furniture</li>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">
                       Parking and facilities
                     </h3>
 
-                    <li>Free parking on premises</li>
-                    <li>Free street parking</li>
+                    <li className="list-inside">Free parking on premises</li>
+                    <li className="list-inside">Free street parking</li>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Services</h3>
 
-                    <li>Pets allowed</li>
-                    <li>Self check-in</li>
-                    <li>Keypad</li>
+                    <li className="list-inside">Pets allowed</li>
+                    <li className="list-inside">Self check-in</li>
+                    <li className="list-inside">Keypad</li>
                   </div>
                 </div>
               </form>
