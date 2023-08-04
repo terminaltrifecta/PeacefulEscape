@@ -9,7 +9,7 @@ import Priceblock from "@/app/components/searchbar/priceblock/priceblock";
 
 export default function Southfield() {
   return (
-    <div className="justify-center flex">
+    <div className="justify-center flex font-poppins">
       <div className="bgpattern bg-base-100 grid p-9 gap-9 justify-between">
         <div className="text-5xl font-bold  text-center justify-center">
           Exotic Mediterranian Oasis

@@ -1,3 +1,5 @@
+/* global gapi */
+
 import classNames from "classnames";
 import {
   add,
@@ -7,13 +9,21 @@ import {
   isSameMonth,
   isToday,
   parse,
-  startOfMonth,
   startOfToday,
+  getDay
 } from "date-fns";
-import { getDay } from "date-fns/esm/fp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { calendar } from "@googleapis/calendar";
 
 export default function Calendar() {
+
+  var CLIENT_ID = "696312971829-un41b9sqml7vqhd2q4475jtm6mjbp9k1.apps.googleusercontent.com"
+  var API_KEY = "AIzaSyA88Y6YyRePlgmbaDbrvt_f27x4vNSHEGI"
+  const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
+  const SCOPES = 'https://www.googleapis.com/auth/calendar.readonly';
+
+  const Calendar = calendar("v3");
+
   let today = startOfToday();
   let [currentMonth, setCurrentMonth] = useState(format(today, "MMM-yyyy"));
   let firstDayCurrentMonth = parse(currentMonth, "MMM-yyyy", new Date());
@@ -35,9 +45,20 @@ export default function Calendar() {
     console.log(currentMonth);
   }
 
-  function isAvailable(day:any) {
-    //8-1-2023
-    return day % 2 === 0; 
+  function handleChange() {
+    
+    gapi.load('client:auth2', () => {
+      console.log('loaded client')
+      gapi.client.init({
+        apiKey: API_KEY,
+        clientId: CLIENT_ID,
+        scope: SCOPES,
+      })
+
+      gapi.client.load('calendar', 'v3', () => console.log('awd'))
+      
+      gapi.auth2.getAuthInstance().signIn()
+    })
   }
 
   return (
@@ -135,7 +156,7 @@ export default function Calendar() {
                     !isSameMonth(day, today) && "text-base-300",
                     isToday(day) &&
                       "font-semibold bg-secondary text-white hover:bg-secondary-focus",
-                    !isAvailable(format(day, "mm-dd-yyyy")) && !isToday(day) && "text-base-200",
+                    // !isAvailable(format(day, "mm-dd-yyyy")) && !isToday(day) && "text-base-200",
                     "text-black mx-auto flex h-8 w-8 items-center justify-center rounded-full"
                   )}
                 >
@@ -148,6 +169,11 @@ export default function Calendar() {
           </div>
         </div>
       </div>
+      <div className="shadow-2xl">
+      <button className="w-full btn btn-primary" onClick={handleChange}>
+        Show Ameneties
+      </button>
+    </div>
     </div>
   );
 }

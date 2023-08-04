@@ -6,7 +6,7 @@ import Calendar from "@/app/components/calendar/calendar";
 
 export default function Home() {
   return (
-    <div className="bg-base-100">
+    <div className="bg-base-100 font-poppins">
       {/* Hero */}
       <Hero />
 

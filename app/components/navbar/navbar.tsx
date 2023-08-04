@@ -16,7 +16,7 @@ const Navbar = () => {
           <img
             alt=""
             src="/assets/peaceful.png"
-            className=" p-0 btn btn-ghost h-16 pl-2 bg-white bg-opacity-20"
+            className=" p-0 btn btn-ghost h-16 pl-2"
           />
         </Link>
       </div>

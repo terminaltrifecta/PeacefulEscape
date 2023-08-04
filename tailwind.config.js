@@ -7,6 +7,10 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: 
+    {
+      'poppins': ['Poppins', 'sans-serif']
+    },
     colors: 
     {
       'yellow': '#FFBD59',
