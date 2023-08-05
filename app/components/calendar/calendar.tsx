@@ -11,13 +11,14 @@ import {
   startOfToday,
   getDay
 } from "date-fns";
+import { Truculenta } from "next/font/google";
 import { useEffect, useState } from "react";
 
 export default function Calendar() {
   let today = startOfToday();
   let [currentMonth, setCurrentMonth] = useState(format(today, "MMM-yyyy"));
   let firstDayCurrentMonth = parse(currentMonth, "MMM-yyyy", new Date());
-
+  
   let newDays = eachDayOfInterval({
     start: firstDayCurrentMonth,
     end: endOfMonth(firstDayCurrentMonth),
@@ -26,13 +27,11 @@ export default function Calendar() {
   function previousMonth() {
     let firstDayPreviousMonth = add(firstDayCurrentMonth, { months: -1 });
     setCurrentMonth(format(firstDayPreviousMonth, "MMM-yyyy"));
-    console.log(currentMonth);
   }
 
   function nextMonth() {
     let firstDayNextMonth = add(firstDayCurrentMonth, { months: 1 });
     setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
-    console.log(currentMonth);
   }
 
   async function getData(url:any) {
@@ -40,15 +39,36 @@ export default function Calendar() {
     return response.text();
   }
 
-    getData("https://docs.google.com/spreadsheets/d/e/2PACX-1vTsqZNl7mVQykLm1h_H5CQsHlLeB83w8FrtgQDXNzkdituj44jiSUvU4xvmXtpjHB7PJQrfLMThcDyZ/pub?output=csv")
-    .then((data:any) => {
-      const events = data.split(/\r?\n/).map((l:any) => l.split(","))
-      .map((event:any) => {
-        return {start: event[0], end: event[1], name: event[2]};
-      });
-    console.log(events);
+  let dateArray: any[] = [];
+  var events: any[] = [];
+
+  getData("https://docs.google.com/spreadsheets/d/e/2PACX-1vTsqZNl7mVQykLm1h_H5CQsHlLeB83w8FrtgQDXNzkdituj44jiSUvU4xvmXtpjHB7PJQrfLMThcDyZ/pub?output=csv")
+  .then((data:any) => {
+    events = data.split(/\r?\n/).map((l:any) => l.split(","))
+    .map((event:any) => {
+      return {start: event[0], end: event[1], name: event[2]};
     });
-  
+    events.map((event:any)=> {
+      let firstDayEvent = new Date(event.start.substring(0,4), event.start.substring(5,7)-1, event.start.substring(8,10));
+      let lastDayEvent = new Date(event.end.substring(0,4), event.end.substring(5,7)-1, event.end.substring(8,10));
+      
+      let eventDays = eachDayOfInterval({
+        start: firstDayEvent,
+        end: lastDayEvent,
+      });
+      eventDays.map((day:any, i:any) => {
+        dateArray.push(format(day, "yyyy-MM-dd"));
+      });
+    })
+  })
+
+  function isAvailable(day:string) {
+    if (5*2 === 15) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   return (
     <div className="flex items-center justify-center py-8 px-4">
@@ -145,7 +165,7 @@ export default function Calendar() {
                     !isSameMonth(day, today) && "text-base-300",
                     isToday(day) &&
                       "font-semibold bg-secondary text-white hover:bg-secondary-focus",
-                    // !isAvailable(format(day, "mm-dd-yyyy")) && !isToday(day) && "text-base-200",
+                    !isAvailable(format(day, "yyyy-MM-dd")) && !isToday(day) && "text-base-200",
                     "text-black mx-auto flex h-8 w-8 items-center justify-center rounded-full"
                   )}
                 >
