@@ -61,36 +61,36 @@ const Pricecard = ({
           <div className="text-3xl font-extrabold text-center">
             ${calculateTotalPrice()}
           </div>
-          <div className="join join-horizontal w-full justify-around">
+          <div className="join join-horizontal w-full justify-center gap-x-1">
             <button
-              className="btn join-item justify-self-start"
+              className="btn join-item justify-self-start bg-neutral"
               onClick={handleDecrementGuests}
             >
               -
             </button>
-            <div className="tooltip" data-tip={`$15 for every guest after ${guestThresholdForExtraCharge} people.`}>
-              <div className="btn join-item disabled">{guests} guests</div>
+            <div className="tooltip w-1/2" data-tip={`$15 for every guest after ${guestThresholdForExtraCharge} people.`}>
+              <div className="btn join-item disabled bg-neutral w-full">{guests} guests</div>
             </div>
             <button
-              className="btn join-item justify-end"
+              className="btn join-item justify-end bg-neutral"
               onClick={handleIncrementGuests}
             >
               +
             </button>
           </div>
 
-          <div className="join join-horizontal w-full justify-around">
+          <div className="join join-horizontal w-full justify-center gap-x-1">
             <button
-              className="btn join-item justify-self-start"
+              className="btn join-item justify-self-start bg-neutral"
               onClick={handleDecrementNights}
             >
               -
             </button>
-            <div className="tooltip" data-tip={`${nights} nights @ $${calculatePartialPrice()} per night.`}>
-              <div className="btn join-item disabled">{nights} nights</div>
+            <div className="tooltip w-1/2" data-tip={`${nights} nights @ $${calculatePartialPrice()} per night.`}>
+              <div className="btn join-item disabled bg-neutral w-full">{nights} nights</div>
             </div>
             <button
-              className="btn join-item justify-end"
+              className="btn join-item justify-end bg-neutral"
               onClick={handleIncrementNights}
             >
               +

@@ -74,5 +74,6 @@ hr {
 }
 
 .stroke {
-  -webkit-text-stroke: 1px black;
+  text-shadow:
+   4px -2px 0 #219EBC
 }

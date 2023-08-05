@@ -11,18 +11,9 @@ import {
   startOfToday,
   getDay
 } from "date-fns";
-import { google } from "googleapis";
 import { useEffect, useState } from "react";
 
 export default function Calendar() {
-
-  var CLIENT_ID = "696312971829-un41b9sqml7vqhd2q4475jtm6mjbp9k1.apps.googleusercontent.com"
-  var API_KEY = "AIzaSyA88Y6YyRePlgmbaDbrvt_f27x4vNSHEGI"
-  const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
-  const SCOPES = 'https://www.googleapis.com/auth/calendar.readonly';
-
-  var calendar = google.calendar("v3");
-  
   let today = startOfToday();
   let [currentMonth, setCurrentMonth] = useState(format(today, "MMM-yyyy"));
   let firstDayCurrentMonth = parse(currentMonth, "MMM-yyyy", new Date());
@@ -44,9 +35,20 @@ export default function Calendar() {
     console.log(currentMonth);
   }
 
-  function handleChange() {
-    
+  async function getData(url:any) {
+    const response = await fetch(url);
+    return response.text();
   }
+
+    getData("https://docs.google.com/spreadsheets/d/e/2PACX-1vTsqZNl7mVQykLm1h_H5CQsHlLeB83w8FrtgQDXNzkdituj44jiSUvU4xvmXtpjHB7PJQrfLMThcDyZ/pub?output=csv")
+    .then((data:any) => {
+      const events = data.split(/\r?\n/).map((l:any) => l.split(","))
+      .map((event:any) => {
+        return {start: event[0], end: event[1], name: event[2]};
+      });
+    console.log(events);
+    });
+  
 
   return (
     <div className="flex items-center justify-center py-8 px-4">
@@ -157,9 +159,6 @@ export default function Calendar() {
         </div>
       </div>
       <div className="shadow-2xl">
-      <button className="w-full btn btn-primary" onClick={handleChange}>
-        Click
-      </button>
     </div>
     </div>
   );
