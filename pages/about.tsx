@@ -18,7 +18,7 @@ export default function About() {
           </div>
         </div>
         <div className="grid gap-4">
-          <div className="h-fit p-8 rounded-xl flex flex-col gap-6 lg:flex-row bg-primary text-primary-content">
+          <div className="h-fit p-8 rounded-xl flex flex-col gap-6 lg:flex-row bg-primary shadow-2xl text-primary-content">
             <div className="avatar justify-center p-4 col-span-2">
               <div className="rounded-full ring ring-primary-content ring-offset-2">
                 <img src="/assets/raf.jpg" alt="" />
