@@ -34,44 +34,36 @@ export default function Calendar() {
     setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
   }
 
-  async function getData() {
-    const response = await fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vTsqZNl7mVQykLm1h_H5CQsHlLeB83w8FrtgQDXNzkdituj44jiSUvU4xvmXtpjHB7PJQrfLMThcDyZ/pub?output=csv"); 
-    const data = await response.text();
-    return data;
+  function getData() {
+    
   }
 
-  let dateArray: any[] = [];
+  function handleChange() {}
 
-  function isAvailable(dayCheck: string) {
-    return new Promise ((resolve, reject) => {
-      getData().
-      then((data: any) => {
-        let events = data
-          .split(/\r?\n/)
-          .map((l: any) => l.split(","))
-          .map((event: any) => {
-            return { start: event[0], end: event[1], name: event[2] };
-          });
-        events.map((event: any) => {
-          let firstDayEvent = parse(event.start, "yyyy-MM-dd", new Date());
-          let lastDayEvent = parse(event.end, "yyyy-MM-dd", new Date());
-          console.log(event.start);
+  function isBooked(dayCheck: string) {
+
+    let dateArray: any[] = [];
+
+    fetch("https://sheets.googleapis.com/v4/spreadsheets/1EPEXPpsttWpdh-QIXULjpiok70Esaa1f3Z3nIGhxCQ8/values/sheet1?alt=json&key=AIzaSyA88Y6YyRePlgmbaDbrvt_f27x4vNSHEGI")
+      .then((response) => response.json())
+      .then((json) => {
+        json.values.map((event: any) => {
+          let firstDayEvent = parse(event[0], "yyyy-MM-dd", new Date());
+          let lastDayEvent = parse(event[1], "yyyy-MM-dd", new Date());
           let eventDays = eachDayOfInterval({
+            //for each event we create an array of all dates it contains
             start: firstDayEvent,
-            end: lastDayEvent
+            end: lastDayEvent,
           });
           eventDays.map((day: any, i: any) => {
-            console.log((format(day, "yyyy-MM-dd") === dayCheck) == true);
-            if ((format(day, "yyyy-MM-dd") === dayCheck) == true) {
-              resolve(true);
-            }
+            //we map through each of the days
+            dateArray.push(format(day, "yyyy-MM-dd"));
           });
         });
       });
-    });
-  }
 
-  console.log(isAvailable("2023-08-07"))
+    return dateArray.includes(dayCheck);
+  }
 
   return (
     <div className="flex items-center justify-center py-8 px-4">
@@ -163,14 +155,14 @@ export default function Calendar() {
                 <button
                   type="button"
                   className={classNames(
+                    isBooked(format(day, "yyyy-MM-dd")) &&
+                      !isToday(day) &&
+                      "text-base-200",
                     isSameMonth(day, today) && "text-gray-900",
                     !isToday(day) && "bg-gray-900 hover:bg-neutral-focus",
                     !isSameMonth(day, today) && "text-base-300",
                     isToday(day) &&
                       "font-semibold bg-secondary text-white hover:bg-secondary-focus",
-                    !isAvailable(format(day, "yyyy-MM-dd")) &&
-                      !isToday(day) &&
-                      "text-base-200",
                     "text-black mx-auto flex h-8 w-8 items-center justify-center rounded-full"
                   )}
                 >
