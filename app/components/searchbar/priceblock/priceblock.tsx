@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Pricecard = ({
   minGuests = 1,
@@ -42,7 +43,7 @@ const Pricecard = ({
         ? guests - guestThresholdForExtraCharge
         : 0;
     const extraGuestCharge = extraGuests * extraGuestChargePerNight;
-    return basePricePerNight * nights + extraGuestCharge;
+    return (extraGuestCharge + basePricePerNight) * nights;
   };
 
   const calculatePartialPrice = () => {
@@ -59,7 +60,7 @@ const Pricecard = ({
       <div className="join-item card 2xl:card-side shadow-2xl bg-primary">
         <div className="card-body w-full">
           <div className="text-3xl font-extrabold text-center">
-            ${calculateTotalPrice()}
+            ${calculateTotalPrice()} + service fees
           </div>
           <div className="join join-horizontal w-full justify-center gap-x-1">
             <button
@@ -68,8 +69,13 @@ const Pricecard = ({
             >
               -
             </button>
-            <div className="tooltip w-1/2" data-tip={`$15 for every guest after ${guestThresholdForExtraCharge} people.`}>
-              <div className="btn join-item disabled bg-neutral w-full">{guests} guests</div>
+            <div
+              className="tooltip w-1/2"
+              data-tip={`$15 for every guest after ${guestThresholdForExtraCharge} people.`}
+            >
+              <div className="btn join-item disabled bg-neutral w-full">
+                {guests} guests
+              </div>
             </div>
             <button
               className="btn join-item justify-end bg-neutral"
@@ -86,8 +92,13 @@ const Pricecard = ({
             >
               -
             </button>
-            <div className="tooltip w-1/2" data-tip={`${nights} nights @ $${calculatePartialPrice()} per night.`}>
-              <div className="btn join-item disabled bg-neutral w-full">{nights} nights</div>
+            <div
+              className="tooltip w-1/2"
+              data-tip={`${nights} nights @ $${calculatePartialPrice()} per night.`}
+            >
+              <div className="btn join-item disabled bg-neutral w-full">
+                {nights} nights
+              </div>
             </div>
             <button
               className="btn join-item justify-end bg-neutral"
@@ -97,7 +108,11 @@ const Pricecard = ({
             </button>
           </div>
 
-          <hr />
+          <Link href="/about">
+            <div className="btn join-item extrabold disabled bg-neutral w-full">
+              contact
+            </div>
+          </Link>
         </div>
       </div>
     </div>
