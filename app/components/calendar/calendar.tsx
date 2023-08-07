@@ -40,33 +40,30 @@ export default function Calendar() {
 
   function handleChange() {}
 
-  function isBooked(dayCheck: string) {
-
-    let dateArray: any[] = [];
-
-    fetch("https://sheets.googleapis.com/v4/spreadsheets/1EPEXPpsttWpdh-QIXULjpiok70Esaa1f3Z3nIGhxCQ8/values/sheet1?alt=json&key=AIzaSyA88Y6YyRePlgmbaDbrvt_f27x4vNSHEGI")
-      .then((response) => response.json())
+  function isBooked(date:string) {
+    return new Promise((resolve, reject) => {
+      fetch("https://sheets.googleapis.com/v4/spreadsheets/1EPEXPpsttWpdh-QIXULjpiok70Esaa1f3Z3nIGhxCQ8/values/sheet1?alt=json&key=AIzaSyA88Y6YyRePlgmbaDbrvt_f27x4vNSHEGI")
+      .then(res => {
+        return res.json();
+      })
       .then((json) => {
-        json.values.map((event: any) => {
-          let firstDayEvent = parse(event[0], "yyyy-MM-dd", new Date());
-          let lastDayEvent = parse(event[1], "yyyy-MM-dd", new Date());
-          let eventDays = eachDayOfInterval({
-            //for each event we create an array of all dates it contains
-            start: firstDayEvent,
-            end: lastDayEvent,
-          });
-          eventDays.map((day: any, i: any) => {
-            //we map through each of the days
-            dateArray.push(format(day, "yyyy-MM-dd"));
-          });
+        json.values.forEach((dateInfo: any) => {
+          if (dateInfo.includes(date)) {
+            resolve(true);
+          }
         });
+        resolve(false);
       });
-
-    return dateArray.includes(dayCheck);
+    });
   }
+
+  console.log(isBooked("2023/08/17"));
 
   return (
     <div className="flex items-center justify-center py-8 px-4">
+      <ul>
+
+      </ul>
       <div className="max-w-sm w-full ">
         <div className="md:p-8 p-5 dark:bg-gray-800 rounded-t">
           <div className="px-4 flex items-center justify-between">
@@ -155,7 +152,7 @@ export default function Calendar() {
                 <button
                   type="button"
                   className={classNames(
-                    isBooked(format(day, "yyyy-MM-dd")) &&
+                    // isBooked(format(day, "yyyy-MM-dd")) &&
                       !isToday(day) &&
                       "text-base-200",
                     isSameMonth(day, today) && "text-gray-900",
