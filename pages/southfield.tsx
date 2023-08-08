@@ -4,8 +4,8 @@ import Slideshow from "@/app/components/slideshow/slideshow";
 import { HomeIcon, WifiIcon } from "@heroicons/react/24/solid";
 import Modal from "@/app/components/Modal/modal";
 import Card from "@/app/components/card/card";
-import Calendar from "@/app/components/calendar/calendar";
 import Priceblock from "@/app/components/searchbar/priceblock/priceblock";
+import Calendar from "@/app/components/calendar/calendar";
 
 export default function Southfield() {
   return (
@@ -206,7 +206,7 @@ export default function Southfield() {
           <div className="md:col-start-4 md:col-span-2">
             <div className="grid sticky top-20 gap-5">
               <div className="card shadow-2xl bg-neutral">
-                <Calendar />
+                <Calendar/>
               </div>
               
               <Priceblock

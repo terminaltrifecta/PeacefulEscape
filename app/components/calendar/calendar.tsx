@@ -1,20 +1,21 @@
-/* global gapi */
 import classNames from "classnames";
 import {
   add,
   eachDayOfInterval,
   endOfMonth,
   format,
+  getDay,
   isSameMonth,
   isToday,
   parse,
   startOfToday,
-  getDay,
 } from "date-fns";
-import { Truculenta } from "next/font/google";
-import { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 
 export default function Calendar() {
+  const [dates, setDates] = useState([]);
+
   let today = startOfToday();
   let [currentMonth, setCurrentMonth] = useState(format(today, "MMM-yyyy"));
   let firstDayCurrentMonth = parse(currentMonth, "MMM-yyyy", new Date());
@@ -34,36 +35,20 @@ export default function Calendar() {
     setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
   }
 
-  function getData() {
-    
+  async function fetchData() {
+    const response = await fetch(
+      "https://sheets.googleapis.com/v4/spreadsheets/1EPEXPpsttWpdh-QIXULjpiok70Esaa1f3Z3nIGhxCQ8/values/sheet1?alt=json&key=AIzaSyA88Y6YyRePlgmbaDbrvt_f27x4vNSHEGI"
+    );
+    return response.json();
   }
-
-  function handleChange() {}
-
-  function isBooked(date:string) {
-    return new Promise((resolve, reject) => {
-      fetch("https://sheets.googleapis.com/v4/spreadsheets/1EPEXPpsttWpdh-QIXULjpiok70Esaa1f3Z3nIGhxCQ8/values/sheet1?alt=json&key=AIzaSyA88Y6YyRePlgmbaDbrvt_f27x4vNSHEGI")
-      .then(res => {
-        return res.json();
-      })
-      .then((json) => {
-        json.values.forEach((dateInfo: any) => {
-          if (dateInfo.includes(date)) {
-            resolve(true);
-          }
-        });
-        resolve(false);
-      });
-    });
-  }
-
-  console.log(isBooked("2023/08/17"));
+  
+  const {data, isFetching} = useQuery(["dates"], fetchData);
+  const isBooked = (dateCheck:any) => data?.values.some((date:any) => {
+    return (date[0] === dateCheck);
+  });
 
   return (
     <div className="flex items-center justify-center py-8 px-4">
-      <ul>
-
-      </ul>
       <div className="max-w-sm w-full ">
         <div className="md:p-8 p-5 dark:bg-gray-800 rounded-t">
           <div className="px-4 flex items-center justify-between">
@@ -152,9 +137,10 @@ export default function Calendar() {
                 <button
                   type="button"
                   className={classNames(
-                    // isBooked(format(day, "yyyy-MM-dd")) &&
-                      !isToday(day) &&
-                      "text-base-200",
+                    isBooked(format(day, "yyyy-MM-dd")) &&
+                    !isToday(day) && "text-base-200",
+                    isBooked(format(day, "yyyy-MM-dd")) &&
+                    !isSameMonth(day, today) && "text-error",
                     isSameMonth(day, today) && "text-gray-900",
                     !isToday(day) && "bg-gray-900 hover:bg-neutral-focus",
                     !isSameMonth(day, today) && "text-base-300",
