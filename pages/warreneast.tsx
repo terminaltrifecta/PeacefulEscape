@@ -23,12 +23,12 @@ export default function Southfield() {
           <div className="col-span-1 md:col-span-3 grid gap-5">
             <div className="shadow-2xl slideshow p-4 bg-neutral w-full join grid gap-2">
               <Slideshow
-                slide2="/assets/warrenEastLocation/warrenEast1.webp"
-                slide1="/assets/warrenEastLocation/warrenEast2.webp"
-                slide3="/assets/warrenEastLocation/warrenEast3.webp"
-                slide4="/assets/warrenEastLocation/warrenEast4.webp"
-                slide5="/assets/warrenEastLocation/warrenEast5.webp"
-                slide6="/assets/warrenEastLocation/warrenEast6.webp"
+                slide2="/assets/warrenEastLocation/warreneast1.webp"
+                slide1="/assets/warrenEastLocation/warreneast2.webp"
+                slide3="/assets/warrenEastLocation/warreneast3.webp"
+                slide4="/assets/warrenEastLocation/warreneast4.webp"
+                slide5="/assets/warrenEastLocation/warreneast5.webp"
+                slide6="/assets/warrenEastLocation/warreneast6.webp"
               />
             </div>
             <hr className="border-secondary" />

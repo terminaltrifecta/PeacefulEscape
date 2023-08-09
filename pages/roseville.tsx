@@ -1,9 +1,5 @@
-import Layout from "@/app/components/layout";
-import Proplayout from "@/app/components/proplayout/proplayout";
 import Slideshow from "@/app/components/slideshow/slideshow";
-import { HomeIcon, WifiIcon } from "@heroicons/react/24/solid";
 import Modal from "@/app/components/Modal/modal";
-import Card from "@/app/components/card/card";
 import Calendar from "@/app/components/calendar/calendar";
 import Priceblock from "@/app/components/searchbar/priceblock/priceblock";
 
@@ -200,20 +196,21 @@ export default function Southfield() {
               </form>
             </dialog>
           </div>
+
           <div className="md:col-start-4 md:col-span-2">
             <div className="grid sticky top-20 gap-5">
-              <div className="h-1 card shadow-2xl bg-neutral">
+              <div className="card shadow-2xl bg-neutral">
                 <Calendar />
               </div>
 
               <Priceblock
                 minGuests={1}
-                maxGuests={8}
-                minNights={4}
+                maxGuests={14}
+                minNights={1}
                 maxNights={30}
-                basePricePerNight={136}
+                basePricePerNight={230}
                 extraGuestChargePerNight={15}
-                guestThresholdForExtraCharge={6}
+                guestThresholdForExtraCharge={5}
               />
             </div>
           </div>
