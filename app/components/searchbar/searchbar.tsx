@@ -9,28 +9,28 @@ export default function Searchbar({ setResults }: any) {
       name: "Exotic Mediterranean Oasis",
       location: "Southfield, Michigan",
       href: "/southfield",
-      image: "/assets/southfieldLocation/southfield1.jpg"
+      image: "/assets/southfieldLocation/southfield1.jpg",
     },
     {
       id: 2,
       name: "Modern Spacious Loft",
       location: "Roseville, Michigan",
       href: "/roseville",
-      image: "/assets/rosevilleLocation/roseville1.webp"
+      image: "/assets/rosevilleLocation/roseville5.jpg",
     },
     {
       id: 3,
       name: "Cheerful Bedroom in a Cozy Home",
       location: "Warren, Michigan",
       href: "/warrenwest",
-      image: "/assets/warrenWestLocation/warrenwest1.webp"
+      image: "/assets/warrenWestLocation/warrenwest1.webp",
     },
     {
       id: 4,
       name: "Comfortable Home in a Quiet Neighborhood",
       location: "Warren, Michigan",
       href: "/warreneast",
-      image: "/assets/warrenEastLocation/warreneast1.webp"
+      image: "/assets/warrenEastLocation/warreneast1.webp",
     },
   ];
 
@@ -40,7 +40,8 @@ export default function Searchbar({ setResults }: any) {
         value &&
         location &&
         location.name &&
-        (location.name.toLowerCase().includes(value.toLowerCase()) || location.location.toLowerCase().includes(value.toLowerCase()))
+        (location.name.toLowerCase().includes(value.toLowerCase()) ||
+          location.location.toLowerCase().includes(value.toLowerCase()))
       );
     });
     setResults(results);
