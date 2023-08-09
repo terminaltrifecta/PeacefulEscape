@@ -51,15 +51,16 @@ export default function Southfield() {
               <hr className="border-yellow" />
               <div className="reviewBody grid gap-5 md:grid-cols-2">
                 <p>
-                  "We enjoyed our stayed. Ralf was very attentive and always
-                  made sure we didn't have any questions or needed anything.
-                  GREAT HOST!" - Yaleb, a past customer
+                  &quot;We enjoyed our stayed. Ralf was very attentive and
+                  always made sure we didn&apos;t have any questions or needed
+                  anything. GREAT HOST!&quot; - Yaleb, a past customer
                 </p>
                 <p>
-                  "Mr. Raf responded quickly. He made my family feel comfortable
-                  in his home. He is extremely kind and welcoming! Nice clean
-                  home, we didn’t have any issues! This home was perfect for our
-                  family trip to Michigan." - Dominque, another past customer
+                  &quot;Mr. Raf responded quickly. He made my family feel
+                  comfortable in his home. He is extremely kind and welcoming!
+                  Nice clean home, we didn&apos;t have any issues! This home was
+                  perfect for our family trip to Michigan.&quot; - Dominque,
+                  another past customer
                 </p>
               </div>
             </div>
@@ -83,8 +84,8 @@ export default function Southfield() {
                   <div>
                     As a precautionary measure, security cameras are installed
                     outside of the house. The house has a keyless padlock for
-                    the convenience of my guests, so there's no need to carry a
-                    key around or worry about losing it.
+                    the convenience of my guests, so there&apos;s no need to
+                    carry a key around or worry about losing it.
                   </div>
                 </div>
               </div>
@@ -113,7 +114,9 @@ export default function Southfield() {
                     <h3 className="font-bold text-lg">Bedroom and laundry</h3>
                     <li className="list-inside">Free washer - In unit</li>
                     <li className="list-inside">Free dryer - In unit</li>
-                    <li className="list-inside">Essentials (Towels, bed sheets, soap, toilet paper)</li>
+                    <li className="list-inside">
+                      Essentials (Towels, bed sheets, soap, toilet paper)
+                    </li>
                     <li className="list-inside">Hangers</li>
                     <li className="list-inside">Bed linens</li>
                     <li className="list-inside">Extra pillows and blankets</li>
@@ -122,12 +125,14 @@ export default function Southfield() {
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Entertainment</h3>
-                    <li className="list-inside">65" TV</li>
+                    <li className="list-inside">65&quot; TV</li>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Family</h3>
-                    <li className="list-inside">Standard crib (52 inches long x 28 inches wide)</li>
-                    <li className="list-inside">Children's dinnerware</li>
+                    <li className="list-inside">
+                      Standard crib (52 inches long x 28 inches wide)
+                    </li>
+                    <li className="list-inside">Children&apos;s dinnerware</li>
                     <li className="list-inside">Baby safety gates</li>
                   </div>
                   <div className="p-4">
@@ -138,7 +143,9 @@ export default function Southfield() {
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Home safety</h3>
-                    <li className="list-inside">Security cameras on property</li>
+                    <li className="list-inside">
+                      Security cameras on property
+                    </li>
                     <li className="list-inside">Smoke alarm</li>
                     <li className="list-inside">Carbon monoxide alarm</li>
                     <li className="list-inside">Fire extinguisher</li>
@@ -154,7 +161,9 @@ export default function Southfield() {
                     <li className="list-inside">Kitchen</li>
                     <li className="list-inside">Refrigerator</li>
                     <li className="list-inside">Microwave</li>
-                    <li className="list-inside">Cooking basics (Pots, pans, oil, salt, pepper)</li>
+                    <li className="list-inside">
+                      Cooking basics (Pots, pans, oil, salt, pepper)
+                    </li>
                     <li className="list-inside">
                       Dishes and silverware (Bowls, chopsticks, plates, cups,
                       etc.)
@@ -177,7 +186,9 @@ export default function Southfield() {
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Outdoor</h3>
                     <li className="list-inside">Private patio or balcony</li>
-                    <li className="list-inside">Fully fenced private backyard</li>
+                    <li className="list-inside">
+                      Fully fenced private backyard
+                    </li>
                     <li className="list-inside">Outdoor furniture</li>
                     <li className="list-inside">Outdoor dining area</li>
                     <li className="list-inside">BBQ grill</li>
@@ -203,21 +214,22 @@ export default function Southfield() {
               </form>
             </dialog>
           </div>
+          
           <div className="md:col-start-4 md:col-span-2">
             <div className="grid sticky top-20 gap-5">
               <div className="card shadow-2xl bg-neutral">
-                <Calendar/>
+                <Calendar />
               </div>
-              
-              <Priceblock
-              minGuests={1}
-              maxGuests={14}
-              minNights={1}
-              maxNights={30}
-              basePricePerNight={230}
-              extraGuestChargePerNight={15}
-              guestThresholdForExtraCharge={5} />
 
+              <Priceblock
+                minGuests={1}
+                maxGuests={14}
+                minNights={1}
+                maxNights={30}
+                basePricePerNight={230}
+                extraGuestChargePerNight={15}
+                guestThresholdForExtraCharge={5}
+              />
             </div>
           </div>
         </div>

@@ -7,6 +7,7 @@ export default function Document() {
         <script
           src="https://apis.google.com/js/api.js"
           type="text/javascript"
+          async
         ></script>
       </Head>
       <body>

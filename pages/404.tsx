@@ -10,7 +10,7 @@ export default function Home() {
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Error 404</h1>
             <p className="py-6">
-              Sorry this page DOESN'T exist. Maybe some other time!
+              Sorry this page DOESNT exist. Maybe some other time!
             </p>
           </div>
         </div>

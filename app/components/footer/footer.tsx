@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -12,24 +13,24 @@ export default function Footer() {
       </div>
       <div>
         <span className="footer-title">Locations</span>
-        <a href="/roseville" className="link link-hover">
+        <Link href="/roseville" className="link link-hover">
           Roseville Loft
-        </a>
-        <a href="/southfield" className="link link-hover">
+        </Link>
+        <Link href="/southfield" className="link link-hover">
           Southfield Home
-        </a>
-        <a href="/warreneast" className="link link-hover">
+        </Link>
+        <Link href="/warreneast" className="link link-hover">
           Warren Home (East)
-        </a>
-        <a href="/warrenwest" className="link link-hover">
+        </Link>
+        <Link href="/warrenwest" className="link link-hover">
           Warren Home (West)
-        </a>
+        </Link>
       </div>
       <div>
         <span className="footer-title">Who are we?</span>
-        <a href="/about" className="link link-hover">
+        <Link href="/about" className="link link-hover">
           About us
-        </a>
+        </Link>
       </div>
     </footer>
   );

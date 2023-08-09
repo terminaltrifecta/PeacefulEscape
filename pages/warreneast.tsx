@@ -16,19 +16,19 @@ export default function Southfield() {
         </div>
 
         <div className="text-2xl font-bold  text-center justify-center">
-        15 guests · 3 bedrooms · 3 beds · 2.5 baths
+          15 guests · 3 bedrooms · 3 beds · 2.5 baths
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-5 justify-center gap-5">
           <div className="col-span-1 md:col-span-3 grid gap-5">
             <div className="shadow-2xl slideshow p-4 bg-neutral w-full join grid gap-2">
               <Slideshow
-                slide2="/assets/warrenEastLocation/warrenEast1.webp"
-                slide1="/assets/warrenEastLocation/warrenEast2.webp"
-                slide3="/assets/warrenEastLocation/warrenEast3.webp"
-                slide4="/assets/warrenEastLocation/warrenEast4.webp"
-                slide5="/assets/warrenEastLocation/warrenEast5.webp"
-                slide6="/assets/warrenEastLocation/warrenEast6.webp"
+                slide2="/assets/warrenEastLocation/warreneast1.webp"
+                slide1="/assets/warrenEastLocation/warreneast2.webp"
+                slide3="/assets/warrenEastLocation/warreneast3.webp"
+                slide4="/assets/warrenEastLocation/warreneast4.webp"
+                slide5="/assets/warrenEastLocation/warreneast5.webp"
+                slide6="/assets/warrenEastLocation/warreneast6.webp"
               />
             </div>
             <hr className="border-secondary" />
@@ -40,7 +40,7 @@ export default function Southfield() {
                 city. Residents will enjoy an abundance of attractions near the
                 house while relaxing in a quiet neighborhood. The property is
                 within proximity to the local hospital as well as shopping
-                malls. Washer and dryer in unit, Clean fresh towels, 65" Smart
+                malls. Washer and dryer in unit, Clean fresh towels, 65&quot; Smart
                 TV, and a fully equipped kitchen to enjoy. This home is owned by
                 a super host, so expect an exceptional stay.
               </div>
@@ -53,15 +53,16 @@ export default function Southfield() {
               <hr className="border-yellow" />
               <div className="reviewBody grid gap-5 md:grid-cols-2">
                 <p>
-                  "We enjoyed our stayed. Ralf was very attentive and always
-                  made sure we didn't have any questions or needed anything.
-                  GREAT HOST!" - Yaleb, a past customer
+                  &quot;We enjoyed our stayed. Ralf was very attentive and
+                  always made sure we didn&apos;t have any questions or needed
+                  anything. GREAT HOST!&quot; - Yaleb, a past customer
                 </p>
                 <p>
-                  "Mr. Raf responded quickly. He made my family feel comfortable
-                  in his home. He is extremely kind and welcoming! Nice clean
-                  home, we didn’t have any issues! This home was perfect for our
-                  family trip to Michigan." - Dominque, another past customer
+                  &quot;Mr. Raf responded quickly. He made my family feel
+                  comfortable in his home. He is extremely kind and welcoming!
+                  Nice clean home, we didn&apos;t have any issues! This home was
+                  perfect for our family trip to Michigan.&quot; - Dominque,
+                  another past customer
                 </p>
               </div>
             </div>
@@ -75,17 +76,19 @@ export default function Southfield() {
               <div className="grid gap-5 md:grid-cols-2">
                 <div className="p-2">
                   <div className="font-bold">House rules</div>
-                    <li className="list-inside">Check-in after 5:00 PM</li>
-                    <li className="list-inside">Checkout before 11:00 AM</li>
-                    <li className="list-inside">Self check-in with keypad</li>
-                    <li className="list-inside">15 guests maximum</li>
-                    <li className="list-inside">Pets allowed</li>
-                    <li className="list-inside">No smoking</li>
+                  <li className="list-inside">Check-in after 5:00 PM</li>
+                  <li className="list-inside">Checkout before 11:00 AM</li>
+                  <li className="list-inside">Self check-in with keypad</li>
+                  <li className="list-inside">15 guests maximum</li>
+                  <li className="list-inside">Pets allowed</li>
+                  <li className="list-inside">No smoking</li>
                 </div>
                 <div className="p-2">
                   <div className="font-bold">Safety & property</div>
-                    <li className="list-inside">Carbon monoxide alarm installed</li>
-                    <li className="list-inside">Smoke alarm installed</li>
+                  <li className="list-inside">
+                    Carbon monoxide alarm installed
+                  </li>
+                  <li className="list-inside">Smoke alarm installed</li>
                 </div>
               </div>
             </div>
@@ -113,7 +116,9 @@ export default function Southfield() {
                     <h3 className="font-bold text-lg">Bedroom and laundry</h3>
                     <li className="list-inside">Free washer - In unit</li>
                     <li className="list-inside">Free dryer - In unit</li>
-                    <li className="list-inside">Essentials (Towels, bed sheets, soap, toilet paper)</li>
+                    <li className="list-inside">
+                      Essentials (Towels, bed sheets, soap, toilet paper)
+                    </li>
                     <li className="list-inside">Hangers</li>
                     <li className="list-inside">Bed linens</li>
                     <li className="list-inside">Extra pillows and blankets</li>
@@ -152,7 +157,9 @@ export default function Southfield() {
                     <li className="list-inside">Kitchen</li>
                     <li className="list-inside">Refrigerator</li>
                     <li className="list-inside">Microwave</li>
-                    <li className="list-inside">Cooking basics (Pots, pans, oil, salt, pepper)</li>
+                    <li className="list-inside">
+                      Cooking basics (Pots, pans, oil, salt, pepper)
+                    </li>
                     <li className="list-inside">
                       Dishes and silverware (Bowls, chopsticks, plates, cups,
                       etc.)
@@ -178,7 +185,9 @@ export default function Southfield() {
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Outdoor</h3>
                     <li className="list-inside">Shared patio or balcony</li>
-                    <li className="list-inside">Fully fenced private backyard</li>
+                    <li className="list-inside">
+                      Fully fenced private backyard
+                    </li>
                     <li className="list-inside">BBQ grill</li>
                   </div>
                   <div className="p-4">
@@ -192,13 +201,17 @@ export default function Southfield() {
                     <h3 className="font-bold text-lg">Services</h3>
                     <li className="list-inside">Pets allowed</li>
                     <li className="list-inside">Luggage dropoff allowed</li>
-                    <li className="list-inside">Long term stays allowed (28 days or more)</li>
+                    <li className="list-inside">
+                      Long term stays allowed (28 days or more)
+                    </li>
                     <li className="list-inside">Self check-in</li>
                     <li className="list-inside">Keypad</li>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Not included</h3>
-                    <li className="list-inside">Security cameras on property</li>
+                    <li className="list-inside">
+                      Security cameras on property
+                    </li>
                   </div>
                 </div>
               </form>

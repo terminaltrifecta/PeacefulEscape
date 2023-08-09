@@ -4,6 +4,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import PublicIcon from "@mui/icons-material/Public";
 import Contact from "@/app/components/Contact/contact";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -20,7 +21,7 @@ export default function About() {
           <div className="h-fit p-8 rounded-xl flex flex-col gap-6 lg:flex-row bg-primary shadow-2xl text-primary-content">
             <div className="avatar justify-center p-4 col-span-2">
               <div className="rounded-full ring ring-primary-content ring-offset-2">
-                <img src="/assets/raf.jpg" alt="" />
+                <Image src="/assets/raf.jpg" alt="" />
               </div>
             </div>
             <div className="col-span-1 flex flex-col gap-1">
