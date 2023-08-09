@@ -49,15 +49,16 @@ export default function Southfield() {
               <hr className="border-yellow" />
               <div className="reviewBody grid gap-5 md:grid-cols-2">
                 <p>
-                  "We enjoyed our stayed. Ralf was very attentive and always
-                  made sure we didn't have any questions or needed anything.
-                  GREAT HOST!" - Yaleb, a past customer
+                  &quot;We enjoyed our stayed. Ralf was very attentive and
+                  always made sure we didn&apos;t have any questions or needed
+                  anything. GREAT HOST!&quot; - Yaleb, a past customer
                 </p>
                 <p>
-                  "Mr. Raf responded quickly. He made my family feel comfortable
-                  in his home. He is extremely kind and welcoming! Nice clean
-                  home, we didn’t have any issues! This home was perfect for our
-                  family trip to Michigan." - Dominque, another past customer
+                  &quot;Mr. Raf responded quickly. He made my family feel
+                  comfortable in his home. He is extremely kind and welcoming!
+                  Nice clean home, we didn&apos;t have any issues! This home was
+                  perfect for our family trip to Michigan.&quot; - Dominque,
+                  another past customer
                 </p>
               </div>
             </div>
@@ -76,14 +77,20 @@ export default function Southfield() {
                   <li className="list-inside">Self check-in with keypad</li>
                   <li className="list-inside">2 guests maximum</li>
                   <li className="list-inside">Pets allowed</li>
-                  <li className="list-inside">Quiet hours: 9:00 PM - 8:00 AM</li>
+                  <li className="list-inside">
+                    Quiet hours: 9:00 PM - 8:00 AM
+                  </li>
                   <li className="list-inside">No parties or events</li>
-                  <li className="list-inside">Commercial photography allowed</li>
+                  <li className="list-inside">
+                    Commercial photography allowed
+                  </li>
                   <li className="list-inside">No smoking</li>
                 </div>
                 <div className="p-2">
                   <div className="font-bold">Safety & Property</div>
-                  <li className="list-inside">Carbon monoxide alarm installed</li>
+                  <li className="list-inside">
+                    Carbon monoxide alarm installed
+                  </li>
                   <li className="list-inside">Smoke alarm installed</li>
                   <li className="list-inside">
                     Some spaces are shared: Kitchen, living room, backyard, and
@@ -115,7 +122,9 @@ export default function Southfield() {
                     <h3 className="font-bold text-lg">Bedroom and laundry</h3>
                     <li className="list-inside">Free washer - In unit</li>
                     <li className="list-inside">Free dryer - In unit</li>
-                    <li className="list-inside">Essentials (Towels, bed sheets, soap, toilet paper)</li>
+                    <li className="list-inside">
+                      Essentials (Towels, bed sheets, soap, toilet paper)
+                    </li>
                     <li className="list-inside">Hangers</li>
                     <li className="list-inside">Bed linens</li>
                     <li className="list-inside">Extra pillows and blankets</li>
@@ -126,7 +135,7 @@ export default function Southfield() {
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Entertainment</h3>
                     <li className="list-inside">
-                      43" TV with Hulu, Roku, Amazon Prime Video, Netflix, Apple
+                      43&quot; TV with Hulu, Roku, Amazon Prime Video, Netflix, Apple
                       TV
                     </li>
                   </div>
@@ -157,14 +166,18 @@ export default function Southfield() {
                     <li className="list-inside">Kitchen</li>
                     <li className="list-inside">Refrigerator</li>
                     <li className="list-inside">Microwave</li>
-                    <li className="list-inside">Cooking basics (Pots, pans, oil, salt, pepper)</li>
+                    <li className="list-inside">
+                      Cooking basics (Pots, pans, oil, salt, pepper)
+                    </li>
                     <li className="list-inside">
                       Dishes and silverware (Bowls, chopsticks, plates, cups,
                       etc.)
                     </li>
                     <li className="list-inside">Freezer</li>
                     <li className="list-inside">Dishwasher</li>
-                    <li className="list-inside">Frigidaire stainless steel gas stove</li>
+                    <li className="list-inside">
+                      Frigidaire stainless steel gas stove
+                    </li>
                     <li className="list-inside">Coffee maker</li>
                     <li className="list-inside">Wine glasses</li>
                     <li className="list-inside">Dining table</li>
@@ -176,7 +189,9 @@ export default function Southfield() {
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Outdoor</h3>
                     <li className="list-inside">Shared patio or balcony</li>
-                    <li className="list-inside">Fully fenced private backyard</li>
+                    <li className="list-inside">
+                      Fully fenced private backyard
+                    </li>
                     <li className="list-inside">Outdoor furniture</li>
                   </div>
                   <div className="p-4">
@@ -195,7 +210,9 @@ export default function Southfield() {
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Not included</h3>
-                    <li className="list-inside">Security cameras on property</li>
+                    <li className="list-inside">
+                      Security cameras on property
+                    </li>
                     <li className="list-inside">Private entrance</li>
                   </div>
                 </div>

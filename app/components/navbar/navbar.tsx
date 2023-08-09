@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
-import { json } from "stream/consumers";
 import Searchbar from "../searchbar/searchbar";
 import Searchresultslist from "../searchbar/searchresultslist";
+import Image from "next/image";
 
 const Navbar = () => {
 
@@ -13,10 +12,12 @@ const Navbar = () => {
     <div className="p-0 navbar sticky top-0 bg-primary z-50 text-white">
       <div className="w-1/3 justify-start">
         <Link href="/">
-          <img
+          <Image
             alt=""
             src="/assets/peaceful.png"
             className=" p-0 btn btn-ghost h-16 pl-2"
+            width="140"
+            height="100"
           />
         </Link>
       </div>

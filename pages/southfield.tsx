@@ -50,16 +50,17 @@ export default function Southfield() {
               </div>
               <hr className="border-yellow" />
               <div className="reviewBody grid gap-5 md:grid-cols-2">
-                <p>
-                  "We enjoyed our stayed. Ralf was very attentive and always
-                  made sure we didn't have any questions or needed anything.
-                  GREAT HOST!" - Yaleb, a past customer
+               <p>
+                  &quot;We enjoyed our stayed. Ralf was very attentive and
+                  always made sure we didn&apos;t have any questions or needed
+                  anything. GREAT HOST!&quot; - Yaleb, a past customer
                 </p>
                 <p>
-                  "Mr. Raf responded quickly. He made my family feel comfortable
-                  in his home. He is extremely kind and welcoming! Nice clean
-                  home, we didn’t have any issues! This home was perfect for our
-                  family trip to Michigan." - Dominque, another past customer
+                  &quot;Mr. Raf responded quickly. He made my family feel
+                  comfortable in his home. He is extremely kind and welcoming!
+                  Nice clean home, we didn&apos;t have any issues! This home was
+                  perfect for our family trip to Michigan.&quot; - Dominque,
+                  another past customer
                 </p>
               </div>
             </div>
@@ -83,7 +84,7 @@ export default function Southfield() {
                   <div>
                     As a precautionary measure, security cameras are installed
                     outside of the house. The house has a keyless padlock for
-                    the convenience of my guests, so there's no need to carry a
+                    the convenience of my guests, so there&apos;s no need to carry a
                     key around or worry about losing it.
                   </div>
                 </div>
@@ -122,12 +123,12 @@ export default function Southfield() {
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Entertainment</h3>
-                    <li className="list-inside">65" TV</li>
+                    <li className="list-inside">65&quot; TV</li>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Family</h3>
                     <li className="list-inside">Standard crib (52 inches long x 28 inches wide)</li>
-                    <li className="list-inside">Children's dinnerware</li>
+                    <li className="list-inside">Children&apos;s dinnerware</li>
                     <li className="list-inside">Baby safety gates</li>
                   </div>
                   <div className="p-4">

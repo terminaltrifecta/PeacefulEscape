@@ -53,15 +53,16 @@ export default function Southfield() {
               <hr className="border-yellow" />
               <div className="reviewBody grid gap-5 md:grid-cols-2">
                 <p>
-                  "We enjoyed our stayed. Ralf was very attentive and always
-                  made sure we didn't have any questions or needed anything.
-                  GREAT HOST!" - Yaleb, a past customer
+                  &quot;We enjoyed our stayed. Ralf was very attentive and
+                  always made sure we didn&apos;t have any questions or needed
+                  anything. GREAT HOST!&quot; - Yaleb, a past customer
                 </p>
                 <p>
-                  "Mr. Raf responded quickly. He made my family feel comfortable
-                  in his home. He is extremely kind and welcoming! Nice clean
-                  home, we didn’t have any issues! This home was perfect for our
-                  family trip to Michigan." - Dominque, another past customer
+                  &quot;Mr. Raf responded quickly. He made my family feel
+                  comfortable in his home. He is extremely kind and welcoming!
+                  Nice clean home, we didn&apos;t have any issues! This home was
+                  perfect for our family trip to Michigan.&quot; - Dominque,
+                  another past customer
                 </p>
               </div>
             </div>
