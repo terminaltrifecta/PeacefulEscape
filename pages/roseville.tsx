@@ -10,7 +10,9 @@ export default function Southfield() {
         <div className="text-5xl font-bold  text-center justify-center">
           Modern Spacious Loft
         </div>
-
+        <div className="text-lg lg:text-2xl font-thin  text-center justify-center">
+          Roseville, Michigan
+        </div>
         <div className="text-2xl font-bold  text-center justify-center">
           8 guests · 2 bedrooms · 3 beds · 1 bath
         </div>

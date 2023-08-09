@@ -14,7 +14,9 @@ export default function Southfield() {
         <div className="text-5xl font-bold  text-center justify-center">
           Cheerful Bedroom in a Cozy Home
         </div>
-
+        <div className="text-lg lg:text-2xl font-thin  text-center justify-center">
+          Warren, Michigan
+        </div>
         <div className="text-2xl font-bold  text-center justify-center">
           2 guests · 1 bedrooms · 1 bed · Shared bathroom
         </div>
@@ -135,8 +137,8 @@ export default function Southfield() {
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Entertainment</h3>
                     <li className="list-inside">
-                      43&quot; TV with Hulu, Roku, Amazon Prime Video, Netflix, Apple
-                      TV
+                      43&quot; TV with Hulu, Roku, Amazon Prime Video, Netflix,
+                      Apple TV
                     </li>
                   </div>
                   <div className="p-4">
