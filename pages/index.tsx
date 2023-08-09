@@ -26,7 +26,7 @@ export default function Home() {
             headerText="Cheerful Bedroom in a Cozy Home (West Warren)"
             paragraphText="Enjoy this spacious, newly remodeled house in the heart of Warren City. Residents will appreciate an abundance of attractions near the house while enjoying the tranquility of a quiet neighborhood. The property is close to the local hospital, as well as shopping malls. Washer and dryer are available in the unit, along with clean, fresh towels, a 65-inch Smart TV, and a fully equipped kitchen for your enjoyment. This home is owned by a super host, so you can expect an exceptional stay. The location is further west on 12 Mile Road."
             buttonText="Check It Out!"
-            imagePath="/assets/warrenWestLocation/warrenWest1.webp"
+            imagePath="/assets/warrenWestLocation/warrenwest1.webp"
             buttonPath="/warrenwest"
             hasButton="true"
             hasImage="true"
