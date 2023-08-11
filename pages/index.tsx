@@ -58,6 +58,8 @@ export default function Home() {
             buttonText="Check It Out!"
             hasImage="true"
             hasButton="true"
+            buttonPath="/rosevilleaprt"
+            imagePath="/assets/rosevilleAprtLocation/rosevilleAprt1.jpg"
           />
         </div>
       </div>

@@ -8,7 +8,7 @@ export default function Southfield() {
     <div className="justify-center flex">
       <div className="bgpattern bg-base-100 grid p-9 gap-9 justify-between">
         <div className="text-5xl font-bold  text-center justify-center">
-          Sunny, stylish, private apartment in the city
+          Sunny, Stylish, Private Apartment in the City
         </div>
         <div className="text-lg lg:text-2xl font-thin  text-center justify-center">
           Roseville, Michigan
@@ -37,8 +37,8 @@ export default function Southfield() {
                 This apartment is safe, private, and recently remodeled,
                 situated on the second level with its own private entrance. The
                 apartment features an open concept design and is fully equipped
-                with brand new appliances, an iron, new furniture, a 50&quot; TV, a
-                washer & dryer, and plenty of comfortable bedding. It is
+                with brand new appliances, an iron, new furniture, a 50&quot;
+                TV, a washer & dryer, and plenty of comfortable bedding. It is
                 conveniently located in the heart of the city, within walking
                 distance to shops and restaurants.
               </div>
@@ -90,11 +90,13 @@ export default function Southfield() {
                     Carbon monoxide alarm installed
                   </li>
                   <li className="list-inside">Smoke alarm installed</li>
+
                   <li className="list-inside">
-                    Potential noise during the day
+                    Guests must climb 11 flights of stairs
                   </li>
                   <li className="list-inside">
-                    Apartment is on the second floor, guests must climb stairs.
+                    Limited facilities in the kitchenette area. Not designed for
+                    major cooking
                   </li>
                 </div>
               </div>
@@ -136,10 +138,10 @@ export default function Southfield() {
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">Heating and cooling</h3>
-                        <li className="list-inside">Central air conditioning</li>
-                        <li className="list-inside">Heating</li>
-                      </div>
-                      <div className="p-4">
+                    <li className="list-inside">Central air conditioning</li>
+                    <li className="list-inside">Heating</li>
+                  </div>
+                  <div className="p-4">
                     <h3 className="font-bold text-lg">Home safety</h3>
                     <li className="list-inside">
                       Security cameras on property (outside of property)
@@ -178,7 +180,7 @@ export default function Southfield() {
                     <li className="list-inside">Wine Glasses</li>
                     <li className="list-inside">Coffee</li>
                   </div>
-                  
+
                   <div className="p-4">
                     <h3 className="font-bold text-lg">
                       Parking and facilities
@@ -210,7 +212,7 @@ export default function Southfield() {
               <Priceblock
                 minGuests={1}
                 maxGuests={6}
-                minNights={1}
+                minNights={30}
                 maxNights={30}
                 basePricePerNight={118}
                 extraGuestChargePerNight={30}

@@ -32,6 +32,13 @@ export default function Searchbar({ setResults }: any) {
       href: "/warreneast",
       image: "/assets/warrenEastLocation/warreneast1.webp",
     },
+    {
+      id: 5,
+      name: "Sunny, Stylish, Private Apartment in the City",
+      location: "Roseville, Michigan",
+      href: "/rosevilleaprt",
+      image: "/assets/rosevilleAprtLocation/rosevilleAprt1.jpg",
+    },
   ];
 
   const fetchData = (value: any) => {
