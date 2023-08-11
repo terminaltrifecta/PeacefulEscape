@@ -9,11 +9,11 @@ export default function Contact() {
       <hr className="border-yellow" />
       <div className="flex ">
         <PhoneIcon className="h-6"/>
-        <div>(586) 907-6261</div>
+        <div>(248) 892-6270</div>
       </div>
       <div className="flex ">
         <EmailIcon className="h-6"/>
-        <div>gmandwee@gmail.com</div>
+        <div>peacefulescapesaccomodations@gmail.com</div>
       </div>
       
     </div>

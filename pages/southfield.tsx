@@ -14,7 +14,9 @@ export default function Southfield() {
         <div className="text-2xl lg:text-5xl font-bold  text-center justify-center">
           Exotic Mediterranian Oasis
         </div>
-
+        <div className="text-lg lg:text-2xl font-thin  text-center justify-center">
+          Southfield, Michigan
+        </div>
         <div className="text-lg lg:text-2xl font-thin  text-center justify-center">
           14 guests · 5 bedrooms · 5 beds · 2.5 baths
         </div>

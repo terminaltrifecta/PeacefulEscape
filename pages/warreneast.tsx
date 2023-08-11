@@ -14,7 +14,9 @@ export default function Southfield() {
         <div className="text-5xl font-bold  text-center justify-center">
           Comfortable Home in a Quiet Neighborhood
         </div>
-
+        <div className="text-lg lg:text-2xl font-thin  text-center justify-center">
+          Warren, Michigan
+        </div>
         <div className="text-2xl font-bold  text-center justify-center">
           15 guests · 3 bedrooms · 3 beds · 2.5 baths
         </div>
