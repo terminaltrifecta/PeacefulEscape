@@ -94,6 +94,16 @@ export default function Southfield() {
             </div>
             <hr className="border-secondary" />
 
+            <div className="p-4 gap-5 card bg-neutral text-accent-content flex md:flex-row">
+              <div className="font-bold">House Rules</div>
+              <div>
+                Check-ins are after 5:00 PM and Checkouts are before 11:00 AM.
+                There is a self check-in with keypad. During your stay, 14
+                guests are allowed, maximum. Pets are allowed. Quiet hours are
+                9:00 PM - 8:00 AM. Commercial photography allowed. No smoking.
+              </div>
+            </div>
+
             <Modal id="2" />
 
             <dialog id="my_modal_2" className="modal">
@@ -216,7 +226,7 @@ export default function Southfield() {
               </form>
             </dialog>
           </div>
-          
+
           <div className="md:col-start-4 md:col-span-2">
             <div className="grid sticky top-20 gap-5">
               <div className="card shadow-2xl bg-neutral">
