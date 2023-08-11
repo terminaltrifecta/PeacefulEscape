@@ -4,18 +4,22 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="hero h-screen text-accent-content">
-      <div className="min-w-fit w-3/4 flex items-center justify-center card -translate-y-10 z-10">
-        <div className="grid gap-4 text-center">
-          <div className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-neutral stroke">
-            Peaceful Escapes
+    <div className="justify-center text-center items-center -translate-y-16 lg:justify-start lg:text-left lg: lg:items-start lg:-translate-y-0 flex h-screen text-accent-content">
+      <div className="lg:pl-16 lg:pt-24 min-w-fit min-h-fit h-fit flex card z-10">
+        <div className="grid gap-4">
+          <div className="grid">
+            <div className="font-sans text-2xl lg:text-7xl font-extrabold text-neutral stroke">
+              Peaceful Escapes
+            </div>
+            <div className="font-sans text-2xl lg:text-7xl font-extrabold text-neutral stroke">
+              Accomodation
+            </div>
           </div>
-          <div className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-neutral stroke">
-            Accommodation
+          <div className="text-sm lg:text-2xl tracking-widest font-sans font-light text-neutral">
+            Making people feel at home.
           </div>
-          <br />
           <Link href="/about">
-            <button className="btn btn-primary btn-wide text-primary-content text-sm md:text-base lg:text-lg">
+            <button className="w-full btn btn-primary text-primary-content">
               Learn More
             </button>
           </Link>
@@ -23,7 +27,7 @@ export default function Hero() {
       </div>
 
       <Image
-        src="/assets/home.jpg"
+        src="/assets/home2.jpg"
         fill={true}
         alt=""
         className="w-fit mix-blend-multiply object-cover"

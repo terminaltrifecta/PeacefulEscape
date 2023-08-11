@@ -11,16 +11,17 @@ export default function Southfield() {
   return (
     <div className="justify-center flex">
       <div className="bgpattern bg-base-100 grid p-9 gap-9 justify-between">
-        <div className="text-5xl font-bold  text-center justify-center">
-          Cheerful Bedroom in a Cozy Home
+        <div className="grid gap-4">
+          <div className="text-3xl lg:text-5xl font-bold  text-center justify-center">
+            Cheerful Bedroom in a Cozy Home
+          </div>
+          <div className="text-lg lg:text-2xl font-thin text-center justify-center">
+            Warren, Michigan
+          </div>
+          <div className="text-lg lg:text-2xl font-thin text-center justify-center">
+            2 guests · 1 bedrooms · 1 bed · Shared bathroom
+          </div>
         </div>
-        <div className="text-lg lg:text-2xl font-thin  text-center justify-center">
-          Warren, Michigan
-        </div>
-        <div className="text-2xl font-bold  text-center justify-center">
-          2 guests · 1 bedrooms · 1 bed · Shared bathroom
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-5 justify-center gap-5">
           <div className="col-span-1 md:col-span-3 grid gap-5">
             <div className="shadow-2xl slideshow p-4 bg-neutral w-full join grid gap-2">

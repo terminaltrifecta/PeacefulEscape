@@ -18,10 +18,10 @@ export default function About() {
           </div>
         </div>
         <div className="grid gap-4">
-          <div className="h-fit p-8 rounded-xl flex flex-col gap-6 lg:flex-row bg-primary shadow-2xl text-primary-content">
-            <div className="avatar justify-center p-4 col-span-2">
+          <div className="p-8 rounded-xl flex flex-col gap-6 xl:flex-row bg-primary shadow-2xl text-primary-content">
+            <div className="w-56 h-56 avatar justify-center p-4 col-span-2">
               <div className="rounded-full ring ring-primary-content ring-offset-2">
-                <Image src="/assets/raf.jpg" alt="" />
+                <Image width={128} height={128} src="/assets/raf.jpg" alt="" />
               </div>
             </div>
             <div className="col-span-1 flex flex-col gap-1">

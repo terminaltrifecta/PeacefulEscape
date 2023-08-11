@@ -7,14 +7,16 @@ export default function Southfield() {
   return (
     <div className="justify-center flex">
       <div className="bgpattern bg-base-100 grid p-9 gap-9 justify-between">
-        <div className="text-5xl font-bold  text-center justify-center">
-          Modern Spacious Loft
-        </div>
-        <div className="text-lg lg:text-2xl font-thin  text-center justify-center">
-          Roseville, Michigan
-        </div>
-        <div className="text-2xl font-bold  text-center justify-center">
-          8 guests · 2 bedrooms · 3 beds · 1 bath
+        <div className="grid gap-4">
+          <div className="text-3xl lg:text-5xl font-bold  text-center justify-center">
+            Modern Spacious Loft
+          </div>
+          <div className="text-lg lg:text-2xl font-thin text-center justify-center">
+            Roseville, Michigan
+          </div>
+          <div className="text-lg lg:text-2xl font-thin text-center justify-center">
+            8 guests · 2 bedrooms · 3 beds · 1 bath
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-5 justify-center gap-5">
@@ -100,7 +102,6 @@ export default function Southfield() {
               </div>
             </div>
             <hr className="border-secondary" />
-
 
             <Modal id="3" />
 
@@ -199,7 +200,7 @@ export default function Southfield() {
               </form>
             </dialog>
           </div>
-          
+
           <div className="md:col-start-4 md:col-span-2">
             <div className="grid sticky top-20 gap-5">
               <div className="card shadow-2xl bg-neutral">

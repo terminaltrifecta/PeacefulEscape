@@ -41,11 +41,12 @@ export default function Calendar() {
     );
     return response.json();
   }
-  
-  const {data, isFetching} = useQuery(["dates"], fetchData);
-  const isBooked = (dateCheck:any) => data?.values.some((date:any) => {
-    return (date[0] === dateCheck);
-  });
+
+  const { data, isFetching } = useQuery(["dates"], fetchData);
+  const isBooked = (dateCheck: any) =>
+    data?.values.some((date: any) => {
+      return date[0] === dateCheck;
+    });
 
   return (
     <div className="flex items-center justify-center py-8 px-4">
@@ -122,9 +123,7 @@ export default function Calendar() {
             <div className="font-light text-secondary-focus mx-auto flex h-8 w-8 items-center justify-center">
               F
             </div>
-            <div className="font-light text-secondary-focus mx-auto flex h-8 w-8 items-center justify-center">
-              S
-            </div>
+            <div className="font-light text-secondary-focus mx-auto flex h-8 w-8 items-center justify-center"></div>
 
             {newDays.map((day, dayIdx) => (
               <div
@@ -138,12 +137,16 @@ export default function Calendar() {
                   type="button"
                   className={classNames(
                     isBooked(format(day, "yyyy-MM-dd")) &&
-                    !isToday(day) && "text-base-200",
+                      !isToday(day) &&
+                      "text-base-300",
                     isBooked(format(day, "yyyy-MM-dd")) &&
-                    !isSameMonth(day, today) && "text-error",
+                      !isSameMonth(day, today) &&
+                      "text-error",
                     isSameMonth(day, today) && "text-gray-900",
-                    !isToday(day) && "bg-gray-900 hover:bg-neutral-focus",
-                    !isSameMonth(day, today) && "text-base-300",
+                    !isToday(day) && "hover:bg-neutral-focus",
+                    !isSameMonth(day, today) &&
+                      !isBooked(format(day, "yyyy-MM-dd")) &&
+                      "text-base-300",
                     isToday(day) &&
                       "font-semibold bg-secondary text-white hover:bg-secondary-focus",
                     "text-black mx-auto flex h-8 w-8 items-center justify-center rounded-full"

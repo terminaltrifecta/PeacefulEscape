@@ -11,14 +11,17 @@ export default function Southfield() {
   return (
     <div className="justify-center flex font-poppins">
       <div className="bgpattern bg-base-100 grid p-9 gap-9 justify-between">
-        <div className="text-2xl lg:text-5xl font-bold  text-center justify-center">
-          Exotic Mediterranian Oasis
-        </div>
-        <div className="text-lg lg:text-2xl font-thin  text-center justify-center">
-          Southfield, Michigan
-        </div>
-        <div className="text-lg lg:text-2xl font-thin  text-center justify-center">
-          14 guests · 5 bedrooms · 5 beds · 2.5 baths
+        
+        <div className="grid gap-4">
+          <div className="text-3xl lg:text-5xl font-bold  text-center justify-center">
+            Exotic Mediterranian Oasis
+          </div>
+          <div className="text-lg lg:text-2xl font-thin text-center justify-center">
+            Southfield, Michigan
+          </div>
+          <div className="text-lg lg:text-2xl font-thin text-center justify-center">
+            14 guests · 5 bedrooms · 5 beds · 2.5 baths
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-5 justify-center gap-5">

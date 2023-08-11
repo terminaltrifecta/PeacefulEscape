@@ -11,14 +11,16 @@ export default function Southfield() {
   return (
     <div className="justify-center flex">
       <div className="bgpattern bg-base-100 grid p-9 gap-9 justify-between">
-        <div className="text-5xl font-bold  text-center justify-center">
-          Comfortable Home in a Quiet Neighborhood
-        </div>
-        <div className="text-lg lg:text-2xl font-thin  text-center justify-center">
-          Warren, Michigan
-        </div>
-        <div className="text-2xl font-bold  text-center justify-center">
-          15 guests · 3 bedrooms · 3 beds · 2.5 baths
+        <div className="grid gap-4">
+          <div className="text-3xl lg:text-5xl font-bold  text-center justify-center">
+            Comfortable Home in a Quiet Neighborhood
+          </div>
+          <div className="text-lg lg:text-2xl font-thin text-center justify-center">
+            Warren, Michigan
+          </div>
+          <div className="text-lg lg:text-2xl font-thin text-center justify-center">
+            15 guests · 3 bedrooms · 3 beds · 2.5 baths
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-5 justify-center gap-5">
@@ -42,9 +44,9 @@ export default function Southfield() {
                 city. Residents will enjoy an abundance of attractions near the
                 house while relaxing in a quiet neighborhood. The property is
                 within proximity to the local hospital as well as shopping
-                malls. Washer and dryer in unit, Clean fresh towels, 65&quot; Smart
-                TV, and a fully equipped kitchen to enjoy. This home is owned by
-                a super host, so expect an exceptional stay.
+                malls. Washer and dryer in unit, Clean fresh towels, 65&quot;
+                Smart TV, and a fully equipped kitchen to enjoy. This home is
+                owned by a super host, so expect an exceptional stay.
               </div>
             </div>
             <hr className="border-secondary" />

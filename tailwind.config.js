@@ -7,15 +7,17 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    fontFamily: 
-    {
-      'poppins': ['Poppins', 'sans-serif']
-    },
-    colors: 
-    {
-      'yellow': '#FFBD59',
-      'white': '#FFFEEA',
-    },
+    extend: {
+      fontFamily: 
+      {
+        'poppins': ['Poppins', 'sans-serif']
+      },
+      colors: 
+      {
+        'yellow': '#FFBD59',
+        'white': '#FFFEEA',
+      },
+    }
   },
   plugins: [require('daisyui')],
   daisyui: {
@@ -27,6 +29,8 @@ module.exports = {
           "accent": "#1fb2a6",
           "neutral": "#FAF8ED",
           "base-100": "#f4f3ee",
+          "base-200": "#DBD9CF",
+          "base-300": "#B4B2A5",
           "info": "#3abff8",
           "success": "#36d399",
           "warning": "#fbbd23",

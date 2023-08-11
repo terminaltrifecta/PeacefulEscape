@@ -16,7 +16,7 @@ const Navbar = () => {
             alt=""
             src="/assets/peaceful.png"
             className=" p-0 btn btn-ghost h-16 pl-2"
-            width="140"
+            width="160"
             height="100"
           />
         </Link>
