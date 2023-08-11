@@ -52,6 +52,13 @@ export default function Home() {
             hasButton="true"
             hasImage="true"
           />
+          <Card
+            headerText="sample"
+            paragraphText="sample"
+            buttonText="Check It Out!"
+            hasImage="true"
+            hasButton="true"
+          />
         </div>
       </div>
     </div>
