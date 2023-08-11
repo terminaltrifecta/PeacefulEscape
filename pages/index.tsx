@@ -53,13 +53,13 @@ export default function Home() {
             hasImage="true"
           />
           <Card
-            headerText="sample"
-            paragraphText="sample"
+            headerText="Sunny, Stylish, Private Apartment in the City (Roseville)"
+            paragraphText="Safe, private, and newly remodeled apartment on the second level with its private entrance. This open concept design apartment is fully equipped with brand new appliances, iron, brand new furniture, 50” T.V, washer & dryer, and plenty of comfortable bedding. It is located in the middle of the city with a walking distance to shops and restaurants."
             buttonText="Check It Out!"
             hasImage="true"
             hasButton="true"
             buttonPath="/rosevilleaprt"
-            imagePath="/assets/rosevilleAprtLocation/rosevilleAprt1.jpg"
+            imagePath="/assets/rosevilleAprtLocation/rosevilleAprt4.jpg"
           />
         </div>
       </div>
