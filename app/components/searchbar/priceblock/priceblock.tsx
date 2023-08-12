@@ -12,6 +12,8 @@ const Pricecard = ({
   pricePerPet = 50,
   extraGuestChargePerNight = 15,
   guestThresholdForExtraCharge = 5,
+  cleaningFee = 100,
+  securityDeposit = true
 }) => {
   const [guests, setGuests] = useState(minGuests);
   const [pets, setPets] = useState(minPets);
@@ -90,8 +92,8 @@ const Pricecard = ({
               <hr className="border-base-100" />
               <br />
               {petNode()}
-              <div className="text-xl">Cleaning Fee: $100</div>
-              <div className="text-xl">Deposit (Refundable): $850</div>
+              <div className="text-xl">Cleaning Fee: ${cleaningFee}</div>
+              {securityDeposit && <div className="text-xl">Deposit (Refundable): $850</div>}
             </div>
           </div>
 
