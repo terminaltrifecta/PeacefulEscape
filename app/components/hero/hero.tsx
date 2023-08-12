@@ -12,7 +12,7 @@ export default function Hero() {
               Peaceful Escapes
             </div>
             <div className="font-sans text-2xl lg:text-7xl font-extrabold text-neutral stroke">
-              Accomodation
+              Accommodation
             </div>
           </div>
           <div className="text-sm lg:text-2xl tracking-widest font-sans font-light text-neutral">
