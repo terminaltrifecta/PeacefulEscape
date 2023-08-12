@@ -68,7 +68,7 @@ const Pricecard = ({
 
   const calculateBasePrice = () => {
     return (
-      calculatePartialPrice() * nights + calculatePetPrice() * nights + 100
+      calculatePartialPrice() * nights + calculatePetPrice() * nights
     );
   };
 
@@ -85,12 +85,13 @@ const Pricecard = ({
           <div className="flex w-full justify-center">
             <div className="w-3/4">
               <div className="text-3xl text-center font-extrabold ">
-                Total: ${calculateBasePrice()}
+                Base Price: ${calculateBasePrice()}
               </div>
               <hr className="border-base-100" />
               <br />
               {petNode()}
               <div className="text-xl">Cleaning Fee: $100</div>
+              <div className="text-xl">Deposit (Refundable): $850</div>
             </div>
           </div>
 

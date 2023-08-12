@@ -34,6 +34,10 @@ export default function Footer() {
         <Link href="/about" className="link link-hover">
           About us
         </Link>
+        <br />
+        <div className="font-light">Designed by Terminal Trifecta</div>
+        <div className="font-light">Reach at (586) 907-6261</div>
+        <div className="font-light">or terminaltrifecta@gmail.com</div>
       </div>
     </footer>
   );

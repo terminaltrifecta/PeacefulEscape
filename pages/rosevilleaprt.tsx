@@ -22,14 +22,7 @@ export default function Southfield() {
         <div className="grid grid-cols-1 md:grid-cols-5 justify-center gap-5">
           <div className="col-span-1 md:col-span-3 grid gap-5">
             <div className="shadow-2xl slideshow p-4 bg-neutral w-full join grid gap-2">
-              <Slideshow
-                slide2="/assets/rosevilleAprtLocation/rosevilleAprt2.jpg"
-                slide1="/assets/rosevilleAprtLocation/rosevilleAprt1.jpg"
-                slide3="/assets/rosevilleAprtLocation/rosevilleAprt3.jpg"
-                slide4="/assets/rosevilleAprtLocation/rosevilleAprt4.jpg"
-                slide5="/assets/rosevilleAprtLocation/rosevilleAprt5.jpg"
-                slide6="/assets/rosevilleAprtLocation/rosevilleAprt6.jpg"
-              />
+            <Slideshow property={0} />
             </div>
             <hr className="border-secondary" />
 

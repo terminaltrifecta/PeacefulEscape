@@ -11,7 +11,6 @@ export default function Southfield() {
   return (
     <div className="justify-center flex font-poppins">
       <div className="bgpattern bg-base-100 grid p-9 gap-9 justify-between">
-        
         <div className="grid gap-4">
           <div className="text-3xl lg:text-5xl font-bold  text-center justify-center">
             Exotic Mediterranian Oasis
@@ -27,14 +26,7 @@ export default function Southfield() {
         <div className="grid grid-cols-1 md:grid-cols-5 justify-center gap-5">
           <div className="col-span-1 md:col-span-3 grid gap-5">
             <div className="shadow-2xl slideshow p-4 bg-neutral w-full join grid gap-2">
-              <Slideshow
-                slide1="/assets/southfieldLocation/southfield1.jpg"
-                slide2="/assets/southfieldLocation/southfield2.jpg"
-                slide3="/assets/southfieldLocation/southfield3.jpg"
-                slide4="/assets/southfieldLocation/southfield4.jpg"
-                slide5="/assets/southfieldLocation/southfield5.jpg"
-                slide6="/assets/southfieldLocation/southfield6.jpg"
-              />
+              <Slideshow property={2} />
             </div>
             <hr className="border-secondary" />
 

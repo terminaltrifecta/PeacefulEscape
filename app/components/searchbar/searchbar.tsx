@@ -52,7 +52,6 @@ export default function Searchbar({ setResults }: any) {
       );
     });
     setResults(results);
-    console.log(results);
   };
 
   const handleChange = (value: any) => {

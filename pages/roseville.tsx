@@ -22,14 +22,7 @@ export default function Southfield() {
         <div className="grid grid-cols-1 md:grid-cols-5 justify-center gap-5">
           <div className="col-span-1 md:col-span-3 grid gap-5">
             <div className="shadow-2xl slideshow p-4 bg-neutral w-full join grid gap-2">
-              <Slideshow
-                slide2="/assets/rosevilleLocation/roseville2.jpg"
-                slide1="/assets/rosevilleLocation/roseville1.jpg"
-                slide3="/assets/rosevilleLocation/roseville3.jpg"
-                slide4="/assets/rosevilleLocation/roseville4.jpg"
-                slide5="/assets/rosevilleLocation/roseville5.jpg"
-                slide6="/assets/rosevilleLocation/roseville6.jpg"
-              />
+              <Slideshow property={1} />
             </div>
             <hr className="border-secondary" />
 
@@ -212,7 +205,7 @@ export default function Southfield() {
                 maxGuests={14}
                 minNights={1}
                 maxNights={30}
-                basePricePerNight={230}
+                basePricePerNight={134}
                 extraGuestChargePerNight={15}
                 guestThresholdForExtraCharge={5}
               />

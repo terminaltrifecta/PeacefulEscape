@@ -37,14 +37,8 @@ function ThumbnailPlugin(mainRef: any): KeenSliderPlugin {
   };
 }
 
-export default function App({
-  slide1,
-  slide2,
-  slide3,
-  slide4,
-  slide5,
-  slide6,
-}: any) {
+export default function App({ property }: any) {
+  const dir = "" + "southfield" + "/";
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
   });
@@ -52,7 +46,7 @@ export default function App({
     {
       initial: 0,
       slides: {
-        number: 6,
+        number: propertyImages[property].length,
         perView: 4,
         spacing: 10,
       },
@@ -63,46 +57,183 @@ export default function App({
   return (
     <>
       <div ref={sliderRef} className="keen-slider row-span-3 flex w-full">
-        <div className="keen-slider__slide number-slide1">
-          <Image src={slide1} fill={true} alt="" className="object-cover" />
-        </div>
-        <div className="keen-slider__slide number-slide1">
-          <Image src={slide2} fill={true} alt="" className="object-cover" />
-        </div>
-        <div className="keen-slider__slide number-slide3">
-          <Image src={slide3} fill={true} alt="" className="object-cover" />
-        </div>
-        <div className="keen-slider__slide number-slide4">
-          <Image src={slide4} fill={true} alt="" className="object-cover" />
-        </div>
-        <div className="keen-slider__slide number-slide5">
-          <Image src={slide5} fill={true} alt="" className="object-cover" />
-        </div>
-        <div className="keen-slider__slide number-slide6">
-          <Image src={slide6} fill={true} alt="" className="object-cover" />
-        </div>
+        {propertyImages[property].map((route: any) => (
+          <div className="keen-slider__slide number-slide1" key={route}>
+            <Image
+              src={route}
+              fill={true}
+              alt=""
+              className="object-cover"
+            />
+          </div>
+        ))}
       </div>
 
       <div ref={thumbnailRef} className="keen-slider thumbnail w-full">
-        <div className="keen-slider__slide number-slide1">
-          <Image src={slide1} fill={true} alt="" className="object-cover" />
-        </div>
-        <div className="keen-slider__slide number-slide1">
-          <Image src={slide2} fill={true} alt="" className="object-cover" />
-        </div>
-        <div className="keen-slider__slide number-slide3">
-          <Image src={slide3} fill={true} alt="" className="object-cover" />
-        </div>
-        <div className="keen-slider__slide number-slide4">
-          <Image src={slide4} fill={true} alt="" className="object-cover" />
-        </div>
-        <div className="keen-slider__slide number-slide5">
-          <Image src={slide5} fill={true} alt="" className="object-cover" />
-        </div>
-        <div className="keen-slider__slide number-slide6">
-          <Image src={slide6} fill={true} alt="" className="object-cover" />
-        </div>
+        {propertyImages[property].map((route: any) => (
+          <div className="keen-slider__slide number-slide1" key={route}>
+            <Image
+              src={route}
+              fill={true}
+              alt=""
+              className="object-cover"
+            />
+          </div>
+        ))}
       </div>
     </>
   );
 }
+
+//roseville 0
+// rosevilleloft 1
+//southfield 2
+// warreneast 3
+// warrenwest 4
+
+const propertyImages = [
+  [
+    "/assets/newPropertyImages/rosevilleApartment/roseville (1).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (2).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (3).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (4).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (5).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (6).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (7).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (8).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (9).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (10).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (11).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (12).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (13).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (14).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (15).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (16).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (17).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (18).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (19).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (20).webp",
+    "/assets/newPropertyImages/rosevilleApartment/roseville (21).webp",
+  ],
+  [
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (1).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (2).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (3).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (4).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (5).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (6).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (7).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (8).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (9).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (10).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (11).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (12).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (13).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (14).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (15).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (16).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (17).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (18).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (19).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (20).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (21).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (22).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (23).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (24).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (25).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (26).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (27).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (28).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (29).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (30).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (31).jpg",
+    "/assets/newPropertyImages/rosevilleLoft/rosevilleLoft (32).jpg",
+  ],
+  [
+    "/assets/newPropertyImages/southfield/southfield (1).webp",
+    "/assets/newPropertyImages/southfield/southfield (2).webp",
+    "/assets/newPropertyImages/southfield/southfield (3).webp",
+    "/assets/newPropertyImages/southfield/southfield (4).webp",
+    "/assets/newPropertyImages/southfield/southfield (5).webp",
+    "/assets/newPropertyImages/southfield/southfield (6).webp",
+    "/assets/newPropertyImages/southfield/southfield (7).webp",
+    "/assets/newPropertyImages/southfield/southfield (8).webp",
+    "/assets/newPropertyImages/southfield/southfield (9).webp",
+    "/assets/newPropertyImages/southfield/southfield (10).webp",
+    "/assets/newPropertyImages/southfield/southfield (11).webp",
+    "/assets/newPropertyImages/southfield/southfield (12).webp",
+    "/assets/newPropertyImages/southfield/southfield (13).webp",
+    "/assets/newPropertyImages/southfield/southfield (14).webp",
+    "/assets/newPropertyImages/southfield/southfield (15).webp",
+    "/assets/newPropertyImages/southfield/southfield (16).webp",
+    "/assets/newPropertyImages/southfield/southfield (17).webp",
+    "/assets/newPropertyImages/southfield/southfield (18).webp",
+    "/assets/newPropertyImages/southfield/southfield (19).webp",
+    "/assets/newPropertyImages/southfield/southfield (20).webp",
+    "/assets/newPropertyImages/southfield/southfield (21).webp",
+    "/assets/newPropertyImages/southfield/southfield (22).webp",
+    "/assets/newPropertyImages/southfield/southfield (23).webp",
+    "/assets/newPropertyImages/southfield/southfield (24).webp",
+    "/assets/newPropertyImages/southfield/southfield (25).webp",
+    "/assets/newPropertyImages/southfield/southfield (26).webp",
+    "/assets/newPropertyImages/southfield/southfield (27).webp",
+    "/assets/newPropertyImages/southfield/southfield (28).webp",
+    "/assets/newPropertyImages/southfield/southfield (29).webp",
+    "/assets/newPropertyImages/southfield/southfield (30).webp",
+    "/assets/newPropertyImages/southfield/southfield (31).webp",
+    "/assets/newPropertyImages/southfield/southfield (32).webp",
+    "/assets/newPropertyImages/southfield/southfield (33).webp",
+    "/assets/newPropertyImages/southfield/southfield (34).webp",
+    "/assets/newPropertyImages/southfield/southfield (35).webp",
+    "/assets/newPropertyImages/southfield/southfield (36).webp",
+    "/assets/newPropertyImages/southfield/southfield (37).webp",
+    "/assets/newPropertyImages/southfield/southfield (38).webp",
+    "/assets/newPropertyImages/southfield/southfield (39).webp",
+    "/assets/newPropertyImages/southfield/southfield (40).webp",
+    "/assets/newPropertyImages/southfield/southfield (41).webp",
+    "/assets/newPropertyImages/southfield/southfield (42).webp",
+    "/assets/newPropertyImages/southfield/southfield (43).webp",
+    "/assets/newPropertyImages/southfield/southfield (44).webp",
+  ],
+  [
+    "/assets/newPropertyImages/warrenEast/warrenEast (1).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (2).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (3).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (4).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (5).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (6).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (7).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (8).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (9).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (10).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (11).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (12).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (13).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (14).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (15).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (16).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (17).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (18).jpg",
+    "/assets/newPropertyImages/warrenEast/warrenEast (19).jpg",
+  ],
+  [
+    "/assets/newPropertyImages/warrenWest/warrenWest (1).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (2).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (3).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (4).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (5).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (6).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (7).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (8).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (9).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (10).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (11).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (12).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (13).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (14).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (15).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (16).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (17).webp",
+    "/assets/newPropertyImages/warrenWest/warrenWest (18).webp",
+  ],
+];
