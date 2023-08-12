@@ -12,15 +12,18 @@ export default function Contact() {
         <PhoneIcon className="h-6" />
         <div>
           <Link className="link link-hover" href="tel:2488926270">
-          (248) 892-6270
+            (248) 892-6270
           </Link>
-          </div>
+        </div>
       </div>
       <div className="flex ">
         <EmailIcon className="h-6" />
         <div>
-          <Link className="link link-hover" href="mailto:peacefulescapesaccomodations@gmail.com">
-          peacefulescapesaccomodations@gmail.com
+          <Link
+            className="link link-hover"
+            href="mailto:peacefulescapesaccomodations@gmail.com"
+          >
+            peacefulescapesaccomodations@gmail.com
           </Link>
         </div>
       </div>
