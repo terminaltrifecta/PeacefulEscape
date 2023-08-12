@@ -13,6 +13,9 @@ export default function Footer() {
       </div>
       <div>
         <span className="footer-title">Locations</span>
+        <Link href="/rosevilleaprt" className="link link-hover">
+          Roseville Apartment
+        </Link>
         <Link href="/roseville" className="link link-hover">
           Roseville Loft
         </Link>
