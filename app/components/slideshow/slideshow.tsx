@@ -38,7 +38,6 @@ function ThumbnailPlugin(mainRef: any): KeenSliderPlugin {
 }
 
 export default function App({ property }: any) {
-  const dir = "" + "southfield" + "/";
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
   });

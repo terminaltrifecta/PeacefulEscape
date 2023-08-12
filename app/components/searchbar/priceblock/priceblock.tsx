@@ -65,7 +65,7 @@ const Pricecard = ({
   };
 
   function calculatePetPrice() {
-    return pets * pricePerPet * nights;
+    return pets * pricePerPet;
   }
 
   const calculateBasePrice = () => {
