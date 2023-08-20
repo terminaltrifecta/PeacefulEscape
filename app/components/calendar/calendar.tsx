@@ -150,11 +150,10 @@ export default function Calendar({ calendarId }: any) {
                   className={classNames(
                     isBooked(format(day, "yyyy-MM-dd")) &&
                       !isToday(day) &&
-                      "text-base-200",
-                    isBooked(format(day, "yyyy-MM-dd")) &&
-                      !isSameMonth(day, today) &&
-                      "text-error",
-                    isSameMonth(day, today) && "text-gray-900",
+                      "text-gray-300",
+                    isSameMonth(day, today) &&
+                      !isBooked(format(day, "yyy-MM-dd")) &&
+                      "text-gray-900",
                     !isToday(day) && "hover:bg-neutral-focus",
                     isToday(day) &&
                       "font-semibold bg-secondary text-white hover:bg-secondary-focus",
