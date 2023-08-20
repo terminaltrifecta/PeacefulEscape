@@ -197,7 +197,7 @@ export default function Southfield() {
           <div className="md:col-start-4 md:col-span-2">
             <div className="grid sticky top-20 gap-5">
               <div className="card shadow-2xl bg-neutral">
-                <Calendar />
+                <Calendar calendarId={1} />
               </div>
 
               <Priceblock

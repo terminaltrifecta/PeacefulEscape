@@ -13,7 +13,7 @@ const Pricecard = ({
   extraGuestChargePerNight = 15,
   guestThresholdForExtraCharge = 5,
   cleaningFee = 100,
-  securityDeposit = true
+  securityDeposit = true,
 }) => {
   const [guests, setGuests] = useState(minGuests);
   const [pets, setPets] = useState(minPets);
@@ -69,9 +69,7 @@ const Pricecard = ({
   }
 
   const calculateBasePrice = () => {
-    return (
-      calculatePartialPrice() * nights + calculatePetPrice() * nights
-    );
+    return calculatePartialPrice() * nights + calculatePetPrice();
   };
 
   function petNode() {
@@ -93,7 +91,9 @@ const Pricecard = ({
               <br />
               {petNode()}
               <div className="text-xl">Cleaning Fee: ${cleaningFee}</div>
-              {securityDeposit && <div className="text-xl">Deposit (Refundable): $850</div>}
+              {securityDeposit && (
+                <div className="text-xl">Deposit (Refundable): $850</div>
+              )}
             </div>
           </div>
 

@@ -13,7 +13,7 @@ import {
 import React, { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 
-export default function Calendar() {
+export default function Calendar({ calendarId }: any) {
   const [dates, setDates] = useState([]);
 
   let today = startOfToday();
@@ -35,10 +35,22 @@ export default function Calendar() {
     setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
   }
 
+  //roseville 0
+  // rosevilleloft 1
+  //southfield 2
+  // warreneast 3
+  // warrenwest 4
+
+  const calendarIDs = [
+    "https://sheets.googleapis.com/v4/spreadsheets/1SNxVMUryO82g_-CVtAT56_jiETkWhiq5a4ML7aOcZ9Q/values/sheet1?alt=json&key=AIzaSyD1a5_18NbGFHLBZaegkNM8TmDFhzwyphc",
+    "https://sheets.googleapis.com/v4/spreadsheets/1c5Z7sbqJaA2rRgwShbkxDYJ-1SS3Rh-qw-DnT2kVo8Y/values/sheet1?alt=json&key=AIzaSyD1a5_18NbGFHLBZaegkNM8TmDFhzwyphc",
+    "https://sheets.googleapis.com/v4/spreadsheets/16tJE0oaJ69PjfXz_vPlBkOm9QgO737NlUwWORGB0SgA/values/sheet1?alt=json&key=AIzaSyD1a5_18NbGFHLBZaegkNM8TmDFhzwyphc",
+    "https://sheets.googleapis.com/v4/spreadsheets/1TqjzH4SJTyj74SSdlSRrTBRDLRYrwl2W1G_9iLm3Y0Q/values/sheet1?alt=json&key=AIzaSyD1a5_18NbGFHLBZaegkNM8TmDFhzwyphc",
+    "https://sheets.googleapis.com/v4/spreadsheets/12no0HZbif6oCv35Y_Se8dJlc2P-nMK8SRfZ0rq-bdGo/values/sheet1?alt=json&key=AIzaSyD1a5_18NbGFHLBZaegkNM8TmDFhzwyphc",
+  ];
+  //
   async function fetchData() {
-    const response = await fetch(
-      "https://sheets.googleapis.com/v4/spreadsheets/1EPEXPpsttWpdh-QIXULjpiok70Esaa1f3Z3nIGhxCQ8/values/sheet1?alt=json&key=AIzaSyA88Y6YyRePlgmbaDbrvt_f27x4vNSHEGI"
-    );
+    const response = await fetch(calendarIDs[calendarId]);
     return response.json();
   }
 
@@ -138,15 +150,12 @@ export default function Calendar() {
                   className={classNames(
                     isBooked(format(day, "yyyy-MM-dd")) &&
                       !isToday(day) &&
-                      "text-base-300",
+                      "text-base-200",
                     isBooked(format(day, "yyyy-MM-dd")) &&
                       !isSameMonth(day, today) &&
                       "text-error",
                     isSameMonth(day, today) && "text-gray-900",
                     !isToday(day) && "hover:bg-neutral-focus",
-                    !isSameMonth(day, today) &&
-                      !isBooked(format(day, "yyyy-MM-dd")) &&
-                      "text-base-300",
                     isToday(day) &&
                       "font-semibold bg-secondary text-white hover:bg-secondary-focus",
                     "text-black mx-auto flex h-8 w-8 items-center justify-center rounded-full"
