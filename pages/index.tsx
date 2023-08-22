@@ -13,10 +13,10 @@ export default function Home() {
       {/* Cards */}
       <div className="bgpattern p-10 grid gap-10 justify-center md:grid-cols-2">
         <Card
-          headerText="Exotic Mediterranean Oasis (Southfield)"
+          headerText="Traveler's Mediterranean Retreat (Southfield)"
           paragraphText="Beautifully decorated, spacious house in Mediterranean style with 5 bedrooms, two dining areas, and an inviting living room with a newly remodeled bathroom. This house also offers you a comfortable, unique-style TV room with Moroccan-style sectional seating. Free WiFi and free parking are provided."
           buttonText="Check It Out!"
-          imagePath="/assets/coverimages/southfield.webp"
+          imagePath="/assets/coverimages/southfield.jpg"
           buttonPath="/southfield"
           hasButton="true"
           hasImage="true"
