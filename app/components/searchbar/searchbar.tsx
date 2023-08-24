@@ -6,7 +6,7 @@ export default function Searchbar({ setResults }: any) {
   const properties = [
     {
       id: 1,
-      name: "Exotic Mediterranean Oasis",
+      name: "Travelers Mediterranean Retreat",
       location: "Southfield, Michigan",
       href: "/southfield",
       image: "/assets/coverimages/southfield.jpg",
