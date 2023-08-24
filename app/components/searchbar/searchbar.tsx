@@ -9,7 +9,7 @@ export default function Searchbar({ setResults }: any) {
       name: "Exotic Mediterranean Oasis",
       location: "Southfield, Michigan",
       href: "/southfield",
-      image: "/assets/coverimages/southfield.webp",
+      image: "/assets/coverimages/southfield.jpg",
     },
     {
       id: 2,
