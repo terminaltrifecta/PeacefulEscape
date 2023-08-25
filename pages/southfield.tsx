@@ -13,7 +13,7 @@ export default function Southfield() {
       <div className="bgpattern bg-base-100 grid p-9 gap-9 justify-between">
         <div className="grid gap-4">
           <div className="text-3xl lg:text-5xl font-bold  text-center justify-center">
-            Traveler's Mediterranean Retreat
+            Traveler&apos;s Mediterranean Retreat
           </div>
           <div className="text-lg lg:text-2xl font-thin text-center justify-center">
             Southfield, Michigan
