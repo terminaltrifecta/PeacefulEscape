@@ -223,7 +223,7 @@ export default function Southfield() {
           </div>
 
           <div className="md:col-start-4 md:col-span-2">
-            <div className="grid sticky top-20 gap-5">
+            <div className="h-scree grid sticky top-20 gap-5">
               <div className="card shadow-2xl bg-neutral">
                 <Calendar calendarId={2} />
               </div>
@@ -231,7 +231,7 @@ export default function Southfield() {
               <Priceblock
                 minGuests={1}
                 maxGuests={14}
-                minNights={1}
+                minNights={4}
                 maxNights={30}
                 basePricePerNight={230}
                 extraGuestChargePerNight={15}

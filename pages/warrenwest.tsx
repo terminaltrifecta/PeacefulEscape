@@ -227,7 +227,7 @@ export default function Southfield() {
               <Priceblock
                 minGuests={1}
                 maxGuests={15}
-                minNights={1}
+                minNights={7}
                 maxNights={30}
                 basePricePerNight={55}
                 extraGuestChargePerNight={15}
