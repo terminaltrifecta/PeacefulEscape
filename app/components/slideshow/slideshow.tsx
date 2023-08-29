@@ -58,25 +58,15 @@ export default function App({ property }: any) {
       <div ref={sliderRef} className="keen-slider row-span-3 flex w-full">
         {propertyImages[property].map((route: any) => (
           <div className="keen-slider__slide number-slide1" key={route}>
-            <Image
-              src={route}
-              fill={true}
-              alt=""
-              className="object-cover"
-            />
+            <Image src={route} fill={true} alt="" className="object-cover" />
           </div>
         ))}
       </div>
 
-      <div ref={thumbnailRef} className="keen-slider thumbnail w-full">
+      <div ref={thumbnailRef} className="keen-slider thumbnail flex w-full">
         {propertyImages[property].map((route: any) => (
           <div className="keen-slider__slide number-slide1" key={route}>
-            <Image
-              src={route}
-              fill={true}
-              alt=""
-              className="object-cover"
-            />
+            <Image src={route} fill={true} alt="" className="object-cover" />
           </div>
         ))}
       </div>
