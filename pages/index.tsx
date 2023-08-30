@@ -22,7 +22,7 @@ export default function Home() {
           hasImage="true"
         />
         <Card
-          headerText="Cheerful Bedroom in a Cozy Home (West Warren)"
+          headerText="Cheerful Bedroom in a Cozy Home (Warren)"
           paragraphText="Enjoy this spacious, newly remodeled house in the heart of Warren City. Residents will appreciate an abundance of attractions near the house while enjoying the tranquility of a quiet neighborhood. The property is close to the local hospital, as well as shopping malls. Washer and dryer are available in the unit, along with clean, fresh towels, a 65-inch Smart TV, and a fully equipped kitchen for your enjoyment. This home is owned by a super host, so you can expect an exceptional stay. The location is further west on 12 Mile Road."
           buttonText="Check It Out!"
           imagePath="/assets/coverimages/warrenwest.webp"
@@ -42,7 +42,7 @@ export default function Home() {
         />
 
         <Card
-          headerText="Comfortable Home in a Quiet Neighborhood (East Warren)"
+          headerText="Comfortable Home in a Quiet Neighborhood (Warren)"
           paragraphText="Enjoy this spacious, newly remodeled house in the heart of Warren City. Residents will enjoy an abundance of attractions near the house while relaxing in a quiet neighborhood. The property is within proximity to the local hospital as well as shopping malls. Washer and dryer are in the unit, along with clean, fresh towels, a 65 inch Smart TV, and a fully equipped kitchen to enjoy. This home is owned by a super host, so expect an exceptional stay."
           buttonText="Check It Out!"
           imagePath="/assets/coverimages/warreneast.webp"

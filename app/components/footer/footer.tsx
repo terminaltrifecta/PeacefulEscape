@@ -23,10 +23,10 @@ export default function Footer() {
           Southfield Home
         </Link>
         <Link href="/warreneast" className="link link-hover">
-          Warren Home (East)
+          Warren Home
         </Link>
         <Link href="/warrenwest" className="link link-hover">
-          Warren Home (West)
+          Warren Bedroom
         </Link>
       </div>
       <div>

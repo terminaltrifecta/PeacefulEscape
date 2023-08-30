@@ -229,7 +229,7 @@ export default function Southfield() {
                 maxGuests={15}
                 minNights={7}
                 maxNights={30}
-                basePricePerNight={55}
+                basePricePerNight={53}
                 extraGuestChargePerNight={15}
                 guestThresholdForExtraCharge={1}
                 cleaningFee={15}
