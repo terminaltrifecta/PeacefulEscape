@@ -30,9 +30,9 @@ export default function Footer() {
         </Link>
       </div>
       <div>
-        <span className="footer-title">Who are we?</span>
+        <span className="footer-title">Who am I?</span>
         <Link href="/about" className="link link-hover">
-          About us
+          About Raf
         </Link>
         <br />
         <div className="font-light">Designed by Terminal Trifecta</div>
